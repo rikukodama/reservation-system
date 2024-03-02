@@ -1,0 +1,53 @@
+﻿@model IEnumerable<RESERVATION.Models.T_COURSE>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.courceName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.limitMinNum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.alertMessage)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.courceName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.limitMinNum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.alertMessage)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.courceId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.courceId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.courceId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

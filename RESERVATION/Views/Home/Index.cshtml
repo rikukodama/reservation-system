@@ -1,0 +1,72 @@
+﻿@model IEnumerable<RESERVATION.Models.T_COURSE>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="text-center">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+         aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="selectdate"></h5>
+                    <button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                        <span aria-hidden="true">戻る</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="p20">●受付中 ×締め切り</h4>
+                    @foreach (var item in Model)
+                    {
+                    <div class="schedule-div">
+                        <span class="schedule">
+                                08:00~12:00 @Html.DisplayFor(modelItem => item.courceName)
+                        </span><span>●</span>
+                    </div>
+                    }
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">戻る</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="calendar">
+        <div class="back">
+            <h4 class="title1">人宿サウナの予約システムです。</h4>
+            <h5 class="title2">「予約日時」の選択</h5>
+            <div id="total">
+                <div id="total">
+                    <button type="button" id="this">今月</button>
+                    <div class="checkbtn">
+                        <button type="button" id="prev">&lt;</button>
+                        <button type="button" id="next">&gt;</button>
+                    </div>
+                </div>
+                <div class="checkbtn">
+                    <div>
+                        <button type="button" id="week" value>週</button>
+
+                    </div>
+                    <div>
+                        <button type="button" id="month" value>月</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="header">
+                <div class="font22">&laquo;<span id="prevBtn"></span></div>
+                <h4 id="monthYear"></h4>
+                <div class="font22"><span id="nextBtn"></span>&raquo;</div>
+            </div>
+            <h5>●受付中 ×締め切り</h5>
+            <div id="calendarBody" class="calendar-grid"></div>
+            <div id="weekBody" class="week-grid"> </div>
+        </div>
+    </div>
+
+</div>
