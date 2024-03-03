@@ -37,6 +37,13 @@ namespace RESERVATION.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("date")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("limitMaxNum")
+                        .HasColumnType("int");
+
                     b.Property<int>("limitMinNum")
                         .HasColumnType("int");
 
@@ -46,6 +53,27 @@ namespace RESERVATION.Migrations
                     b.HasKey("courceId");
 
                     b.ToTable("T_COURSE");
+                });
+
+            modelBuilder.Entity("RESERVATION.Models.T_COURSEM", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("alertMessage")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("T_COURSEM");
                 });
 
             modelBuilder.Entity("RESERVATION.Models.T_OPTION", b =>

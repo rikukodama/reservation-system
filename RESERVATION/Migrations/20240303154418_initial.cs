@@ -16,12 +16,28 @@ namespace RESERVATION.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     courceName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     limitMinNum = table.Column<int>(type: "int", nullable: false),
+                    limitMaxNum = table.Column<int>(type: "int", nullable: false),
                     price = table.Column<int>(type: "int", nullable: false),
-                    alertMessage = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    alertMessage = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    date = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_T_COURSE", x => x.courceId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "T_COURSEM",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    alertMessage = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_T_COURSEM", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -63,6 +79,9 @@ namespace RESERVATION.Migrations
         {
             migrationBuilder.DropTable(
                 name: "T_COURSE");
+
+            migrationBuilder.DropTable(
+                name: "T_COURSEM");
 
             migrationBuilder.DropTable(
                 name: "T_OPTION");

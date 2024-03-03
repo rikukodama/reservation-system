@@ -4,6 +4,12 @@ using RESERVATION.Data;
 using RESERVATION.Models;
 using System.Diagnostics;
 
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc.Rendering;
 namespace RESERVATION.Controllers
 {
     public class HomeController : Controller
@@ -18,16 +24,23 @@ namespace RESERVATION.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
+      
+        public async Task<IActionResult> Index()
         {
-            return _context.T_COURSE != null ?
-                          View(await _context.T_COURSE.ToListAsync()) :
-                          Problem("Entity set 'ReservationContext.T_COURSE'  is null.");
+            return _context.T_COURSEM != null ?
+                        View(await _context.T_COURSEM.ToListAsync()) :
+                        Problem("Entity set 'ReservationContext.T_COURSE'  is null.");
         }
-
         public IActionResult Privacy()
         {
             return View();
+        }
+
+        public async Task<IActionResult> Course()
+        {
+            return _context.T_COURSE != null ?
+                        View(await _context.T_COURSE.ToListAsync()) :
+                        Problem("Entity set 'ReservationContext.T_OPTION'  is null.");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -157,7 +157,7 @@ function renderWeeker(year, month, date) {
         // const time = year + '/' + month + '/' + date + '(' + day + ')';
 
         if (count) selectDate($(this), currentMonth, currentYear);
-        else window.location.href = `../../Views/Home/Course.cshtml`;
+
 
     });
 
@@ -231,10 +231,7 @@ function openModal(year, month, date, day) {
     //   $("#modal-container").css("display", "block");
     $('#exampleModal').modal('show');
     const time = year + '/' + month + '/' + date + '(' + day + ')';
-    $(".schedule").click(function () {
 
-        window.location.href = `../../Views/Home/Course.cshtml?time=${time}&reservation=${$(this).html()}`;
-    })
 }
 // function closeModal(dayCell) {
 //   dayCell.addClass("selected-date");

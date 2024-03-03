@@ -1,4 +1,4 @@
-﻿@model IEnumerable<RESERVATION.Models.T_COURSE>
+﻿@model IEnumerable<RESERVATION.Models.T_COURSEM>
 
 @{
     ViewData["Title"] = "Home Page";
@@ -23,7 +23,8 @@
                     {
                     <div class="schedule-div">
                         <span class="schedule">
-                                08:00~12:00 @Html.DisplayFor(modelItem => item.courceName)
+                                <a class="nav-link text-dark" asp-action="Course" asp-area="" asp-controller="Home" asp-route-id="@item.Id" > @Html.DisplayFor(modelItem => item.Name)</a>
+                           
                         </span><span>●</span>
                     </div>
                     }

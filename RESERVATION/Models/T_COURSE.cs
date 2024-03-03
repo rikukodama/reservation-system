@@ -12,10 +12,15 @@ namespace RESERVATION.Models
         public string courceName { get; set; }
         [DisplayName("最小数")]
         public int limitMinNum { get; set; }
+        [DisplayName("最小数")]
+        public int limitMaxNum { get; set; }
         [DisplayName("価格")]
         public int price { get; set; }
         [DataType("nvarchar(50)")]
         [DisplayName("メッセージ")]
         public string alertMessage { get; set; }
+        [DisplayName("")]
+        public string date { get; set; }
+        
     }
 }

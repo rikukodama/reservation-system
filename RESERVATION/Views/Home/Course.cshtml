@@ -3,9 +3,9 @@
 
 *@
 @{
-    ViewData["Title"] = "Course and Option";
+    ViewData["Title"] = "Course";
 }
-@model IEnumerable<RESERVATION.Models.T_OPTION>
+@model IEnumerable<RESERVATION.Models.T_COURSE>
 
 
 
@@ -19,14 +19,15 @@
             </div>
         @foreach (var item in Model)
         {
-            
-            <div class="form-check">
+               
+//                <input type="hidden" asp-for="courceId" />
+                <div  class="form-check" asp-action="Course">
                 <input class="form-check-input" type="radio"
                        value="5500"
-                       name="flexRadioDefault" id="flexRadioDefault1"
-                       checked>
-                <label class="form-check-label" for="flexRadioDefault1">
-                        @Html.DisplayFor(modelItem => item.optionName) <span> @Html.DisplayFor(modelItem => item.price) (税込)</span>
+                           name="flexRadioDefault" id="flexRadioDefault{$ @Html.DisplayFor(modelItem => item.courceId)}"
+                       >
+                    <label class="form-check-label" for="flexRadioDefault{$ @Html.DisplayFor(modelItem => item.courceId)}">
+                        @Html.DisplayFor(modelItem => item.courceName) <span> @Html.DisplayFor(modelItem => item.price) (税込)</span>
                 </label>
             </div>
         }
@@ -36,17 +37,16 @@
                 <h4 class="title2">オプション サウナ飯</h4>
                 <p class="red-text">*回答必須</p>
             </div>
-            @foreach (var item in Model)
-        {
+
             <div class="form-check">
                 <input class="form-check-input" type="checkbox"
                        value="3300"
                        id="flexCheckDefault1">
                 <label class="form-check-label" for="flexCheckDefault1">
-                    @Html.DisplayFor(modelItem => item.optionName) <span>¥ @Html.DisplayFor(modelItem => item.price) (税込)</span>
-                </label>
+                    d <span>¥ 23 (税込)</span>
+                </label> 
             </div>
-            }
+
             
         </div>
         <div id="payment">
