@@ -90,7 +90,7 @@ button {
     display: grid;
 }
 
-#weekBody {
+#weekBody, #weekBody1 {
     display: none;
 }
 

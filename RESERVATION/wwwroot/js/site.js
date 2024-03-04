@@ -8,6 +8,33 @@ let currentMonth = currentDate.getMonth();
 let currentDay = currentDate.getDate();
 let count = 1;
 $(document).ready(function () {
+    $('input[type="radio"]').change(function () {
+        calculateSum();
+    });
+
+    $('input[type="checkbox"]').change(function () {
+        calculateSum();
+    });
+    
+    function calculateSum() {
+        var radioSum = 0;
+        var checkboxSum = 0;
+        $('input[type="radio"]:checked').each(function () {
+            radioSum += parseInt($(this).val());
+
+        });
+
+        $('input[type="checkbox"]:checked').each(function () {
+            checkboxSum += parseInt($(this).val());
+        });
+
+         var totalSum = radioSum + checkboxSum;
+
+
+        if (totalSum >= 1000) $('#result').text(parseInt(totalSum / 1000) + ',' + parseInt(totalSum % 1000 / 100) + parseInt(totalSum % 100 / 10) + parseInt(totalSum % 10));
+        else $('#result').text(totalSum);
+  
+    }
     renderCalendar(currentYear, currentMonth);
     show();
 
@@ -19,6 +46,7 @@ $(document).ready(function () {
 
         $("#calendarBody").css("display", "grid");
         $("#weekBody").css("display", "none");
+        $("#weekBody1").css("display", "none");
 
         $(".header").css("display", "flex");
         $(this).css("background-color", "rgba(255,0,0,0.5)")
@@ -34,6 +62,7 @@ $(document).ready(function () {
 
         $("#calendarBody").css("display", "none");
         $("#weekBody").css("display", "grid");
+        $("#weekBody1").css("display", "grid");
 
         $(".header").css("display", "none");
         $(this).css("background-color", "rgba(255,0,0,0.5)");
@@ -124,45 +153,15 @@ function renderWeeker(year, month, date) {
         weekBody.append(cell);
     }
 
-    const cell1 = $("<div>").addClass("day-week").html("08:00~ 12:00 午前枠-A");
-    weekBody.append(cell1);
 
-    for (let i = 0; i < 7; i++) {
-        const cell = $("<div>").addClass("day-cell").html("");
-        weekBody.append(cell);
-    }
-
-    const cell2 = $("<div>").addClass("day-week").html("08:00~ 12:00 午前枠-B");
-    weekBody.append(cell2);
-    for (let i = 0; i < 7; i++) {
-        const cell = $("<div>").addClass("day-cell").html("");
-        weekBody.append(cell);
-    }
-
-    const cell3 = $("<div>").addClass("day-week").html("14:00~ 18:00 午前枠-A");
-    weekBody.append(cell3);
-    for (let i = 0; i < 7; i++) {
-        const cell = $("<div>").addClass("day-cell").html("");
-        weekBody.append(cell);
-    }
-
-    const cell4 = $("<div>").addClass("day-week").html("14:00~ 18:00 午前枠-B");
-    weekBody.append(cell4);
-    for (let i = 0; i < 7; i++) {
-        const cell = $("<div>").addClass("day-cell").html("");
-        weekBody.append(cell);
-    }
 
     $(".day-cell").on("click", function () {
-        // const time = year + '/' + month + '/' + date + '(' + day + ')';
 
         if (count) selectDate($(this), currentMonth, currentYear);
-
 
     });
 
 }
-
 
 function renderCalendar(year, month) {
     const monthYear = $("#monthYear");
@@ -209,8 +208,6 @@ function renderCalendar(year, month) {
         cell.val((currentMonth + 1) % 12 + 1);
         calendarBody.append(cell);
     }
-
-
 }
 
 
@@ -230,8 +227,27 @@ function selectDate(dayCell, currentMonth, currentYear) {
 function openModal(year, month, date, day) {
     //   $("#modal-container").css("display", "block");
     $('#exampleModal').modal('show');
+    $("#modal_select").click(function () {
+        $("#modal_form").submit();
+    });
     const time = year + '/' + month + '/' + date + '(' + day + ')';
+}
 
+function pay_click() {
+    var course = "";
+    var option = "";
+    $('input[type="radio"]:checked').each(function () {
+        course += parseString($(this).text());
+
+    });
+    
+    $('input[type="checkbox"]:checked').each(function () {
+        option += parseString($(this).text());
+    });
+
+    $("#h_course_id").val(course);
+    $("#h_option_id").val(option);
+    $("#pay_form").submit();
 }
 // function closeModal(dayCell) {
 //   dayCell.addClass("selected-date");

@@ -10,87 +10,87 @@ using RESERVATION.Models;
 
 namespace RESERVATION.Controllers
 {
-    public class CourseController : Controller
+    public class T_RESERVATIONController : Controller
     {
         private readonly ReservationContext _context;
 
-        public CourseController(ReservationContext context)
+        public T_RESERVATIONController(ReservationContext context)
         {
             _context = context;
         }
 
-        // GET: Course
+        // GET: T_RESERVATION
         public async Task<IActionResult> Index()
         {
-              return _context.T_COURSE != null ? 
-                          View(await _context.T_COURSE.ToListAsync()) :
-                          Problem("Entity set 'ReservationContext.T_COURSE'  is null.");
+              return _context.T_RESERVATION != null ? 
+                          View(await _context.T_RESERVATION.ToListAsync()) :
+                          Problem("Entity set 'ReservationContext.T_RESERVATION'  is null.");
         }
-        
-        // GET: Course/Details/5
+
+        // GET: T_RESERVATION/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.T_COURSE == null)
+            if (id == null || _context.T_RESERVATION == null)
             {
                 return NotFound();
             }
 
-            var t_COURSE = await _context.T_COURSE
-                .FirstOrDefaultAsync(m => m.courceId == id);
-            if (t_COURSE == null)
+            var t_RESERVATION = await _context.T_RESERVATION
+                .FirstOrDefaultAsync(m => m.reservationId == id);
+            if (t_RESERVATION == null)
             {
                 return NotFound();
             }
 
-            return View(t_COURSE);
+            return View(t_RESERVATION);
         }
 
-        // GET: Course/Create
+        // GET: T_RESERVATION/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Course/Create
+        // POST: T_RESERVATION/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("courceId,courceName,limitMinNum,limitMaxNum,price,alertMessage")] T_COURSE t_COURSE)
+        public async Task<IActionResult> Create([Bind("reservationId,date,time,courceName,optionName,price,alertMessage,update")] T_RESERVATION t_RESERVATION)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(t_COURSE);
+                _context.Add(t_RESERVATION);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(t_COURSE);
+            return View(t_RESERVATION);
         }
 
-        // GET: Course/Edit/5
+        // GET: T_RESERVATION/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.T_COURSE == null)
+            if (id == null || _context.T_RESERVATION == null)
             {
                 return NotFound();
             }
 
-            var t_COURSE = await _context.T_COURSE.FindAsync(id);
-            if (t_COURSE == null)
+            var t_RESERVATION = await _context.T_RESERVATION.FindAsync(id);
+            if (t_RESERVATION == null)
             {
                 return NotFound();
             }
-            return View(t_COURSE);
+            return View(t_RESERVATION);
         }
 
-        // POST: Course/Edit/5
+        // POST: T_RESERVATION/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("courceId,courceName,limitMinNum,limitMaxNum,price,alertMessage")] T_COURSE t_COURSE)
+        public async Task<IActionResult> Edit(int id, [Bind("reservationId,date,time,courceName,optionName,price,alertMessage,update")] T_RESERVATION t_RESERVATION)
         {
-            if (id != t_COURSE.courceId)
+            if (id != t_RESERVATION.reservationId)
             {
                 return NotFound();
             }
@@ -99,12 +99,12 @@ namespace RESERVATION.Controllers
             {
                 try
                 {
-                    _context.Update(t_COURSE);
+                    _context.Update(t_RESERVATION);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!T_COURSEExists(t_COURSE.courceId))
+                    if (!T_RESERVATIONExists(t_RESERVATION.reservationId))
                     {
                         return NotFound();
                     }
@@ -115,49 +115,49 @@ namespace RESERVATION.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(t_COURSE);
+            return View(t_RESERVATION);
         }
 
-        // GET: Course/Delete/5
+        // GET: T_RESERVATION/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.T_COURSE == null)
+            if (id == null || _context.T_RESERVATION == null)
             {
                 return NotFound();
             }
 
-            var t_COURSE = await _context.T_COURSE
-                .FirstOrDefaultAsync(m => m.courceId == id);
-            if (t_COURSE == null)
+            var t_RESERVATION = await _context.T_RESERVATION
+                .FirstOrDefaultAsync(m => m.reservationId == id);
+            if (t_RESERVATION == null)
             {
                 return NotFound();
             }
 
-            return View(t_COURSE);
+            return View(t_RESERVATION);
         }
 
-        // POST: Course/Delete/5
+        // POST: T_RESERVATION/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.T_COURSE == null)
+            if (_context.T_RESERVATION == null)
             {
-                return Problem("Entity set 'ReservationContext.T_COURSE'  is null.");
+                return Problem("Entity set 'ReservationContext.T_RESERVATION'  is null.");
             }
-            var t_COURSE = await _context.T_COURSE.FindAsync(id);
-            if (t_COURSE != null)
+            var t_RESERVATION = await _context.T_RESERVATION.FindAsync(id);
+            if (t_RESERVATION != null)
             {
-                _context.T_COURSE.Remove(t_COURSE);
+                _context.T_RESERVATION.Remove(t_RESERVATION);
             }
             
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool T_COURSEExists(int id)
+        private bool T_RESERVATIONExists(int id)
         {
-          return (_context.T_COURSE?.Any(e => e.courceId == id)).GetValueOrDefault();
+          return (_context.T_RESERVATION?.Any(e => e.reservationId == id)).GetValueOrDefault();
         }
     }
 }

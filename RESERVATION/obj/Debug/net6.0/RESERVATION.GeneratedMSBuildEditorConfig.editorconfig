@@ -50,6 +50,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/Home/Reservation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZXNlcnZhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/Option/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3B0aW9uXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -96,6 +100,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/T_COURSEM/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVF9DT1VSU0VNXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/T_RESERVATION/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVF9SRVNFUlZBVElPTlxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/T_RESERVATION/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVF9SRVNFUlZBVElPTlxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/T_RESERVATION/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVF9SRVNFUlZBVElPTlxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/T_RESERVATION/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVF9SRVNFUlZBVElPTlxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/T_RESERVATION/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVF9SRVNFUlZBVElPTlxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/User/Create.cshtml]

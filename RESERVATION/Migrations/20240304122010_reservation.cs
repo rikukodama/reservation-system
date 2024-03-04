@@ -4,7 +4,7 @@
 
 namespace RESERVATION.Migrations
 {
-    public partial class initial : Migration
+    public partial class reservation : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -18,8 +18,7 @@ namespace RESERVATION.Migrations
                     limitMinNum = table.Column<int>(type: "int", nullable: false),
                     limitMaxNum = table.Column<int>(type: "int", nullable: false),
                     price = table.Column<int>(type: "int", nullable: false),
-                    alertMessage = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    date = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    alertMessage = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -57,6 +56,25 @@ namespace RESERVATION.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "T_RESERVATION",
+                columns: table => new
+                {
+                    reservationId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    date = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    time = table.Column<int>(type: "int", nullable: false),
+                    courceName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    optionName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    price = table.Column<int>(type: "int", nullable: false),
+                    alertMessage = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    update = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_T_RESERVATION", x => x.reservationId);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "T_USER",
                 columns: table => new
                 {
@@ -85,6 +103,9 @@ namespace RESERVATION.Migrations
 
             migrationBuilder.DropTable(
                 name: "T_OPTION");
+
+            migrationBuilder.DropTable(
+                name: "T_RESERVATION");
 
             migrationBuilder.DropTable(
                 name: "T_USER");

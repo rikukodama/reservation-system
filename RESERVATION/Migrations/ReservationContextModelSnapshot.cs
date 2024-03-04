@@ -37,10 +37,6 @@ namespace RESERVATION.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("date")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("limitMaxNum")
                         .HasColumnType("int");
 
@@ -101,6 +97,45 @@ namespace RESERVATION.Migrations
                     b.HasKey("OptionId");
 
                     b.ToTable("T_OPTION");
+                });
+
+            modelBuilder.Entity("RESERVATION.Models.T_RESERVATION", b =>
+                {
+                    b.Property<int>("reservationId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("reservationId"), 1L, 1);
+
+                    b.Property<string>("alertMessage")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("courceName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("date")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("optionName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("price")
+                        .HasColumnType("int");
+
+                    b.Property<int>("time")
+                        .HasColumnType("int");
+
+                    b.Property<string>("update")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("reservationId");
+
+                    b.ToTable("T_RESERVATION");
                 });
 
             modelBuilder.Entity("RESERVATION.Models.T_USER", b =>

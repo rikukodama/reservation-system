@@ -24,5 +24,6 @@ namespace RESERVATION.Data
         public DbSet<RESERVATION.Models.T_OPTION>? T_OPTION { get; set; }
         public DbSet<RESERVATION.Models.T_USER>? T_USER { get; set; }
         public DbSet<RESERVATION.Models.T_COURSEM>? T_COURSEM { get; set; }
+        public DbSet<RESERVATION.Models.T_RESERVATION>? T_RESERVATION { get; set; }
     }
 }

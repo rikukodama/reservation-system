@@ -1,9 +1,8 @@
-﻿@model IEnumerable<RESERVATION.Models.T_COURSEM>
-
+﻿
 @{
     ViewData["Title"] = "Home Page";
 }
-
+@model RESERVATION.Models.DateViewModel
 
 <div class="text-center">
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
@@ -19,15 +18,16 @@
                 </div>
                 <div class="modal-body">
                     <h4 class="p20">●受付中 ×締め切り</h4>
-                    @foreach (var item in Model)
-                    {
-                    <div class="schedule-div">
-                        <span class="schedule">
-                                <a class="nav-link text-dark" asp-action="Course" asp-area="" asp-controller="Home" asp-route-id="@item.Id" > @Html.DisplayFor(modelItem => item.Name)</a>
-                           
-                        </span><span>●</span>
-                    </div>
-                    }
+                    <form asp-action="Course" id="modal_form">
+                        <input type="hidden" asp-for="@Model.res_date" />
+                        <select asp-for="@Model.coursem_id" id="modal_select" >
+                        @foreach (var item in (List<T_COURSEM>)ViewData["coursemList"])
+                        {
+                            <option value="@item.Id" >@item.Name</option>
+                        }
+                        </select>
+                    </form>
+                    
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">戻る</button>
@@ -35,6 +35,7 @@
             </div>
         </div>
     </div>
+
 
     <div id="calendar">
         <div class="back">
@@ -50,11 +51,11 @@
                 </div>
                 <div class="checkbtn">
                     <div>
-                        <button type="button" id="week" value>週</button>
+                        <button type="button" id="week" >週</button>
 
                     </div>
                     <div>
-                        <button type="button" id="month" value>月</button>
+                        <button type="button" id="month" >月</button>
 
                     </div>
                 </div>
@@ -66,7 +67,22 @@
             </div>
             <h5>●受付中 ×締め切り</h5>
             <div id="calendarBody" class="calendar-grid"></div>
+
             <div id="weekBody" class="week-grid"> </div>
+            <div id="weekBody1" class="week-grid">
+                @foreach (var item in (List<T_COURSEM>)ViewData["coursemList"])
+                    {
+                    <div class="day-week">
+                <a class="nav-link text-white" asp-action="Course" asp-area="" asp-controller="Home" asp-route-id="@item.Id"> @Html.DisplayFor(modelItem => item.Name)</a>
+                    
+                    </div>
+                    @for(var i = 0; i < 7; i ++){
+                        <div class="day-cell">
+                            o
+                        </div>
+                    }                    
+                }
+            </div>
         </div>
     </div>
 

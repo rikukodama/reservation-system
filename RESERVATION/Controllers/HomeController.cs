@@ -4,7 +4,6 @@ using RESERVATION.Data;
 using RESERVATION.Models;
 using System.Diagnostics;
 
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,20 +26,29 @@ namespace RESERVATION.Controllers
       
         public async Task<IActionResult> Index()
         {
-            return _context.T_COURSEM != null ?
-                        View(await _context.T_COURSEM.ToListAsync()) :
-                        Problem("Entity set 'ReservationContext.T_COURSE'  is null.");
+            ViewData["coursemList"] = await _context.T_COURSEM.ToListAsync();
+            
+            return View();
         }
         public IActionResult Privacy()
         {
             return View();
         }
 
-        public async Task<IActionResult> Course()
+        [HttpPost]
+        public async Task<IActionResult> Course([FromBody] DateViewModel model)
         {
-            return _context.T_COURSE != null ?
-                        View(await _context.T_COURSE.ToListAsync()) :
-                        Problem("Entity set 'ReservationContext.T_OPTION'  is null.");
+            ViewData["res_date"] = model.res_date;
+            ViewData["coursem_id"] = model.coursem_id;
+            ViewData["courseList"] = await _context.T_COURSE.ToListAsync();
+            ViewData["optionList"] = await _context.T_OPTION.ToListAsync();
+
+            return View();
+        }
+        public async Task<IActionResult> Reservation()
+        {
+
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

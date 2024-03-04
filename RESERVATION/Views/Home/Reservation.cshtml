@@ -1,0 +1,41 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
+*@
+@{
+    ViewData["Title"] = "Reservation";
+}
+
+
+<div id="calendar">
+    <div class="back-system">
+        <h3>サウナ予約システム</h3>
+        <div class="col">
+            <div class="row hr">
+                <div class="col-3">種目</div>
+                <div class="col-9">kiitos</div>
+            </div>
+            <div class="row">
+                <div class="col-3">日時</div>
+                <div class="col-9">
+                    <div id="display"></div>
+                </div>
+            </div>
+        </div>
+        <p class="red-text">*回答必須</p>
+        <label>名前<span class="red-text">*</span></label><br>
+        <input type="text" id="name">
+        <label>電話番号<span class="red-text">*</span></label><br>
+        <input type="text" id="phone"> -
+        <input type="text" id="phone"> -
+        <input type="text" id="phone">
+        <br>
+        <label>メールアドレス<span class="red-text">*</span></label><br>
+        <input type="text" id="email">
+        <input type="text" id="verfy" placeholder="メールアドレス(確認)"><br>
+        <input class="check" type="checkbox" id="verfycheck">
+        <label class="form-check-label" for="verfycheck">
+            お知らせメールを受信する
+        </label>
+    </div>
+</div>

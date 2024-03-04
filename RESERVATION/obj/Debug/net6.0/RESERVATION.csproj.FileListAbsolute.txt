@@ -260,6 +260,7 @@ D:\Work\ASP.Net\reservation\RESERVATION\RESERVATION\obj\Debug\net6.0\RESERVATION
 D:\Work\ASP.Net\reservation\RESERVATION\RESERVATION\obj\Debug\net6.0\RESERVATION.MvcApplicationPartsAssemblyInfo.cache
 D:\Work\ASP.Net\reservation\RESERVATION\RESERVATION\obj\Debug\net6.0\RESERVATION.RazorAssemblyInfo.cache
 D:\Work\ASP.Net\reservation\RESERVATION\RESERVATION\obj\Debug\net6.0\RESERVATION.RazorAssemblyInfo.cs
+D:\Work\ASP.Net\reservation\RESERVATION\RESERVATION\obj\Debug\net6.0\RESERVATION.sourcelink.json
 D:\Work\ASP.Net\reservation\RESERVATION\RESERVATION\obj\Debug\net6.0\staticwebassets.build.json
 D:\Work\ASP.Net\reservation\RESERVATION\RESERVATION\obj\Debug\net6.0\staticwebassets.development.json
 D:\Work\ASP.Net\reservation\RESERVATION\RESERVATION\obj\Debug\net6.0\staticwebassets\msbuild.RESERVATION.Microsoft.AspNetCore.StaticWebAssets.props
@@ -276,4 +277,3 @@ D:\Work\ASP.Net\reservation\RESERVATION\RESERVATION\obj\Debug\net6.0\refint\RESE
 D:\Work\ASP.Net\reservation\RESERVATION\RESERVATION\obj\Debug\net6.0\RESERVATION.pdb
 D:\Work\ASP.Net\reservation\RESERVATION\RESERVATION\obj\Debug\net6.0\RESERVATION.genruntimeconfig.cache
 D:\Work\ASP.Net\reservation\RESERVATION\RESERVATION\obj\Debug\net6.0\ref\RESERVATION.dll
-D:\Work\ASP.Net\reservation\RESERVATION\RESERVATION\obj\Debug\net6.0\RESERVATION.sourcelink.json
