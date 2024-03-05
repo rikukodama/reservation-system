@@ -26,25 +26,9 @@ namespace RESERVATION.Controllers
                           View(await _context.T_COURSE.ToListAsync()) :
                           Problem("Entity set 'ReservationContext.T_COURSE'  is null.");
         }
-        
+
         // GET: Course/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null || _context.T_COURSE == null)
-            {
-                return NotFound();
-            }
-
-            var t_COURSE = await _context.T_COURSE
-                .FirstOrDefaultAsync(m => m.courceId == id);
-            if (t_COURSE == null)
-            {
-                return NotFound();
-            }
-
-            return View(t_COURSE);
-        }
-
+        
         // GET: Course/Create
         public IActionResult Create()
         {
@@ -154,7 +138,7 @@ namespace RESERVATION.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
+        
         private bool T_COURSEExists(int id)
         {
           return (_context.T_COURSE?.Any(e => e.courceId == id)).GetValueOrDefault();

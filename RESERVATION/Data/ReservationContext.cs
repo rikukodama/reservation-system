@@ -19,6 +19,11 @@ namespace RESERVATION.Data
                 .HasKey(c => new { c.OptionId });
             modelBuilder.Entity<T_USER>()
                 .HasKey(c => new { c.Id });
+            modelBuilder.Entity<DateViewModel>()
+                .HasNoKey();
+            modelBuilder.Entity<OptionViewModel>()
+                .HasNoKey();
+            
         }
         public DbSet<RESERVATION.Models.T_COURSE>? T_COURSE { get; set; }
         public DbSet<RESERVATION.Models.T_OPTION>? T_OPTION { get; set; }

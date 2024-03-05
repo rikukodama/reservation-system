@@ -9,6 +9,68 @@
 
 <div id="calendar">
     <div class="back">
-        
+        <form asp-action="Reservation" id="pay_form">
+            <div class="option">
+                <div>
+                    <h4 class="title2">人数</h4>
+                    <p class="red-text">*回答必須</p>
+                </div>
+                <input type="hidden" asp-for="@Model.res_date" value='@ViewData["res_date"]' />
+                <input type="hidden" asp-for="@Model.coursem_id" value='@ViewData["coursem_id"]' />
+                <input type="hidden" asp-for="@Model.course_id" id="h_course_id" />
+                <input type="hidden" asp-for="@Model.option_id" id="h_option_id" />
+                @foreach (var item in (List<T_COURSE>)ViewData["courseList"])
+                {
+                    <div  class="form-check" asp-action="Course">
+                        <input class="form-check-input" type="radio" value="@Html.DisplayFor(modelItem => item.courceId)"
+                            name="flexRadioDefault" id="radio{$ @Html.DisplayFor(modelItem => item.courceId)}"
+                        >
+                        <label class="form-check-label" for="radio{$ @Html.DisplayFor(modelItem => item.courceId)}">
+                            @Html.DisplayFor(modelItem => item.limitMinNum)人
+                            @if (Html.DisplayFor(modelItem => item.limitMaxNum) == Html.DisplayFor(modelItem => item.limitMinNum))
+                            {
+                                <span>以上</span>
+                            }
+                            <input type="hidden" value="@Html.DisplayFor(modelItem => item.price)" class="course_price {$ @Html.DisplayFor(modelItem => item.courceId)}" />
+                            <span>¥ @Html.DisplayFor(modelItem => item.price) (税込)</span>
+                        </label>
+                    </div>
+                }
+            </div> 
+            <div class="option">
+                <div>
+                    <h4 class="title2">オプション サウナ飯</h4>
+                    <p class="red-text">*回答必須</p>
+                </div>
+                @foreach (var item in (List<T_OPTION>)ViewData["optionList"])
+                {
+                    <div class="form-check">
+                        <input class="form-check-input option-check" name="option_id" type="checkbox" 
+                                   id="check{$ @Html.DisplayFor(modelItem => item.OptionId)}" value="@Html.DisplayFor(modelItem => item.OptionId)">
+                            <label class="form-check-label" for="check{$ @Html.DisplayFor(modelItem => item.OptionId)}">
+                            @Html.DisplayFor(modelItem => item.optionName)<input type="hidden" value="@Html.DisplayFor(modelItem => item.price)" id="option_price" /> <span>¥ @Html.DisplayFor(modelItem => item.price) (税込) </span>
+                        </label> 
+                    </div>
+                }
+            </div>
+            <div id="payment">
+                <div id="total">
+                    <div>
+
+                        <p>確定時のお支払い合計</p>
+                    </div>
+                    <div>
+
+                        <span>¥</span><input type="hidden" asp-for="@Model.price" /> <span id="result">5,500</span><span>(税込)</span>
+                    </div>
+
+                </div>
+                <div>
+                    <button class="btn btn-primary" id="pay" onclick="pay_click()">
+                        枠料金
+                    </button>
+                </div>
+            </div>
+        </form>
     </div>
 </div>

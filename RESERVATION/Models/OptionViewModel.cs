@@ -5,7 +5,6 @@ namespace RESERVATION.Models
 {
     public class OptionViewModel
     {
-        public int Id { get; set; }
         public DateTime res_date { get; set; }
         public int coursem_id { get; set; }
         public int course_id { get; set; }

@@ -19,13 +19,14 @@
                 <div class="modal-body">
                     <h4 class="p20">●受付中 ×締め切り</h4>
                     <form asp-action="Course" id="modal_form">
-                        <input type="hidden" asp-for="@Model.res_date" />
+                        <input type="hidden" asp-for="@Model.res_date" id="hidden1" />
                         <select asp-for="@Model.coursem_id" id="modal_select" >
                         @foreach (var item in (List<T_COURSEM>)ViewData["coursemList"])
                         {
                             <option value="@item.Id" >@item.Name</option>
                         }
                         </select>
+
                     </form>
                     
                 </div>

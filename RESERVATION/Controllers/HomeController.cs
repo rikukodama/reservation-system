@@ -4,6 +4,7 @@ using RESERVATION.Data;
 using RESERVATION.Models;
 using System.Diagnostics;
 
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,21 +37,39 @@ namespace RESERVATION.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Course([FromBody] DateViewModel model)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Course([Bind("res_date,coursem_id")] DateViewModel model)
         {
             ViewData["res_date"] = model.res_date;
             ViewData["coursem_id"] = model.coursem_id;
             ViewData["courseList"] = await _context.T_COURSE.ToListAsync();
             ViewData["optionList"] = await _context.T_OPTION.ToListAsync();
-
+    
             return View();
         }
-        public async Task<IActionResult> Reservation()
+       
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Reservation([Bind("res_date,coursem_id,course_id,option_id,price")] OptionViewModel model)
         {
+            ViewData["res_date"] = model.res_date;
+            ViewData["coursem_id"] = model.coursem_id;
+            ViewData["course_id"] = model.course_id;
+            ViewData["option_id"] = model.option_id;
+            ViewData["price"] = model.price;
+            if (model.course_id == null || _context.T_COURSEM == null)
+            {
+                return NotFound();
+            }
 
+            var t_COURSEM = await _context.T_COURSEM.FindAsync(model.coursem_id);
+            if (t_COURSEM == null)
+            {
+                return NotFound();
+            }
+            ViewData["coursem_name"] = t_COURSEM.Name;
             return View();
         }
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

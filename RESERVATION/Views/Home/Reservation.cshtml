@@ -4,11 +4,14 @@
 *@
 @{
     ViewData["Title"] = "Reservation";
+    var resDate = (DateTime)ViewData["res_date"];
+    var weekdays = new string[] { "日", "月", "火", "水", "木", "金", "土" };
+    var day1 = (int)resDate.DayOfWeek;
 }
-
+@model RESERVATION.Models.T_COURSEM
 
 <div id="calendar">
-    <div class="back-system">
+    <form class="back-system">
         <h3>サウナ予約システム</h3>
         <div class="col">
             <div class="row hr">
@@ -18,7 +21,9 @@
             <div class="row">
                 <div class="col-3">日時</div>
                 <div class="col-9">
-                    <div id="display"></div>
+                    <div id="display">
+                        @resDate.Year/@resDate.Month/@resDate.Day ( @weekdays[day1] ) @ViewData["coursem_name"] @ViewData["price"]
+                    </div>
                 </div>
             </div>
         </div>
@@ -37,5 +42,5 @@
         <label class="form-check-label" for="verfycheck">
             お知らせメールを受信する
         </label>
-    </div>
+    </form>
 </div>

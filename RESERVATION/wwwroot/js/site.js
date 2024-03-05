@@ -19,20 +19,28 @@ $(document).ready(function () {
     function calculateSum() {
         var radioSum = 0;
         var checkboxSum = 0;
+        let course = 0;
+        let option = "";
         $('input[type="radio"]:checked').each(function () {
-            radioSum += parseInt($(this).val());
-
+            radioSum += parseInt($(".course_price").val());
+            course += parseInt($(this).val());
         });
 
         $('input[type="checkbox"]:checked').each(function () {
-            checkboxSum += parseInt($(this).val());
+            checkboxSum += parseInt($("#option_price").val());
+            option += String($(this).val()+",");
         });
-
+        
          var totalSum = radioSum + checkboxSum;
 
 
         if (totalSum >= 1000) $('#result').text(parseInt(totalSum / 1000) + ',' + parseInt(totalSum % 1000 / 100) + parseInt(totalSum % 100 / 10) + parseInt(totalSum % 10));
         else $('#result').text(totalSum);
+
+        console.log(radioSum,option)
+        $("#h_course_id").val(course);
+        $("#h_option_id").val(option);
+        $("#h_price").val(totalSum);
   
     }
     renderCalendar(currentYear, currentMonth);
@@ -172,7 +180,7 @@ function renderCalendar(year, month) {
 
     const firstDay = new Date(year, month, 1).getDay();
     const totalDays = new Date(year, month + 1, 0).getDate();
-
+    
     $("#prevBtn").html((currentMonth + 11) % 12 + 1 + "月");
     $("#nextBtn").html((currentMonth + 1) % 12 + 1 + "月");
 
@@ -227,27 +235,22 @@ function selectDate(dayCell, currentMonth, currentYear) {
 function openModal(year, month, date, day) {
     //   $("#modal-container").css("display", "block");
     $('#exampleModal').modal('show');
-    $("#modal_select").click(function () {
+    let date1 = new Date(year, month - 1, date);
+    const formattedDate = date1.getFullYear() + '-' + (date1.getMonth() < 9 ? '0' : '') + (date1.getMonth() + 1) + '-' + (date1.getDate() < 10 ? '0' : '') + date1.getDate();
+
+     $("#hidden1").val(formattedDate);
+
+    $("#modal_select").on("change", function () {
+        console.log($("#modal_form").html());
         $("#modal_form").submit();
     });
     const time = year + '/' + month + '/' + date + '(' + day + ')';
 }
 
 function pay_click() {
-    var course = "";
-    var option = "";
-    $('input[type="radio"]:checked').each(function () {
-        course += parseString($(this).text());
-
-    });
     
-    $('input[type="checkbox"]:checked').each(function () {
-        option += parseString($(this).text());
-    });
-
-    $("#h_course_id").val(course);
-    $("#h_option_id").val(option);
-    $("#pay_form").submit();
+    
+  //  $("#pay_form").submit();
 }
 // function closeModal(dayCell) {
 //   dayCell.addClass("selected-date");
