@@ -8,10 +8,15 @@
     var weekdays = new string[] { "日", "月", "火", "水", "木", "金", "土" };
     var day1 = (int)resDate.DayOfWeek;
 }
-@model RESERVATION.Models.T_COURSEM
+@model RESERVATION.Models.T_RESERVATION
 
 <div id="calendar">
-    <form class="back-system">
+    <form  asp-action="Verify" class="back-system">
+        <input type="hidden" asp-for="@Model.date" value='@ViewData["res_date"]' />
+        <input type="hidden" asp-for="@Model.coursem_id" value='@ViewData["coursem_id"]' />
+        <input type="hidden" asp-for="@Model.cource_id" value='@ViewData["cource_id"]' />
+        <input type="hidden" asp-for="@Model.option_id" value='@ViewData["option_id"]' />
+        <input type="hidden" asp-for="@Model.price" value='@ViewData["price"]' />
         <h3>サウナ予約システム</h3>
         <div class="col">
             <div class="row hr">
@@ -22,25 +27,30 @@
                 <div class="col-3">日時</div>
                 <div class="col-9">
                     <div id="display">
-                        @resDate.Year/@resDate.Month/@resDate.Day ( @weekdays[day1] ) @ViewData["coursem_name"] @ViewData["price"]
+                        @resDate.Year/@resDate.Month/@resDate.Day (@weekdays[day1]) @ViewData["coursem_name"] / ¥@ViewData["price"] (税込) ×
                     </div>
                 </div>
             </div>
         </div>
         <p class="red-text">*回答必須</p>
         <label>名前<span class="red-text">*</span></label><br>
-        <input type="text" id="name">
+        <input type="text" asp-for="@Model.username" id="name">
         <label>電話番号<span class="red-text">*</span></label><br>
-        <input type="text" id="phone"> -
-        <input type="text" id="phone"> -
-        <input type="text" id="phone">
+        <input type="hidden" asp-for="@Model.phonenumber" id="phonenumber"/>
+        <input type="text" class="phone"> -
+        <input type="text" class="phone"> -
+        <input type="text" class="phone">
         <br>
         <label>メールアドレス<span class="red-text">*</span></label><br>
-        <input type="text" id="email">
+        <input type="text" asp-for="@Model.mail"  id="email">
         <input type="text" id="verfy" placeholder="メールアドレス(確認)"><br>
         <input class="check" type="checkbox" id="verfycheck">
         <label class="form-check-label" for="verfycheck">
             お知らせメールを受信する
         </label>
+        <div id="reservation">
+            <input type="hidden" asp-for="@Model.update" id="update"/>
+            <div  class="btn btn-primary" onclick="reservation()">予約</div>
+        </div>
     </form>
 </div>

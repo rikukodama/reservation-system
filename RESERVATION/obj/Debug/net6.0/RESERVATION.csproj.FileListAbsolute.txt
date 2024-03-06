@@ -277,3 +277,4 @@ D:\Work\ASP.Net\reservation\RESERVATION\RESERVATION\obj\Debug\net6.0\refint\RESE
 D:\Work\ASP.Net\reservation\RESERVATION\RESERVATION\obj\Debug\net6.0\RESERVATION.pdb
 D:\Work\ASP.Net\reservation\RESERVATION\RESERVATION\obj\Debug\net6.0\RESERVATION.genruntimeconfig.cache
 D:\Work\ASP.Net\reservation\RESERVATION\RESERVATION\obj\Debug\net6.0\ref\RESERVATION.dll
+D:\Work\ASP.Net\reservation\RESERVATION\RESERVATION\bin\Debug\net6.0\Stripe.net.dll

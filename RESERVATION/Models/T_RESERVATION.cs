@@ -9,20 +9,23 @@ namespace RESERVATION.Models
         public int reservationId { get; set; }
         [DataType("nvarchar(15)")]
         [DisplayName("日付")]
-        public string date { get; set; }
+        public DateTime date { get; set; }
         [DisplayName("時間")]
-        public int time { get; set; }
+        public int coursem_id { get; set; }
         [DisplayName("コース名")]
-        public string courceName { get; set; }
+        public int cource_id { get; set; }
         [DisplayName("オプション名")]
-        public string optionName { get; set; }
+        public string option_id { get; set; }
         [DisplayName("価格")]
         public int price { get; set; }
-        [DataType("nvarchar(50)")]
-        [DisplayName("メッセージ")]
 
-        public string alertMessage { get; set; }
+        [DisplayName("価格")]
+        public string username { get; set; }
+        [DisplayName("価格")]
+        public int phonenumber { get; set; }
+        [DisplayName("価格")]
+        public string mail { get; set; }
         [DisplayName("日付")]
-        public string update { get; set; }
+        public DateTime update { get; set; }
     }
 }

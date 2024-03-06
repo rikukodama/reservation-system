@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "eWikYuR95cHPbNuczQ8qk48Q/KG7Tsiq+EPVAos5LTH+AGlby7BZrgKtlycLCJFK5ttJhAjdvLkgFF4Sw6s7Rg==",
+  "dgSpecHash": "AMpCMWhjLLMQ+Phgc+P9tIRAxqfhRAjCaDKYI55fThLQ1f/fdNMnqIbSp1bSKDq09NUu5/Q6wqjq8NNh8bVJow==",
   "success": true,
   "projectFilePath": "D:\\Work\\ASP.Net\\reservation\\RESERVATION\\RESERVATION\\RESERVATION.csproj",
   "expectedPackageFiles": [
@@ -148,6 +148,7 @@
     "C:\\Users\\Satellite\\.nuget\\packages\\sqlitepclraw.core\\2.1.2\\sqlitepclraw.core.2.1.2.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.2\\sqlitepclraw.lib.e_sqlite3.2.1.2.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.2\\sqlitepclraw.provider.e_sqlite3.2.1.2.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\stripe.net\\43.17.0\\stripe.net.43.17.0.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",

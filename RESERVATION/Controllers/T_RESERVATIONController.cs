@@ -56,7 +56,7 @@ namespace RESERVATION.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("reservationId,date,time,courceName,optionName,price,alertMessage,update")] T_RESERVATION t_RESERVATION)
+        public async Task<IActionResult> Create([Bind("reservationId,date,coursem_id,cource_id,option_id,price,username,phonenumber,mail,update")] T_RESERVATION t_RESERVATION)
         {
             if (ModelState.IsValid)
             {
@@ -88,7 +88,7 @@ namespace RESERVATION.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("reservationId,date,time,courceName,optionName,price,alertMessage,update")] T_RESERVATION t_RESERVATION)
+        public async Task<IActionResult> Edit(int id, [Bind("reservationId,date,coursem_id,cource_id,option_id,price,username,phonenumber,mail,update")] T_RESERVATION t_RESERVATION)
         {
             if (id != t_RESERVATION.reservationId)
             {

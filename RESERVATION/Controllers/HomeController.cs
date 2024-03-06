@@ -3,24 +3,29 @@ using Microsoft.EntityFrameworkCore;
 using RESERVATION.Data;
 using RESERVATION.Models;
 using System.Diagnostics;
-
+using Microsoft.Extensions.Configuration;
+using Stripe;
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.Extensions.Options;
+using Stripe.Checkout;
+
+
+
 namespace RESERVATION.Controllers
 {
     public class HomeController : Controller
     {
-       
-        private readonly ILogger<HomeController> _logger;
+
         private readonly ReservationContext _context;
 
-        public HomeController(ILogger<HomeController> logger, ReservationContext context)
+        public HomeController(ILogger<HomeController> logger, ReservationContext context, IConfiguration configuration)
         {
-            _logger = logger;
+            StripeConfiguration.ApiKey = configuration.GetSection("Stripe:ApiKey").Value;
             _context = context;
         }
 
@@ -35,6 +40,28 @@ namespace RESERVATION.Controllers
         {
             return View();
         }
+        public IActionResult Verify(string stripeToken, decimal amount)
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Checkout(string stripeToken, decimal amount)
+        {
+            StripeConfiguration.ApiKey = "sk_test_51OrCH42L9BZ0orkJ7t4xNcwqisT5LyBPfEfA81j3DltMcmrzXddT2evOAWhDJN4o8SQ74kiqiytCvAZF54VgablH00hN1jCfVT";
+            var paymentIntentService = new PaymentIntentService();
+            var paymentIntent = paymentIntentService.Create(new PaymentIntentCreateOptions
+            {
+                Amount = 10000,
+                Currency = "usd",
+                // In the latest version of the API, specifying the `automatic_payment_methods` parameter is optional because Stripe enables its functionality by default.
+                AutomaticPaymentMethods = new PaymentIntentAutomaticPaymentMethodsOptions
+                {
+                    Enabled = true,
+                },
+            });
+            return Json(new { clientSecret = paymentIntent.ClientSecret });
+        }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -44,7 +71,7 @@ namespace RESERVATION.Controllers
             ViewData["coursem_id"] = model.coursem_id;
             ViewData["courseList"] = await _context.T_COURSE.ToListAsync();
             ViewData["optionList"] = await _context.T_OPTION.ToListAsync();
-    
+
             return View();
         }
        

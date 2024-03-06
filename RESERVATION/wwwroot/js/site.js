@@ -22,22 +22,29 @@ $(document).ready(function () {
         let course = 0;
         let option = "";
         $('input[type="radio"]:checked').each(function () {
-            radioSum += parseInt($(".course_price").val());
+            let values = $(".course_price").map(function () {
+                return $(this).val();
+            }).get();
+
+            radioSum = values[$(this).val() - 1];
             course += parseInt($(this).val());
         });
 
         $('input[type="checkbox"]:checked').each(function () {
-            checkboxSum += parseInt($("#option_price").val());
+            let values = $(".option_price").map(function () {
+                return $(this).val();
+            }).get();
+
+            checkboxSum +=parseInt(values[$(this).val() - 1]);
             option += String($(this).val()+",");
         });
-        
-         var totalSum = radioSum + checkboxSum;
+
+        var totalSum = parseInt(radioSum) + checkboxSum;
 
 
         if (totalSum >= 1000) $('#result').text(parseInt(totalSum / 1000) + ',' + parseInt(totalSum % 1000 / 100) + parseInt(totalSum % 100 / 10) + parseInt(totalSum % 10));
         else $('#result').text(totalSum);
-
-        console.log(radioSum,option)
+        
         $("#h_course_id").val(course);
         $("#h_option_id").val(option);
         $("#h_price").val(totalSum);
@@ -152,10 +159,11 @@ function renderWeeker(year, month, date) {
         if (date > totalDays) {
             date = 1;
             month++;
-            if (month > 12) month = 1;
+            if (month > 12) month = 1,year++;
         }
         if (firstDay > 6) firstDay = 0;
         const cell = $("<div>").addClass("day-week").html(month + "/" + date + "&#13;" + "<br>(" + weekdays[firstDay] + ")");
+        cell.val(new Date(year, month - 1, date));
         date++;
         firstDay++;
         weekBody.append(cell);
@@ -166,6 +174,21 @@ function renderWeeker(year, month, date) {
     $(".day-cell").on("click", function () {
 
         if (count) selectDate($(this), currentMonth, currentYear);
+        else {
+            
+            let values = $(".day-week").map(function () {
+
+                return $(this).val();
+            }).get();
+            let selectDate = parseInt($(this).find('.selectDate').val());
+            let select_id = parseInt($(this).find('.select_id').val());
+            let date1 = values[8 + selectDate];
+            const formattedDate = date1.getFullYear() + '-' + (date1.getMonth() < 9 ? '0' : '') + (date1.getMonth() + 1) + '-' + (date1.getDate() < 10 ? '0' : '') + date1.getDate();
+            $("#hidden1").val(formattedDate);
+            $("#modal_select").val(select_id);
+           
+            $("#modal_form").submit();
+        }
 
     });
 
@@ -249,8 +272,19 @@ function openModal(year, month, date, day) {
 
 function pay_click() {
     
-    
-  //  $("#pay_form").submit();
+    if ($("#h_course_id").val() > 0)  $("#pay_form").submit();
+}
+
+function reservation() {
+    let values = $(".phone").map(function () {
+        return $(this).val();
+    }).get();
+    $("#phonenumber").val(parseInt(values[0] + values[1] + values[2]))
+    const update = currentYear + '-' + (currentMonth < 9 ? '0' : '') + (currentMonth + 1) + '-' + (currentDay < 10 ? '0' : '') + currentDay;
+    $("#update").val(update);
+    if ($("#name").val() && values[0].length == 3 && values[1].length == 3 && values[2].length == 3 && $("#email").val() && $("#verfy").val()) {
+        if ($("#email").val() == $("#verfy").val()) $(".back-system").submit();
+    }
 }
 // function closeModal(dayCell) {
 //   dayCell.addClass("selected-date");

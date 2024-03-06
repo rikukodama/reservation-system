@@ -70,20 +70,26 @@
             <div id="calendarBody" class="calendar-grid"></div>
 
             <div id="weekBody" class="week-grid"> </div>
-            <div id="weekBody1" class="week-grid">
+                <form asp-action="Course" id="modal_form">
+            <div id="weekBody1" >
                 @foreach (var item in (List<T_COURSEM>)ViewData["coursemList"])
                     {
+                        <div class="week-grid">
                     <div class="day-week">
-                <a class="nav-link text-white" asp-action="Course" asp-area="" asp-controller="Home" asp-route-id="@item.Id"> @Html.DisplayFor(modelItem => item.Name)</a>
-                    
+                            @Html.DisplayFor(modelItem => item.Name)
                     </div>
+                            <input type="hidden" asp-for="@Model.res_date" class="selectDate" id="hidden1" />
+                            <input type="hidden" asp-for="@Model.coursem_id" id="modal_select" />
                     @for(var i = 0; i < 7; i ++){
-                        <div class="day-cell">
-                            o
-                        </div>
-                    }                    
+                                <span class="day-cell">
+                                    <input type="hidden"  class="selectDate" value='@i' />
+                                    <input type="hidden" value='@item.Id' class="select_id" />
+                                    o</span>
+                            }                    
+                    </div>
                 }
             </div>
+                </form>
         </div>
     </div>
 
