@@ -7,17 +7,35 @@
     ViewData["Title"] = "Verify";
     
 }
-
+@model RESERVATION.Models.T_RESERVATION
 <div id="calendar">
-    <form id="payment-form">
+    <div class="back">
+
+
+        <form  id="payment-form">
+            
+
         <div id="payment-element">
             <!--Stripe.js injects the Payment Element-->
         </div>
-        <button id="submit">
+            <button id="submit">
             <div class="spinner hidden" id="spinner"></div>
             <span id="button-text">決済</span>
         </button>
         <div id="payment-message" class="hidden"></div>
+    </form>
+    <form asp-action="Create" id="submitbtn">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <input type="hidden" asp-for="date" value='@ViewData["date"]' />
+            <input type="hidden" asp-for="coursem_id" value='@ViewData["coursem_id"]' />
+            <input type="hidden" asp-for="cource_id" value='@ViewData["cource_id"]' />
+            <input type="hidden" asp-for="option_id" value='@ViewData["option_id"]' />
+            <input type="hidden" asp-for="price" value='@ViewData["price"]' />
+            <input type="hidden" asp-for="username" value='@ViewData["username"]' />
+            <input type="hidden" asp-for="phonenumber" value='@ViewData["phonenumber"]' />
+            <input type="hidden" asp-for="mail" value='@ViewData["mail"]' />
+            <input type="hidden" asp-for="update" value='@ViewData["update"]' />
     </form>
     <script src="https://js.stripe.com/v3/"></script>
     <script>
@@ -33,6 +51,10 @@
         async function initialize() {
             const response = await fetch("/Home/Checkout", {
                 method: "POST",
+                    headers: {
+                        'Content-Type': 'application/json'  // Add the Content-Type header
+                    },
+                    body: JSON.stringify(@ViewData["price"])
             });
 
             const { clientSecret } = await response.json();
@@ -60,7 +82,7 @@
                     return_url: "https://localhost:44330/Home/Verify",
                 },
             });
-
+      
             // This point will only be reached if there is an immediate error when
             // confirming the payment. Otherwise, your customer will be redirected to
             // your `return_url`. For some payment methods like iDEAL, your customer will
@@ -84,10 +106,10 @@
             }
 
             const { paymentIntent } = await stripe.retrievePaymentIntent(clientSecret);
-
+                
             switch (paymentIntent.status) {
                 case "succeeded":
-                    showMessage("Payment succeeded!");
+                        document.getElementById("submitbtn").submit();
                     break;
                 case "processing":
                     showMessage("Your payment is processing.");
@@ -99,6 +121,7 @@
                     showMessage("Something went wrong.");
                     break;
             }
+      
         }
 
         function showMessage(messageText) {
@@ -131,5 +154,6 @@
     </script>
     <div id="checkout">
         <!-- Checkout will insert the payment form here -->
+    </div>
     </div>
 </div>

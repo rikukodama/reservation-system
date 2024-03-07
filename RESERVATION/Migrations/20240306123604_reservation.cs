@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
@@ -8,6 +9,31 @@ namespace RESERVATION.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "DateViewModel",
+                columns: table => new
+                {
+                    res_date = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    coursem_id = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                });
+
+            migrationBuilder.CreateTable(
+                name: "OptionViewModel",
+                columns: table => new
+                {
+                    res_date = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    coursem_id = table.Column<int>(type: "int", nullable: false),
+                    course_id = table.Column<int>(type: "int", nullable: false),
+                    option_id = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    price = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                });
+
             migrationBuilder.CreateTable(
                 name: "T_COURSE",
                 columns: table => new
@@ -61,13 +87,15 @@ namespace RESERVATION.Migrations
                 {
                     reservationId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    date = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    time = table.Column<int>(type: "int", nullable: false),
-                    courceName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    optionName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    date = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    coursem_id = table.Column<int>(type: "int", nullable: false),
+                    cource_id = table.Column<int>(type: "int", nullable: false),
+                    option_id = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     price = table.Column<int>(type: "int", nullable: false),
-                    alertMessage = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    update = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    username = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    phonenumber = table.Column<int>(type: "int", nullable: false),
+                    mail = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    update = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -95,6 +123,12 @@ namespace RESERVATION.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "DateViewModel");
+
+            migrationBuilder.DropTable(
+                name: "OptionViewModel");
+
             migrationBuilder.DropTable(
                 name: "T_COURSE");
 

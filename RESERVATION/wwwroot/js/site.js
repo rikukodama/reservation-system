@@ -8,6 +8,7 @@ let currentMonth = currentDate.getMonth();
 let currentDay = currentDate.getDate();
 let count = 1;
 $(document).ready(function () {
+    
     $('input[type="radio"]').change(function () {
         calculateSum();
     });
@@ -286,7 +287,3 @@ function reservation() {
         if ($("#email").val() == $("#verfy").val()) $(".back-system").submit();
     }
 }
-// function closeModal(dayCell) {
-//   dayCell.addClass("selected-date");
-//   $("#modal-container").css("display", "none");
-// }

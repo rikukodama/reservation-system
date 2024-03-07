@@ -8,7 +8,7 @@ namespace RESERVATION.Models
         [Key]
         public int reservationId { get; set; }
         [DataType("nvarchar(15)")]
-        [DisplayName("日付")]
+        [DisplayName("予約日")]
         public DateTime date { get; set; }
         [DisplayName("時間")]
         public int coursem_id { get; set; }
@@ -19,13 +19,14 @@ namespace RESERVATION.Models
         [DisplayName("価格")]
         public int price { get; set; }
 
-        [DisplayName("価格")]
+        [DisplayName("ユーザー名")]
         public string username { get; set; }
-        [DisplayName("価格")]
+        [DisplayName("電話番号")]
         public int phonenumber { get; set; }
-        [DisplayName("価格")]
+        [DisplayName("メール")]
         public string mail { get; set; }
-        [DisplayName("日付")]
-        public DateTime update { get; set; }
+        [DisplayName("アップロード日")]
+
+        public DateTime update { get; set; } = DateTime.Today;
     }
 }
