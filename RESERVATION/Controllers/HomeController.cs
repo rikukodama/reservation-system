@@ -6,6 +6,7 @@ using System.Diagnostics;
 using Microsoft.Extensions.Configuration;
 using Stripe;
 using SlackAPI;
+using System.Net.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Options;
 using Stripe.Checkout;
 using RESERVATION.Migrations;
-using System.Net.Http;
+
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -39,26 +40,43 @@ namespace RESERVATION.Controllers
             {
                 var client = _httpClientFactory.CreateClient("SlackApiClient");
 
-                var response = await client.PostAsync("/chat.postMessage", new FormUrlEncodedContent(new[]
-                {
-                new KeyValuePair<string, string>("channel", channel),
-                new KeyValuePair<string, string>("text", message)
-            }));
+                var parameters = new Dictionary<string, string>
+    {
+    { "channel", channel },
+    { "text", message }
+};
+
+                var content = new FormUrlEncodedContent(parameters);
+
+                var response = await client.PostAsync("chat.postMessage", content);
 
                 if (response.IsSuccessStatusCode)
                 {
+                    var responseContent = await response.Content.ReadAsStringAsync();
+                    Debug.WriteLine("Response: " + responseContent);
                     return true;
                 }
                 else
                 {
                     // Log the response or handle the error accordingly
+
                     return false;
                 }
             }
-            catch (Exception ex)
+            catch (HttpRequestException ex)
             {
-                // Handle the exception accordingly
-                return false;
+
+                if (ex.InnerException != null)
+                    Debug.WriteLine("Inner Exception: " + ex.InnerException);
+
+                // Access additional error details
+                if (ex.StatusCode.HasValue)
+                {
+                    Debug.WriteLine("Status Code: " + ex.StatusCode);
+                }
+
+                // Optionally, add more specific error handling or rethrow the exception
+                throw;
             }
         }
     }
@@ -73,33 +91,11 @@ namespace RESERVATION.Controllers
             _context = context;
             _slackService = slackService;
         }
-        [HttpGet]
-        public async Task<IActionResult> Create()
-        {
-            var channel = "{D06NQG697R7}";
-            var message = "Hello from ASP.NET Core 6!";
-
-            var result = await _slackService.SendMessage(channel, message);
-            Debug.WriteLine("message : " + message);
-            if (result)
-            {
-                // Slack message was sent successfully
-                return Ok();
-            }
-            else
-            {
-                // Slack message sending failed
-                return BadRequest();
-            }
-        }
+     
         public async Task<IActionResult> Index()
         {
             ViewData["coursemList"] = await _context.T_COURSEM.ToListAsync();
-            
-            return View();
-        }
-        public IActionResult Privacy()
-        {
+
             return View();
         }
 
@@ -121,7 +117,7 @@ namespace RESERVATION.Controllers
             ViewData["phonenumber"] = model.phonenumber;
             ViewData["mail"] = model.mail;
             ViewData["update"] = model.update;
-        
+
             return View();
         }
 
@@ -129,39 +125,44 @@ namespace RESERVATION.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("reservationId,date,coursem_id,cource_id,option_id,price,username,phonenumber,mail,update")] T_RESERVATION t_RESERVATION)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(t_RESERVATION);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(t_RESERVATION);
-        }
-        [HttpPost]
         public IActionResult Checkout([FromBody] decimal price)
         {
-         
+
             //    StripeConfiguration.ApiKey = "sk_test_51OrCH42L9BZ0orkJ7t4xNcwqisT5LyBPfEfA81j3DltMcmrzXddT2evOAWhDJN4o8SQ74kiqiytCvAZF54VgablH00hN1jCfVT";
-                var paymentIntentService = new PaymentIntentService();
+            var paymentIntentService = new PaymentIntentService();
 
-                var paymentIntent = paymentIntentService.Create(new PaymentIntentCreateOptions
+            var paymentIntent = paymentIntentService.Create(new PaymentIntentCreateOptions
+            {
+                Amount = (long)(price * 100),  // Stripe expects price in cents, so multiply by 100
+                Currency = "jpy",
+                // In the latest version of the API, specifying the `automatic_payment_methods` parameter is optional because Stripe enables its functionality by default.
+                AutomaticPaymentMethods = new PaymentIntentAutomaticPaymentMethodsOptions
                 {
-                    Amount = (long)(price),  // Stripe expects price in cents, so multiply by 100
-                    Currency = "jpy",
-                    // In the latest version of the API, specifying the `automatic_payment_methods` parameter is optional because Stripe enables its functionality by default.
-                    AutomaticPaymentMethods = new PaymentIntentAutomaticPaymentMethodsOptions
-                    {
-                        Enabled = true,
-                    },
-                });
+                    Enabled = true,
+                },
+            });
 
-                return Json(new { clientSecret = paymentIntent.ClientSecret });
+            return Json(new { clientSecret = paymentIntent.ClientSecret });
 
         }
-
+        [HttpGet]
+        public async Task<IActionResult> Privacy()
+        {
+            var channel = "D06NQG697R7";
+            var message = "hello";
+            var result = await _slackService.SendMessage(channel, message);
+            if (result)
+            {
+                // Slack message was sent successfully
+                
+                return View();
+            }
+            else
+            {
+                // Slack message sending failed
+                return BadRequest();
+            }
+        }
         [HttpPost]
         public IActionResult Refund(string paymentIntentId)
         {
@@ -188,7 +189,7 @@ namespace RESERVATION.Controllers
 
             return View();
         }
-       
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Reservation([Bind("res_date,coursem_id,course_id,option_id,price")] OptionViewModel model)

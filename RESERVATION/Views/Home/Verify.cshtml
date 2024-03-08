@@ -24,10 +24,11 @@
         </button>
         <div id="payment-message" class="hidden"></div>
     </form>
-    <form asp-action="Create" id="submitbtn">
+    <form asp-action="Privacy" id="submitbtn">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
             <input type="hidden" asp-for="date" value='@ViewData["date"]' />
+
             <input type="hidden" asp-for="coursem_id" value='@ViewData["coursem_id"]' />
             <input type="hidden" asp-for="cource_id" value='@ViewData["cource_id"]' />
             <input type="hidden" asp-for="option_id" value='@ViewData["option_id"]' />

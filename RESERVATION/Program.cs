@@ -8,11 +8,17 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ReservationContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("reservationContext")));
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddHttpClient("SlackApiClient", c =>
-{
-    c.BaseAddress = new Uri("https://slack.com/api/");
-    c.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "{xoxb-6478304789431-6759776124819-QD33W0cNQoAqHCutbRrLUDCb}");
-});
+builder.Services.AddHttpClient("SlackApiClient")
+    .ConfigurePrimaryHttpMessageHandler(() =>
+    {
+        var handler = new HttpClientHandler();
+        handler.ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator;
+        return handler;
+    })
+    .ConfigureHttpClient((serviceProvider, client) =>
+    {
+        client.BaseAddress = new Uri("https://slack.com/api/");
+    });
 builder.Services.AddScoped<RESERVATION.Controllers.SlackService>();
 var app = builder.Build();
 //builder.Services.AddDbContext<ReservationContext>(options =>
