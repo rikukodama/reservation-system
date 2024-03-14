@@ -54,6 +54,10 @@
               "target": "Package",
               "version": "[6.0.0, )"
             },
+            "AspNetCore.LineLogin": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            },
             "Google.Apis.Auth": {
               "target": "Package",
               "version": "[1.67.0, )"
@@ -153,6 +157,10 @@
             "System.Threading.Tasks": {
               "target": "Package",
               "version": "[4.3.0, )"
+            },
+            "Yamac.LineMessagingApi.AspNetCore.Middleware": {
+              "target": "Package",
+              "version": "[0.0.1-prerelease-8, )"
             }
           },
           "imports": [
