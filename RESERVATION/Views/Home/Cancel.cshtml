@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div>
+    <button id="cancel-button">Cancel Payment</button>
+</div>
+<script>
+    document.getElementById("cancel-button").addEventListener("click", async function () {
+        const { paymentIntent } = await stripe.retrievePaymentIntent(clientSecret);
+        const response = await fetch("/Home/Refund", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ paymentIntentId: paymentIntent.id })
+        });
+        const data = await response.json();
+        if (data.success) {
+            // Handle successful refund
+            showMessage("Payment refunded successfully.");
+        } else {
+            // Handle refund failure
+            showMessage("Failed to refund payment.");
+        }
+    });
+
+</script>

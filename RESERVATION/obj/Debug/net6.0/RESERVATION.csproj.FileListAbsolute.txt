@@ -301,3 +301,8 @@ D:\Work\ASP.Net\reservation\RESERVATION\RESERVATION\bin\Debug\net6.0\Slack.Webho
 D:\Work\ASP.Net\reservation\RESERVATION\RESERVATION\bin\Debug\net6.0\System.CodeDom.dll
 D:\Work\ASP.Net\reservation\RESERVATION\RESERVATION\bin\Debug\net6.0\System.Management.dll
 D:\Work\ASP.Net\reservation\RESERVATION\RESERVATION\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Management.dll
+D:\Work\ASP.Net\reservation\RESERVATION\RESERVATION\bin\Debug\net6.0\Secrets\credentials.json
+D:\Work\ASP.Net\reservation\RESERVATION\RESERVATION\bin\Debug\net6.0\AspNet.Security.OAuth.Line.dll
+D:\Work\ASP.Net\reservation\RESERVATION\RESERVATION\bin\Debug\net6.0\LineAuthentication.dll
+D:\Work\ASP.Net\reservation\RESERVATION\RESERVATION\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Binder.dll
+D:\Work\ASP.Net\reservation\RESERVATION\RESERVATION\bin\Debug\net6.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll

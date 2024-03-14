@@ -12,8 +12,8 @@ using RESERVATION.Data;
 namespace RESERVATION.Migrations
 {
     [DbContext(typeof(ReservationContext))]
-    [Migration("20240306123604_reservation")]
-    partial class reservation
+    [Migration("20240314085354_reservtion")]
+    partial class reservtion
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -142,6 +142,10 @@ namespace RESERVATION.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("reservationId"), 1L, 1);
 
+                    b.Property<string>("calendarid")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("cource_id")
                         .HasColumnType("int");
 
@@ -156,6 +160,10 @@ namespace RESERVATION.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("option_id")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("paymentIntentid")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

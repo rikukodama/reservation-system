@@ -12,6 +12,8 @@
 
 <div id="calendar">
     <form  asp-action="Verify" class="back-system">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
         <input type="hidden" asp-for="@Model.date" value='@ViewData["res_date"]' />
         <input type="hidden" asp-for="@Model.coursem_id" value='@ViewData["coursem_id"]' />
         <input type="hidden" asp-for="@Model.cource_id" value='@ViewData["cource_id"]' />

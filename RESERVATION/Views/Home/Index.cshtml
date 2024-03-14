@@ -5,6 +5,7 @@
 @model RESERVATION.Models.DateViewModel
 
 <div class="text-center">
+   
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
          aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -19,13 +20,20 @@
                 <div class="modal-body">
                     <h4 class="p20">●受付中 ×締め切り</h4>
                     <form asp-action="Course" id="modal_form">
-                        <input type="hidden" asp-for="@Model.res_date" id="hidden1" />
-                        <select asp-for="@Model.coursem_id" id="modal_select" >
+                        <input type="hidden" asp-for="@Model.res_date" id="hidden1"/>
+                        <div>
+                        <input type="hidden" asp-for="@Model.coursem_id" id="modal_select" />
                         @foreach (var item in (List<T_COURSEM>)ViewData["coursemList"])
                         {
-                            <option value="@item.Id" >@item.Name</option>
+                            <div value="@item.Id" class="s_coursem">
+                                    <input type="hidden" value="@item.Id" class="s_date" />
+                                @item.Name 
+                                    <span class="status" id="reservationStatus_@item.Id" >
+                                        ●
+                                    </span>
+                            </div>
                         }
-                        </select>
+                        </div>
 
                     </form>
                     
@@ -84,7 +92,8 @@
                                 <span class="day-cell">
                                     <input type="hidden"  class="selectDate" value='@i' />
                                     <input type="hidden" value='@item.Id' class="select_id" />
-                                    o</span>
+                                    <span class="">o</span>
+                                </span>
                             }                    
                     </div>
                 }

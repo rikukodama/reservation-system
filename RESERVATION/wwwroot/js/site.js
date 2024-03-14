@@ -21,7 +21,7 @@ $(document).ready(function () {
         var radioSum = 0;
         var checkboxSum = 0;
         let course = 0;
-        let option = "";
+        let option = "0";
         $('input[type="radio"]:checked').each(function () {
             let values = $(".course_price").map(function () {
                 return $(this).val();
@@ -37,7 +37,7 @@ $(document).ready(function () {
             }).get();
 
             checkboxSum +=parseInt(values[$(this).val() - 1]);
-            option += String($(this).val()+",");
+            option += "," + String($(this).val());
         });
 
         var totalSum = parseInt(radioSum) + checkboxSum;
@@ -171,7 +171,6 @@ function renderWeeker(year, month, date) {
     }
 
 
-
     $(".day-cell").on("click", function () {
 
         if (count) selectDate($(this), currentMonth, currentYear);
@@ -264,8 +263,10 @@ function openModal(year, month, date, day) {
 
      $("#hidden1").val(formattedDate);
 
-    $("#modal_select").on("change", function () {
-        console.log($("#modal_form").html());
+    $(".s_coursem").on("click", function () {
+   
+        let selectDate = parseInt($(this).find('.s_date').val());
+        $("#modal_select").val(selectDate);
         $("#modal_form").submit();
     });
     const time = year + '/' + month + '/' + date + '(' + day + ')';
@@ -284,6 +285,7 @@ function reservation() {
     const update = currentYear + '-' + (currentMonth < 9 ? '0' : '') + (currentMonth + 1) + '-' + (currentDay < 10 ? '0' : '') + currentDay;
     $("#update").val(update);
     if ($("#name").val() && values[0].length == 3 && values[1].length == 3 && values[2].length == 3 && $("#email").val() && $("#verfy").val()) {
-        if ($("#email").val() == $("#verfy").val()) $(".back-system").submit();
+        if ($("#email").val() == $("#verfy").val()) 
+            $(".back-system").submit();
     }
 }

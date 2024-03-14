@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\RESERVATION.bundle.scp.css"
     },
     {
+      "Id": "D:\\Work\\ASP.Net\\reservation\\RESERVATION\\RESERVATION\\wwwroot\\Services\\credentials.json",
+      "PackagePath": "staticwebassets\\Services\\credentials.json"
+    },
+    {
       "Id": "D:\\Work\\ASP.Net\\reservation\\RESERVATION\\RESERVATION\\wwwroot\\css\\img_20240229.png",
       "PackagePath": "staticwebassets\\css\\img_20240229.png"
     },

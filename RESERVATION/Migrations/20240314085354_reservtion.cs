@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace RESERVATION.Migrations
 {
-    public partial class reservation : Migration
+    public partial class reservtion : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -95,6 +95,8 @@ namespace RESERVATION.Migrations
                     username = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     phonenumber = table.Column<int>(type: "int", nullable: false),
                     mail = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    paymentIntentid = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    calendarid = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     update = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>

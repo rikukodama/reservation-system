@@ -1,8 +1,12 @@
 using Microsoft.EntityFrameworkCore;
+using RESERVATION.Controllers;
 using RESERVATION.Data;
 using Stripe;
 using System.Configuration;
 using System.Net.Http.Headers;
+using Google.Apis.Auth.OAuth2;
+using Google.Apis.Calendar.v3;
+using Google.Apis.Calendar.v3.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<ReservationContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("reservationContext")));
@@ -18,8 +22,11 @@ builder.Services.AddHttpClient("SlackApiClient")
     .ConfigureHttpClient((serviceProvider, client) =>
     {
         client.BaseAddress = new Uri("https://slack.com/api/");
+        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "xoxb-6478304789431-6759776124819-BuwoiWbv6ELJIvcYSf1NNmlI");
     });
+
 builder.Services.AddScoped<RESERVATION.Controllers.SlackService>();
+builder.Services.AddScoped<ReservationService>();
 var app = builder.Build();
 //builder.Services.AddDbContext<ReservationContext>(options =>
 //            options.UseSqlServer(builder.Configuration.GetConnectionString("reservationContext")));

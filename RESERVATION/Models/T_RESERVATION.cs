@@ -25,6 +25,14 @@ namespace RESERVATION.Models
         public int phonenumber { get; set; }
         [DisplayName("メール")]
         public string mail { get; set; }
+        [DisplayName("paymentid")]
+
+        public string paymentIntentid { get; set; }
+        [DisplayName("calendarid")]
+
+        public string calendarid { get; set; }
+
+
         [DisplayName("アップロード日")]
 
         public DateTime update { get; set; } = DateTime.Today;

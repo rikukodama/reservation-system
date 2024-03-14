@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "u45tgNEKbC8l6WByVtHx976z45s2gEM9MO/U+25V3l0=",
+  "Hash": "QdFFIrK2dsYTkCWX79lJowLWeBoX966TqSt89L+hSjM=",
   "Source": "RESERVATION",
   "BasePath": "_content/RESERVATION",
   "Mode": "Default",
@@ -1212,6 +1212,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "D:\\Work\\ASP.Net\\reservation\\RESERVATION\\RESERVATION\\wwwroot\\Services\\credentials.json",
+      "SourceId": "RESERVATION",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Work\\ASP.Net\\reservation\\RESERVATION\\RESERVATION\\wwwroot\\",
+      "BasePath": "_content/RESERVATION",
+      "RelativePath": "Services/credentials.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Services\\credentials.json"
     }
   ]
 }

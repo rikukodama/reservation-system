@@ -1,1 +1,4 @@
 /.vs
+RESERVATION/wwwroot/Services/credentials.json
+RESERVATION/appsettings.json
+RESERVATION/bin/Debug/net6.0/Secrets/credentials.json

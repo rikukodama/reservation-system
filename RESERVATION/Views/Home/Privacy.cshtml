@@ -2,5 +2,36 @@
     ViewData["Title"] = "Privacy Policy";
 }
 <h1>@ViewData["Title"]</h1>
+@model RESERVATION.Models.T_RESERVATION
+<div>
+    @if (ViewData["reservation"] != null)
+    {
+        @foreach (var item in (List<T_RESERVATION>)ViewData["reservation"])
+        {
+            <div value ="@item.reservationId">
+                <larbel>@item.date @item.coursem_id</larbel>
+                <button onclick="refund('@item.reservationId')">予約解除 </button>
+            </div>
+        }
+    }
+    
+</div>
+<script>
+    async function refund(paymentIntentId) {
+        const response = await fetch("/Home/Refund", {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json'  // Add the Content-Type header
+            },
+            body: JSON.stringify(paymentIntentId)
+        });
 
-<p>Use this page to detail your site's privacy policy.</p>
+        if (response.ok) {
+            const result = await response.text();
+          //  alert(result); // Display a success message or perform additional actions
+window.location.replace('/Home');
+        } else {
+            alert("Refund failed."); // Display an error message or perform additional error handling
+        }
+    }
+</script>
