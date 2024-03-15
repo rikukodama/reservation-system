@@ -17,8 +17,32 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "D:\\Work\\ASP.Net\\reservation\\RESERVATION\\RESERVATION\\wwwroot\\css\\site.min.css",
+      "PackagePath": "staticwebassets\\css\\site.min.css"
+    },
+    {
       "Id": "D:\\Work\\ASP.Net\\reservation\\RESERVATION\\RESERVATION\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Work\\ASP.Net\\reservation\\RESERVATION\\RESERVATION\\wwwroot\\images\\banner1.svg",
+      "PackagePath": "staticwebassets\\images\\banner1.svg"
+    },
+    {
+      "Id": "D:\\Work\\ASP.Net\\reservation\\RESERVATION\\RESERVATION\\wwwroot\\images\\banner2.svg",
+      "PackagePath": "staticwebassets\\images\\banner2.svg"
+    },
+    {
+      "Id": "D:\\Work\\ASP.Net\\reservation\\RESERVATION\\RESERVATION\\wwwroot\\images\\banner3.svg",
+      "PackagePath": "staticwebassets\\images\\banner3.svg"
+    },
+    {
+      "Id": "D:\\Work\\ASP.Net\\reservation\\RESERVATION\\RESERVATION\\wwwroot\\images\\banner4.svg",
+      "PackagePath": "staticwebassets\\images\\banner4.svg"
+    },
+    {
+      "Id": "D:\\Work\\ASP.Net\\reservation\\RESERVATION\\RESERVATION\\wwwroot\\images\\btn_login_base.png",
+      "PackagePath": "staticwebassets\\images\\btn_login_base.png"
     },
     {
       "Id": "D:\\Work\\ASP.Net\\reservation\\RESERVATION\\RESERVATION\\wwwroot\\js\\site.js",

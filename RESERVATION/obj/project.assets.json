@@ -27,6 +27,44 @@
           "lib/net5.0/AspNetCoreLineLogin.dll": {}
         }
       },
+      "CsQuery/1.3.4": {
+        "type": "package",
+        "compile": {
+          "lib/net40/CsQuery.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net40/CsQuery.dll": {
+            "related": ".XML"
+          }
+        }
+      },
+      "evernote-cloud-sdk-windows/1.0.8": {
+        "type": "package",
+        "dependencies": {
+          "PreMailer.Net": "1.2.7",
+          "SgmlReader": "1.8.11"
+        },
+        "compile": {
+          "lib/net40/Evernote.dll": {},
+          "lib/net40/EvernoteOAuthNet.dll": {},
+          "lib/net40/EvernoteSDK.dll": {
+            "related": ".tlb"
+          },
+          "lib/net40/Thrift.dll": {},
+          "lib/net40/en-html2enml.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Evernote.dll": {},
+          "lib/net40/EvernoteOAuthNet.dll": {},
+          "lib/net40/EvernoteSDK.dll": {
+            "related": ".tlb"
+          },
+          "lib/net40/Thrift.dll": {},
+          "lib/net40/en-html2enml.dll": {}
+        }
+      },
       "Google.Apis/1.67.0": {
         "type": "package",
         "dependencies": {
@@ -728,6 +766,36 @@
           }
         }
       },
+      "Line.Api/1.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3",
+          "OpenSSL.X509Certificate2.Provider": "1.2.0"
+        },
+        "compile": {
+          "lib/CloudrailSI.dll": {}
+        },
+        "runtime": {
+          "lib/CloudrailSI.dll": {}
+        }
+      },
+      "Line.Messaging/1.4.5": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "compile": {
+          "lib/netstandard1.3/Line.Messaging.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.3/Line.Messaging.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "LineAuthentication/1.1.4": {
         "type": "package",
         "compile": {
@@ -743,6 +811,20 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "LineBotSDK/2.12.39": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
+          "Microsoft.CSharp": "4.7.0",
+          "Newtonsoft.Json": "12.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/LineBotSDK.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/LineBotSDK.dll": {}
+        }
       },
       "MessagePack/2.1.152": {
         "type": "package",
@@ -886,6 +968,59 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.OAuth.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.OpenIdConnect/6.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.10.0"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Microsoft.AspNetCore.Authorization/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Options": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Authorization.Policy/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Authorization": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.Policy.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.Policy.dll": {
             "related": ".xml"
           }
         }
@@ -1139,6 +1274,53 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Mvc.Abstractions/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Routing.Abstractions": "2.2.0",
+          "Microsoft.Net.Http.Headers": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.Core/2.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.Core": "2.2.0",
+          "Microsoft.AspNetCore.Authorization.Policy": "2.2.0",
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Http": "2.2.0",
+          "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
+          "Microsoft.AspNetCore.Mvc.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.ResponseCaching.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Routing": "2.2.0",
+          "Microsoft.AspNetCore.Routing.Abstractions": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection": "2.2.0",
+          "Microsoft.Extensions.DependencyModel": "2.1.0",
+          "Microsoft.Extensions.FileProviders.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Logging.Abstractions": "2.2.0",
+          "System.Diagnostics.DiagnosticSource": "4.5.0",
+          "System.Threading.Tasks.Extensions": "4.5.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Razor.Language/6.0.0": {
         "type": "package",
         "compile": {
@@ -1148,43 +1330,54 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Language.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Routing/1.0.2": {
+      "Microsoft.AspNetCore.ResponseCaching.Abstractions/2.2.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Extensions": "1.0.1",
-          "Microsoft.AspNetCore.Routing.Abstractions": "1.0.2",
-          "Microsoft.Extensions.Logging.Abstractions": "1.0.1",
-          "Microsoft.Extensions.ObjectPool": "1.0.1",
-          "Microsoft.Extensions.Options": "1.0.1",
-          "System.Collections": "4.0.11",
-          "System.Text.RegularExpressions": "4.1.0"
+          "Microsoft.Extensions.Primitives": "2.2.0"
         },
         "compile": {
-          "lib/netstandard1.3/Microsoft.AspNetCore.Routing.dll": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard1.3/Microsoft.AspNetCore.Routing.dll": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll": {
             "related": ".xml"
           }
         }
       },
-      "Microsoft.AspNetCore.Routing.Abstractions/1.0.2": {
+      "Microsoft.AspNetCore.Routing/2.2.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Abstractions": "1.0.1",
-          "System.Collections.Concurrent": "4.0.12",
-          "System.Reflection.Extensions": "4.0.1",
-          "System.Threading.Tasks": "4.0.11"
+          "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
+          "Microsoft.AspNetCore.Routing.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Logging.Abstractions": "2.2.0",
+          "Microsoft.Extensions.ObjectPool": "2.2.0",
+          "Microsoft.Extensions.Options": "2.2.0"
         },
         "compile": {
-          "lib/netstandard1.3/Microsoft.AspNetCore.Routing.Abstractions.dll": {
+          "lib/netcoreapp2.2/Microsoft.AspNetCore.Routing.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard1.3/Microsoft.AspNetCore.Routing.Abstractions.dll": {
+          "lib/netcoreapp2.2/Microsoft.AspNetCore.Routing.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Routing.Abstractions/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Routing.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Routing.Abstractions.dll": {
             "related": ".xml"
           }
         }
@@ -1790,7 +1983,7 @@
           }
         }
       },
-      "Microsoft.CSharp/4.5.0": {
+      "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.0/_._": {}
@@ -2575,10 +2768,10 @@
           }
         }
       },
-      "Microsoft.IdentityModel.JsonWebTokens/6.8.0": {
+      "Microsoft.IdentityModel.JsonWebTokens/6.10.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Tokens": "6.8.0"
+          "Microsoft.IdentityModel.Tokens": "6.10.0"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
@@ -2591,7 +2784,7 @@
           }
         }
       },
-      "Microsoft.IdentityModel.Logging/6.8.0": {
+      "Microsoft.IdentityModel.Logging/6.10.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {
@@ -2604,11 +2797,11 @@
           }
         }
       },
-      "Microsoft.IdentityModel.Protocols/6.8.0": {
+      "Microsoft.IdentityModel.Protocols/6.10.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Logging": "6.8.0",
-          "Microsoft.IdentityModel.Tokens": "6.8.0"
+          "Microsoft.IdentityModel.Logging": "6.10.0",
+          "Microsoft.IdentityModel.Tokens": "6.10.0"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.dll": {
@@ -2621,11 +2814,11 @@
           }
         }
       },
-      "Microsoft.IdentityModel.Protocols.OpenIdConnect/6.8.0": {
+      "Microsoft.IdentityModel.Protocols.OpenIdConnect/6.10.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Protocols": "6.8.0",
-          "System.IdentityModel.Tokens.Jwt": "6.8.0"
+          "Microsoft.IdentityModel.Protocols": "6.10.0",
+          "System.IdentityModel.Tokens.Jwt": "6.10.0"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {
@@ -2638,11 +2831,11 @@
           }
         }
       },
-      "Microsoft.IdentityModel.Tokens/6.8.0": {
+      "Microsoft.IdentityModel.Tokens/6.10.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.5.0",
-          "Microsoft.IdentityModel.Logging": "6.8.0",
+          "Microsoft.IdentityModel.Logging": "6.10.0",
           "System.Security.Cryptography.Cng": "4.5.0"
         },
         "compile": {
@@ -2788,6 +2981,39 @@
       },
       "Microsoft.NETCore.Windows.ApiSets/1.0.1": {
         "type": "package"
+      },
+      "Microsoft.Owin/3.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.dll": {
+            "related": ".XML"
+          }
+        }
+      },
+      "Microsoft.Owin.Security/3.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "3.0.1",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.dll": {
+            "related": ".XML"
+          }
+        }
       },
       "Microsoft.VisualBasic/10.1.0": {
         "type": "package",
@@ -3195,6 +3421,842 @@
           "lib/netstandard2.0/NuGet.Versioning.dll": {}
         }
       },
+      "OpenSSL.PrivateKeyDecoder/1.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/OpenSSL.PrivateKeyDecoder.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/OpenSSL.PrivateKeyDecoder.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenSSL.X509Certificate2.Provider/1.2.0": {
+        "type": "package",
+        "dependencies": {
+          "OpenSSL.PrivateKeyDecoder": "1.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/OpenSSL.X509Certificate2.Provider.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/OpenSSL.X509Certificate2.Provider.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Owin/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Owin.dll": {}
+        }
+      },
+      "Owin.Security.Providers/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Owin.Security.Providers.ArcGISOnline": "[2.26.0]",
+          "Owin.Security.Providers.ArcGISPortal": "[2.26.0]",
+          "Owin.Security.Providers.Asana": "[2.26.0]",
+          "Owin.Security.Providers.Backlog": "[2.26.0]",
+          "Owin.Security.Providers.Baidu": "[2.26.0]",
+          "Owin.Security.Providers.BattleNet": "[2.26.0]",
+          "Owin.Security.Providers.Bitbucket": "[2.26.0]",
+          "Owin.Security.Providers.Box": "[2.26.0]",
+          "Owin.Security.Providers.Buffer": "[2.26.0]",
+          "Owin.Security.Providers.Cosign": "[2.26.0]",
+          "Owin.Security.Providers.DeviantArt": "[2.26.0]",
+          "Owin.Security.Providers.Discord": "[2.26.0]",
+          "Owin.Security.Providers.DoYouBuzz": "[2.26.0]",
+          "Owin.Security.Providers.Dropbox": "[2.26.0]",
+          "Owin.Security.Providers.EVEOnline": "[2.26.0]",
+          "Owin.Security.Providers.Evernote": "[2.26.0]",
+          "Owin.Security.Providers.Fitbit": "[2.26.0]",
+          "Owin.Security.Providers.Flickr": "[2.26.0]",
+          "Owin.Security.Providers.Foursquare": "[2.26.0]",
+          "Owin.Security.Providers.Geni": "[2.26.0]",
+          "Owin.Security.Providers.GitHub": "[2.26.0]",
+          "Owin.Security.Providers.Gitter": "[2.26.0]",
+          "Owin.Security.Providers.Google": "[2.26.0]",
+          "Owin.Security.Providers.GooglePlus": "[2.26.0]",
+          "Owin.Security.Providers.HealthGraph": "[2.26.0]",
+          "Owin.Security.Providers.Imgur": "[2.26.0]",
+          "Owin.Security.Providers.Instagram": "[2.26.0]",
+          "Owin.Security.Providers.LinkedIn": "[2.26.0]",
+          "Owin.Security.Providers.MyHeritage": "[2.26.0]",
+          "Owin.Security.Providers.Onshape": "[2.26.0]",
+          "Owin.Security.Providers.OpenID": "[2.26.0]",
+          "Owin.Security.Providers.Orcid": "[2.26.0]",
+          "Owin.Security.Providers.PayPal": "[2.26.0]",
+          "Owin.Security.Providers.Podbean": "[2.26.0]",
+          "Owin.Security.Providers.Reddit": "[2.26.0]",
+          "Owin.Security.Providers.Salesforce": "[2.26.0]",
+          "Owin.Security.Providers.Shopify": "[2.26.0]",
+          "Owin.Security.Providers.SlackProvider": "[2.26.0]",
+          "Owin.Security.Providers.SoundCloud": "[2.26.0]",
+          "Owin.Security.Providers.Spotify": "[2.26.0]",
+          "Owin.Security.Providers.StackExchange": "[2.26.0]",
+          "Owin.Security.Providers.Steam": "[2.26.0]",
+          "Owin.Security.Providers.TripIt": "[2.26.0]",
+          "Owin.Security.Providers.Twitch": "[2.26.0]",
+          "Owin.Security.Providers.Typeform": "[2.26.0]",
+          "Owin.Security.Providers.Untappd": "[2.26.0]",
+          "Owin.Security.Providers.VKontakte": "[2.26.0]",
+          "Owin.Security.Providers.Vimeo": "[2.26.0]",
+          "Owin.Security.Providers.VisualStudio": "[2.26.0]",
+          "Owin.Security.Providers.WSO2": "[2.26.0]",
+          "Owin.Security.Providers.Wargaming": "[2.26.0]",
+          "Owin.Security.Providers.WordPress": "[2.26.0]",
+          "Owin.Security.Providers.Xing": "[2.26.0]",
+          "Owin.Security.Providers.Yahoo": "[2.26.0]",
+          "Owin.Security.Providers.Yammer": "[2.26.0]"
+        }
+      },
+      "Owin.Security.Providers.ArcGISOnline/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.ArcGISOnline.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.ArcGISOnline.dll": {}
+        }
+      },
+      "Owin.Security.Providers.ArcGISPortal/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.ArcGISPortal.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.ArcGISPortal.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Asana/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Asana.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Asana.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Backlog/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Backlog.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Backlog.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Baidu/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Baidu.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Baidu.dll": {}
+        }
+      },
+      "Owin.Security.Providers.BattleNet/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.BattleNet.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.BattleNet.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Bitbucket/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Bitbucket.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Bitbucket.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Box/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Box.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Box.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Buffer/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Buffer.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Buffer.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Cosign/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Cosign.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Cosign.dll": {}
+        }
+      },
+      "Owin.Security.Providers.DeviantArt/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.DeviantArt.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.DeviantArt.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Discord/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Discord.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Discord.dll": {}
+        }
+      },
+      "Owin.Security.Providers.DoYouBuzz/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.DoYouBuzz.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.DoYouBuzz.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Dropbox/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Dropbox.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Dropbox.dll": {}
+        }
+      },
+      "Owin.Security.Providers.EVEOnline/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.EVEOnline.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.EVEOnline.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Evernote/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "9.0.1",
+          "evernote-cloud-sdk-windows": "1.0.8"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Evernote.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Evernote.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Fitbit/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Fitbit.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Fitbit.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Flickr/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Flickr.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Flickr.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Foursquare/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Foursquare.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Foursquare.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Geni/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Geni.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Geni.dll": {}
+        }
+      },
+      "Owin.Security.Providers.GitHub/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.GitHub.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.GitHub.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Gitter/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Gitter.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Gitter.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Google/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Google.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Google.dll": {}
+        }
+      },
+      "Owin.Security.Providers.GooglePlus/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.GooglePlus.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.GooglePlus.dll": {}
+        }
+      },
+      "Owin.Security.Providers.HealthGraph/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.HealthGraph.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.HealthGraph.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Imgur/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Imgur.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Imgur.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Instagram/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Instagram.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Instagram.dll": {}
+        }
+      },
+      "Owin.Security.Providers.LinkedIn/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.LinkedIn.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.LinkedIn.dll": {}
+        }
+      },
+      "Owin.Security.Providers.MyHeritage/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.MyHeritage.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.MyHeritage.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Onshape/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Onshape.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Onshape.dll": {}
+        }
+      },
+      "Owin.Security.Providers.OpenID/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Owin.Security.Providers.OpenIDBase": "2.1.1"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.OpenID.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.OpenID.dll": {}
+        }
+      },
+      "Owin.Security.Providers.OpenIDBase/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.OpenIDBase.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.OpenIDBase.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Orcid/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Orcid.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Orcid.dll": {}
+        }
+      },
+      "Owin.Security.Providers.PayPal/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.PayPal.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.PayPal.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Podbean/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Podbean.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Podbean.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Reddit/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Reddit.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Reddit.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Salesforce/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Salesforce.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Salesforce.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Shopify/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Shopify.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Shopify.dll": {}
+        }
+      },
+      "Owin.Security.Providers.SlackProvider/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Slack.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Slack.dll": {}
+        }
+      },
+      "Owin.Security.Providers.SoundCloud/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.SoundCloud.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.SoundCloud.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Spotify/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Spotify.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Spotify.dll": {}
+        }
+      },
+      "Owin.Security.Providers.StackExchange/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.StackExchange.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.StackExchange.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Steam/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Owin.Security.Providers.OpenIDBase": "2.1.1"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Steam.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Steam.dll": {}
+        }
+      },
+      "Owin.Security.Providers.TripIt/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.TripIt.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.TripIt.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Twitch/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Twitch.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Twitch.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Typeform/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Typeform.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Typeform.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Untappd/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Untappd.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Untappd.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Vimeo/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Vimeo.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Vimeo.dll": {}
+        }
+      },
+      "Owin.Security.Providers.VisualStudio/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.VisualStudio.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.VisualStudio.dll": {}
+        }
+      },
+      "Owin.Security.Providers.VKontakte/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.VKontakte.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.VKontakte.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Wargaming/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Owin.Security.Providers.OpenIDBase": "2.1.1"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Wargaming.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Wargaming.dll": {}
+        }
+      },
+      "Owin.Security.Providers.WordPress/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.WordPress.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.WordPress.dll": {}
+        }
+      },
+      "Owin.Security.Providers.WSO2/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/OWin.Security.Providers.WSO2.dll": {}
+        },
+        "runtime": {
+          "lib/net45/OWin.Security.Providers.WSO2.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Xing/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Xing.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Xing.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Yahoo/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Yahoo.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Yahoo.dll": {}
+        }
+      },
+      "Owin.Security.Providers.Yammer/2.26.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/net45/Owin.Security.Providers.Yammer.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Owin.Security.Providers.Yammer.dll": {}
+        }
+      },
+      "PreMailer.Net/1.2.7": {
+        "type": "package",
+        "dependencies": {
+          "CsQuery": "1.3.4"
+        },
+        "compile": {
+          "lib/net40/PreMailer.Net.dll": {}
+        },
+        "runtime": {
+          "lib/net40/PreMailer.Net.dll": {}
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
         "type": "package",
         "runtimeTargets": {
@@ -3377,6 +4439,15 @@
             "assetType": "native",
             "rid": "ubuntu.16.10-x64"
           }
+        }
+      },
+      "SgmlReader/1.8.11": {
+        "type": "package",
+        "compile": {
+          "lib/4.0/SgmlReaderDll.dll": {}
+        },
+        "runtime": {
+          "lib/4.0/SgmlReaderDll.dll": {}
         }
       },
       "Slack.Webhooks/1.1.5": {
@@ -4182,11 +5253,11 @@
           }
         }
       },
-      "System.IdentityModel.Tokens.Jwt/6.8.0": {
+      "System.IdentityModel.Tokens.Jwt/6.10.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.JsonWebTokens": "6.8.0",
-          "Microsoft.IdentityModel.Tokens": "6.8.0"
+          "Microsoft.IdentityModel.JsonWebTokens": "6.10.0",
+          "Microsoft.IdentityModel.Tokens": "6.10.0"
         },
         "compile": {
           "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {
@@ -5928,6 +6999,36 @@
         "lib/net5.0/AspNetCoreLineLogin.dll"
       ]
     },
+    "CsQuery/1.3.4": {
+      "sha512": "JQUAwMrxt4Wg5GVxT7kKNYQTi0+gvN+DdQ60C2ZVegzvftrOpJgVobazZn+/OcReiNLIGwJhMFSn0FskgqbOUQ==",
+      "type": "package",
+      "path": "csquery/1.3.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "csquery.1.3.4.nupkg.sha512",
+        "csquery.nuspec",
+        "lib/net40/CsQuery.XML",
+        "lib/net40/CsQuery.dll"
+      ]
+    },
+    "evernote-cloud-sdk-windows/1.0.8": {
+      "sha512": "dsxxdp6WTKNXA/o8gzLLgQKyenfIvBI9JgT+y5BkwcH1Q3t1nP6OEUwIiOvWdgDn8hNF4tmUnhheCWQYZq3mDw==",
+      "type": "package",
+      "path": "evernote-cloud-sdk-windows/1.0.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "evernote-cloud-sdk-windows.1.0.8.nupkg.sha512",
+        "evernote-cloud-sdk-windows.nuspec",
+        "lib/net40/Evernote.dll",
+        "lib/net40/EvernoteOAuthNet.dll",
+        "lib/net40/EvernoteSDK.dll",
+        "lib/net40/EvernoteSDK.tlb",
+        "lib/net40/Thrift.dll",
+        "lib/net40/en-html2enml.dll"
+      ]
+    },
     "Google.Apis/1.67.0": {
       "sha512": "XM8/fViJaB1pN61OdXy5RMZoQEqd3hKlWvA/K431gFSb5XtQ48BynfgrbBkUtFcPbSRa4BdjBHzSbkBh/skyMg==",
       "type": "package",
@@ -6782,6 +7883,31 @@
         "runtimes/win7-x86/native/libuv.dll"
       ]
     },
+    "Line.Api/1.0.5": {
+      "sha512": "/9kc44YcVG97YmCY+U3stUDlRXfEGFtyTmg1oajK0HNuBXrskGMCdYDxlEtm9vPScJVVopo/cBwA3P6UwIrsXA==",
+      "type": "package",
+      "path": "line.api/1.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/CloudrailSI.dll",
+        "line.api.1.0.5.nupkg.sha512",
+        "line.api.nuspec"
+      ]
+    },
+    "Line.Messaging/1.4.5": {
+      "sha512": "IIMWjqf3uWcTTBc1BBY/ou2R4oGLleDqcH7HHEj3glsSQoh2HPX+lpgakny+jWU08Zh3DIw9vPvp6cjOEiwF4w==",
+      "type": "package",
+      "path": "line.messaging/1.4.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.3/Line.Messaging.dll",
+        "lib/netstandard1.3/Line.Messaging.xml",
+        "line.messaging.1.4.5.nupkg.sha512",
+        "line.messaging.nuspec"
+      ]
+    },
     "LineAuthentication/1.1.4": {
       "sha512": "j3IbGnYbuai3m09l4zbD/t5xfcX66lDfDgVmEEe/ng9lshh1UUZQQgmbm5ysQ27G56d8isrglJsNoND6n7SFAA==",
       "type": "package",
@@ -6801,6 +7927,21 @@
         "lib/netstandard2.0/LineAuthentication.xml",
         "lineauthentication.1.1.4.nupkg.sha512",
         "lineauthentication.nuspec"
+      ]
+    },
+    "LineBotSDK/2.12.39": {
+      "sha512": "lpJcYmQhTHbyylXLkjZObt76tPLgTcphfff0W4k5gzMRfYiVBfUwxVAiUu7DTSR1EaX7q2BCqTSa991AkhdxpQ==",
+      "type": "package",
+      "path": "linebotsdk/2.12.39",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Readme.txt",
+        "lib/net45/LineBot.XML",
+        "lib/net45/LineBot.dll",
+        "lib/netstandard2.0/LineBotSDK.dll",
+        "linebotsdk.2.12.39.nupkg.sha512",
+        "linebotsdk.nuspec"
       ]
     },
     "MessagePack/2.1.152": {
@@ -6923,6 +8064,47 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.OAuth.xml",
         "microsoft.aspnetcore.authentication.oauth.2.2.0.nupkg.sha512",
         "microsoft.aspnetcore.authentication.oauth.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.OpenIdConnect/6.0.3": {
+      "sha512": "1jdkAJk14muF2aqcOC9d4eRhjxgo9HFFzj8kQIgSKokyQ+iv9+yFtJNELcjxlwy82ntNPFbZCo6WLJyZvyV0Fw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.openidconnect/6.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net6.0/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll",
+        "lib/net6.0/Microsoft.AspNetCore.Authentication.OpenIdConnect.xml",
+        "microsoft.aspnetcore.authentication.openidconnect.6.0.3.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.openidconnect.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Authorization/2.2.0": {
+      "sha512": "/L0W8H3jMYWyaeA9gBJqS/tSWBegP9aaTM0mjRhxTttBY9z4RVDRYJ2CwPAmAXIuPr3r1sOw+CS8jFVRGHRezQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authorization/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.xml",
+        "microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.authorization.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Authorization.Policy/2.2.0": {
+      "sha512": "aJCo6niDRKuNg2uS2WMEmhJTooQUGARhV2ENQ2tO5443zVHUo19MSgrgGo9FIrfD+4yKPF8Q+FF33WkWfPbyKw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authorization.policy/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.Policy.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.Policy.xml",
+        "microsoft.aspnetcore.authorization.policy.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.authorization.policy.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Cryptography.Internal/2.2.0": {
@@ -7100,6 +8282,32 @@
         "microsoft.aspnetcore.httpoverrides.nuspec"
       ]
     },
+    "Microsoft.AspNetCore.Mvc.Abstractions/2.2.0": {
+      "sha512": "ET6uZpfVbGR1NjCuLaLy197cQ3qZUjzl7EG5SL4GfJH/c9KRE89MMBrQegqWsh0w1iRUB/zQaK0anAjxa/pz4g==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.mvc.abstractions/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Abstractions.xml",
+        "microsoft.aspnetcore.mvc.abstractions.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Mvc.Core/2.2.5": {
+      "sha512": "/8sr8ixIUD57UFwUntha9bOwex7/AkZfdk1f9oNJG1Ek7p/uuKVa7fuHmYZpQOf35Oxrt+2Ku4WPwMSbNxOuWg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.mvc.core/2.2.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Core.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Core.xml",
+        "microsoft.aspnetcore.mvc.core.2.2.5.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.core.nuspec"
+      ]
+    },
     "Microsoft.AspNetCore.Razor.Language/6.0.0": {
       "sha512": "yCtBr1GSGzJrrp1NJUb4ltwFYMKHw/tJLnIDvg9g/FnkGIEzmE19tbCQqXARIJv5kdtBgsoVIdGLL+zmjxvM/A==",
       "type": "package",
@@ -7114,33 +8322,44 @@
         "microsoft.aspnetcore.razor.language.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Routing/1.0.2": {
-      "sha512": "Hf5zeqFgG+6qucR1icH5bFJtKykaYt9jcLiFbldswsocMr6ZhpJPuwz8qFWT6fyZw5AzRhqfIeNDfRCWsUYBww==",
+    "Microsoft.AspNetCore.ResponseCaching.Abstractions/2.2.0": {
+      "sha512": "CIHWEKrHzZfFp7t57UXsueiSA/raku56TgRYauV/W1+KAQq6vevz60zjEKaazt3BI76zwMz3B4jGWnCwd8kwQw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.routing/1.0.2",
+      "path": "microsoft.aspnetcore.responsecaching.abstractions/2.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net451/Microsoft.AspNetCore.Routing.dll",
-        "lib/net451/Microsoft.AspNetCore.Routing.xml",
-        "lib/netstandard1.3/Microsoft.AspNetCore.Routing.dll",
-        "lib/netstandard1.3/Microsoft.AspNetCore.Routing.xml",
-        "microsoft.aspnetcore.routing.1.0.2.nupkg.sha512",
+        "lib/netstandard2.0/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.ResponseCaching.Abstractions.xml",
+        "microsoft.aspnetcore.responsecaching.abstractions.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.responsecaching.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Routing/2.2.0": {
+      "sha512": "jAhDBy0wryOnMhhZTtT9z63gJbvCzFuLm8yC6pHzuVu9ZD1dzg0ltxIwT4cfwuNkIL/TixdKsm3vpVOpG8euWQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.routing/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp2.2/Microsoft.AspNetCore.Routing.dll",
+        "lib/netcoreapp2.2/Microsoft.AspNetCore.Routing.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Routing.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Routing.xml",
+        "microsoft.aspnetcore.routing.2.2.0.nupkg.sha512",
         "microsoft.aspnetcore.routing.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Routing.Abstractions/1.0.2": {
-      "sha512": "g3rRFUwUgjlGxr8YJbrY4f5+UJrFCHdOLywfhxv4Z8BldCi+7f37O2jfHnuigEFQgSl0ztug6U0VBCfYIaJsxg==",
+    "Microsoft.AspNetCore.Routing.Abstractions/2.2.0": {
+      "sha512": "lRRaPN7jDlUCVCp9i0W+PB0trFaKB0bgMJD7hEJS9Uo4R9MXaMC8X2tJhPLmeVE3SGDdYI4QNKdVmhNvMJGgPQ==",
       "type": "package",
-      "path": "microsoft.aspnetcore.routing.abstractions/1.0.2",
+      "path": "microsoft.aspnetcore.routing.abstractions/2.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net451/Microsoft.AspNetCore.Routing.Abstractions.dll",
-        "lib/net451/Microsoft.AspNetCore.Routing.Abstractions.xml",
-        "lib/netstandard1.3/Microsoft.AspNetCore.Routing.Abstractions.dll",
-        "lib/netstandard1.3/Microsoft.AspNetCore.Routing.Abstractions.xml",
-        "microsoft.aspnetcore.routing.abstractions.1.0.2.nupkg.sha512",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Routing.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Routing.Abstractions.xml",
+        "microsoft.aspnetcore.routing.abstractions.2.2.0.nupkg.sha512",
         "microsoft.aspnetcore.routing.abstractions.nuspec"
       ]
     },
@@ -7734,10 +8953,10 @@
         "microsoft.codeanalysis.workspaces.common.nuspec"
       ]
     },
-    "Microsoft.CSharp/4.5.0": {
-      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+    "Microsoft.CSharp/4.7.0": {
+      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
       "type": "package",
-      "path": "microsoft.csharp/4.5.0",
+      "path": "microsoft.csharp/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7750,6 +8969,7 @@
         "lib/netcoreapp2.0/_._",
         "lib/netstandard1.3/Microsoft.CSharp.dll",
         "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
         "lib/portable-net45+win8+wp8+wpa81/_._",
         "lib/uap10.0.16299/_._",
         "lib/win8/_._",
@@ -7759,7 +8979,7 @@
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "microsoft.csharp.4.5.0.nupkg.sha512",
+        "microsoft.csharp.4.7.0.nupkg.sha512",
         "microsoft.csharp.nuspec",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
@@ -8730,10 +9950,10 @@
         "ref/xamarinmac20/Microsoft.Identity.Client.xml"
       ]
     },
-    "Microsoft.IdentityModel.JsonWebTokens/6.8.0": {
-      "sha512": "+7JIww64PkMt7NWFxoe4Y/joeF7TAtA/fQ0b2GFGcagzB59sKkTt/sMZWR6aSZht5YC7SdHi3W6yM1yylRGJCQ==",
+    "Microsoft.IdentityModel.JsonWebTokens/6.10.0": {
+      "sha512": "0qjS31rN1MQTc46tAYbzmMTSRfdV5ndZxSjYxIGqKSidd4wpNJfNII/pdhU5Fx8olarQoKL9lqqYw4yNOIwT0Q==",
       "type": "package",
-      "path": "microsoft.identitymodel.jsonwebtokens/6.8.0",
+      "path": "microsoft.identitymodel.jsonwebtokens/6.10.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -8741,16 +9961,18 @@
         "lib/net45/Microsoft.IdentityModel.JsonWebTokens.xml",
         "lib/net461/Microsoft.IdentityModel.JsonWebTokens.dll",
         "lib/net461/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "lib/net472/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/net472/Microsoft.IdentityModel.JsonWebTokens.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.xml",
-        "microsoft.identitymodel.jsonwebtokens.6.8.0.nupkg.sha512",
+        "microsoft.identitymodel.jsonwebtokens.6.10.0.nupkg.sha512",
         "microsoft.identitymodel.jsonwebtokens.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.Logging/6.8.0": {
-      "sha512": "Rfh/p4MaN4gkmhPxwbu8IjrmoDncGfHHPh1sTnc0AcM/Oc39/fzC9doKNWvUAjzFb8LqA6lgZyblTrIsX/wDXg==",
+    "Microsoft.IdentityModel.Logging/6.10.0": {
+      "sha512": "zbcwV6esnNzhZZ/VP87dji6VrUBLB5rxnZBkDMqNYpyG+nrBnBsbm4PUYLCBMUflHCM9EMLDG0rLnqqT+l0ldA==",
       "type": "package",
-      "path": "microsoft.identitymodel.logging/6.8.0",
+      "path": "microsoft.identitymodel.logging/6.10.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -8758,16 +9980,18 @@
         "lib/net45/Microsoft.IdentityModel.Logging.xml",
         "lib/net461/Microsoft.IdentityModel.Logging.dll",
         "lib/net461/Microsoft.IdentityModel.Logging.xml",
+        "lib/net472/Microsoft.IdentityModel.Logging.dll",
+        "lib/net472/Microsoft.IdentityModel.Logging.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.Logging.xml",
-        "microsoft.identitymodel.logging.6.8.0.nupkg.sha512",
+        "microsoft.identitymodel.logging.6.10.0.nupkg.sha512",
         "microsoft.identitymodel.logging.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.Protocols/6.8.0": {
-      "sha512": "OJZx5nPdiH+MEkwCkbJrTAUiO/YzLe0VSswNlDxJsJD9bhOIdXHufh650pfm59YH1DNevp3/bXzukKrG57gA1w==",
+    "Microsoft.IdentityModel.Protocols/6.10.0": {
+      "sha512": "DFyXD0xylP+DknCT3hzJ7q/Q5qRNu0hO/gCU90O0ATdR0twZmlcuY9RNYaaDofXKVbzcShYNCFCGle2G/o8mkg==",
       "type": "package",
-      "path": "microsoft.identitymodel.protocols/6.8.0",
+      "path": "microsoft.identitymodel.protocols/6.10.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -8775,16 +9999,18 @@
         "lib/net45/Microsoft.IdentityModel.Protocols.xml",
         "lib/net461/Microsoft.IdentityModel.Protocols.dll",
         "lib/net461/Microsoft.IdentityModel.Protocols.xml",
+        "lib/net472/Microsoft.IdentityModel.Protocols.dll",
+        "lib/net472/Microsoft.IdentityModel.Protocols.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.xml",
-        "microsoft.identitymodel.protocols.6.8.0.nupkg.sha512",
+        "microsoft.identitymodel.protocols.6.10.0.nupkg.sha512",
         "microsoft.identitymodel.protocols.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.Protocols.OpenIdConnect/6.8.0": {
-      "sha512": "X/PiV5l3nYYsodtrNMrNQIVlDmHpjQQ5w48E+o/D5H4es2+4niEyQf3l03chvZGWNzBRhfSstaXr25/Ye4AeYw==",
+    "Microsoft.IdentityModel.Protocols.OpenIdConnect/6.10.0": {
+      "sha512": "LVvMXAWPbPeEWTylDrxunlHH2wFyE4Mv0L4gZrJHC4HTESbWHquKZb/y/S8jgiQEDycOP0PDQvbG4RR/tr2TVQ==",
       "type": "package",
-      "path": "microsoft.identitymodel.protocols.openidconnect/6.8.0",
+      "path": "microsoft.identitymodel.protocols.openidconnect/6.10.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -8792,16 +10018,18 @@
         "lib/net45/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
         "lib/net461/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
         "lib/net461/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
+        "lib/net472/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "lib/net472/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
-        "microsoft.identitymodel.protocols.openidconnect.6.8.0.nupkg.sha512",
+        "microsoft.identitymodel.protocols.openidconnect.6.10.0.nupkg.sha512",
         "microsoft.identitymodel.protocols.openidconnect.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.Tokens/6.8.0": {
-      "sha512": "gTqzsGcmD13HgtNePPcuVHZ/NXWmyV+InJgalW/FhWpII1D7V1k0obIseGlWMeA4G+tZfeGMfXr0klnWbMR/mQ==",
+    "Microsoft.IdentityModel.Tokens/6.10.0": {
+      "sha512": "qbf1NslutDB4oLrriYTJpy7oB1pbh2ej2lEHd2IPDQH9C74ysOdhU5wAC7KoXblldbo7YsNR2QYFOqQM/b0Rsg==",
       "type": "package",
-      "path": "microsoft.identitymodel.tokens/6.8.0",
+      "path": "microsoft.identitymodel.tokens/6.10.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -8809,9 +10037,11 @@
         "lib/net45/Microsoft.IdentityModel.Tokens.xml",
         "lib/net461/Microsoft.IdentityModel.Tokens.dll",
         "lib/net461/Microsoft.IdentityModel.Tokens.xml",
+        "lib/net472/Microsoft.IdentityModel.Tokens.dll",
+        "lib/net472/Microsoft.IdentityModel.Tokens.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.xml",
-        "microsoft.identitymodel.tokens.6.8.0.nupkg.sha512",
+        "microsoft.identitymodel.tokens.6.10.0.nupkg.sha512",
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
@@ -8985,6 +10215,32 @@
         "microsoft.netcore.windows.apisets.1.0.1.nupkg.sha512",
         "microsoft.netcore.windows.apisets.nuspec",
         "runtime.json"
+      ]
+    },
+    "Microsoft.Owin/3.0.1": {
+      "sha512": "64yZsGN9uRnXNVAyAT4F6KWmdDUJ6yX4uqzxKTdGANKH1oMt0IKZ7THRRa3mXIOo8iSu4tq/DCBUycUY9pXZzw==",
+      "type": "package",
+      "path": "microsoft.owin/3.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.Owin.XML",
+        "lib/net45/Microsoft.Owin.dll",
+        "microsoft.owin.3.0.1.nupkg.sha512",
+        "microsoft.owin.nuspec"
+      ]
+    },
+    "Microsoft.Owin.Security/3.0.1": {
+      "sha512": "LPoUxaTKzmjs97wDCTtBIoRwp30Jkq9UFnoj+EfMFJv+XxjcvHE/D573LRomA568WhvXoI2cUiwhZFvqfbLMVg==",
+      "type": "package",
+      "path": "microsoft.owin.security/3.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.Owin.Security.XML",
+        "lib/net45/Microsoft.Owin.Security.dll",
+        "microsoft.owin.security.3.0.1.nupkg.sha512",
+        "microsoft.owin.security.nuspec"
       ]
     },
     "Microsoft.VisualBasic/10.1.0": {
@@ -9909,6 +11165,755 @@
         "nuget.versioning.nuspec"
       ]
     },
+    "OpenSSL.PrivateKeyDecoder/1.2.0": {
+      "sha512": "2+NGfjqjpIyXEVtsEg5ML7E6bzPGiw6RtH0a7rUhtAEBWWo/d/7uI/TKtHW+/EPO4E/0Gpz4ozG2ETqOAhpmVw==",
+      "type": "package",
+      "path": "openssl.privatekeydecoder/1.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/OpenSSL.PrivateKeyDecoder.dll",
+        "lib/net20/OpenSSL.PrivateKeyDecoder.xml",
+        "lib/net35/OpenSSL.PrivateKeyDecoder.dll",
+        "lib/net35/OpenSSL.PrivateKeyDecoder.xml",
+        "lib/net45/OpenSSL.PrivateKeyDecoder.dll",
+        "lib/net45/OpenSSL.PrivateKeyDecoder.xml",
+        "lib/netstandard1.3/OpenSSL.PrivateKeyDecoder.dll",
+        "lib/netstandard1.3/OpenSSL.PrivateKeyDecoder.xml",
+        "lib/netstandard2.0/OpenSSL.PrivateKeyDecoder.dll",
+        "lib/netstandard2.0/OpenSSL.PrivateKeyDecoder.xml",
+        "openssl.privatekeydecoder.1.2.0.nupkg.sha512",
+        "openssl.privatekeydecoder.nuspec"
+      ]
+    },
+    "OpenSSL.X509Certificate2.Provider/1.2.0": {
+      "sha512": "mXoKvCxJHgzIIxvC3VQ1QZC4KeyLUDuxIVD2DAzEJG7aLOC+zvlE0QsNG1tNbp/1eoI0u0RHnM8UL/y88vdiRQ==",
+      "type": "package",
+      "path": "openssl.x509certificate2.provider/1.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/OpenSSL.X509Certificate2.Provider.dll",
+        "lib/net20/OpenSSL.X509Certificate2.Provider.xml",
+        "lib/net35/OpenSSL.X509Certificate2.Provider.dll",
+        "lib/net35/OpenSSL.X509Certificate2.Provider.xml",
+        "lib/net45/OpenSSL.X509Certificate2.Provider.dll",
+        "lib/net45/OpenSSL.X509Certificate2.Provider.xml",
+        "lib/netstandard1.3/OpenSSL.X509Certificate2.Provider.dll",
+        "lib/netstandard1.3/OpenSSL.X509Certificate2.Provider.xml",
+        "lib/netstandard2.0/OpenSSL.X509Certificate2.Provider.dll",
+        "lib/netstandard2.0/OpenSSL.X509Certificate2.Provider.xml",
+        "openssl.x509certificate2.provider.1.2.0.nupkg.sha512",
+        "openssl.x509certificate2.provider.nuspec"
+      ]
+    },
+    "Owin/1.0.0": {
+      "sha512": "OseTFniKmyp76mEzOBwIKGBRS5eMoYNkMKaMXOpxx9jv88+b6mh1rSaw43vjBOItNhaLFG3d0a20PfHyibH5sw==",
+      "type": "package",
+      "path": "owin/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Owin.dll",
+        "owin.1.0.0.nupkg.sha512",
+        "owin.nuspec"
+      ]
+    },
+    "Owin.Security.Providers/2.26.0": {
+      "sha512": "sJysAJFHJPrQzXXRPxL8IyHlne9mK8wUyv3uCpMkp0/sgoVGLMt5zs2NVdq5uNwezlKRvn05e938AGapkQquSg==",
+      "type": "package",
+      "path": "owin.security.providers/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "owin.security.providers.2.26.0.nupkg.sha512",
+        "owin.security.providers.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.ArcGISOnline/2.26.0": {
+      "sha512": "Bp0xHSzkCCK5U9LdwC3nhoesfr+qUOr08YCoMzYegHm1704mTJj/cMvpBlB5oYkBWVMUSLBg49jYCAO2XszCiQ==",
+      "type": "package",
+      "path": "owin.security.providers.arcgisonline/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.ArcGISOnline.dll",
+        "owin.security.providers.arcgisonline.2.26.0.nupkg.sha512",
+        "owin.security.providers.arcgisonline.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.ArcGISPortal/2.26.0": {
+      "sha512": "Ei8VfX9sGIDLgO2CZXhTjJQFrSzDVY6BHtawT4NSLDfs51UQtOAievAT3r1G0PINUc7O06shc7EojSRKkRCKRg==",
+      "type": "package",
+      "path": "owin.security.providers.arcgisportal/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.ArcGISPortal.dll",
+        "owin.security.providers.arcgisportal.2.26.0.nupkg.sha512",
+        "owin.security.providers.arcgisportal.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Asana/2.26.0": {
+      "sha512": "/M/HYMg1A+GzgzzmXH+qF5H2BMmkIHRladcOOAQ3cMrkZjVZOhaqwud4jui7066tDBrb/AWWtJ71DOKV62e3KA==",
+      "type": "package",
+      "path": "owin.security.providers.asana/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Asana.dll",
+        "owin.security.providers.asana.2.26.0.nupkg.sha512",
+        "owin.security.providers.asana.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Backlog/2.26.0": {
+      "sha512": "c7L90DzpEY9DoFqb7RZPfEjxElBa8j1q+7cx58rYp0Y4Yvnsa0xC252v7hAZbkWdDSbmoeJhFQB3ghBmoU21KA==",
+      "type": "package",
+      "path": "owin.security.providers.backlog/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Backlog.dll",
+        "owin.security.providers.backlog.2.26.0.nupkg.sha512",
+        "owin.security.providers.backlog.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Baidu/2.26.0": {
+      "sha512": "i0Q8y6ju8HFLhSCItkvkG//jOSAVqDa2bA/f+vEX2ZCO+waIxGhCrs7kdjMS3TkpcER086swihmSFBxGpS2sjA==",
+      "type": "package",
+      "path": "owin.security.providers.baidu/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Baidu.dll",
+        "owin.security.providers.baidu.2.26.0.nupkg.sha512",
+        "owin.security.providers.baidu.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.BattleNet/2.26.0": {
+      "sha512": "O1ELA1mV66x3XVP+FnVPL0UJO/GxtWYvCkG2AplwsNUgZ+mWra/Ojhk08zBwnEmH//aYNvZ/o8FFFQu82h7f8A==",
+      "type": "package",
+      "path": "owin.security.providers.battlenet/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.BattleNet.dll",
+        "owin.security.providers.battlenet.2.26.0.nupkg.sha512",
+        "owin.security.providers.battlenet.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Bitbucket/2.26.0": {
+      "sha512": "OIDbkAHnpqsHOovM6VAxq6Wy0zA8eLSKVS9BF2zGdZuqn2HEEZ4W1M9E/YbvS12V1S+ryitAbyTyY6jw1qoUxg==",
+      "type": "package",
+      "path": "owin.security.providers.bitbucket/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Bitbucket.dll",
+        "owin.security.providers.bitbucket.2.26.0.nupkg.sha512",
+        "owin.security.providers.bitbucket.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Box/2.26.0": {
+      "sha512": "42tAT1PBhXzXChuZhGBwR/Ye9l800aYDA5scN7vtFY2FnxHc2sHlhEvO6UvAehZ8I3wxe+5BunM+0Z+Zsb5xQA==",
+      "type": "package",
+      "path": "owin.security.providers.box/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Box.dll",
+        "owin.security.providers.box.2.26.0.nupkg.sha512",
+        "owin.security.providers.box.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Buffer/2.26.0": {
+      "sha512": "t8ePNbhndECpTDChFUnJLrl6vZ5Ji6uinReMUhAAlTr27YnpD+0DCn7dgy575GLTopzB1gyclbMVcmyJH0QzcA==",
+      "type": "package",
+      "path": "owin.security.providers.buffer/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Buffer.dll",
+        "owin.security.providers.buffer.2.26.0.nupkg.sha512",
+        "owin.security.providers.buffer.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Cosign/2.26.0": {
+      "sha512": "zIjkyHJOoxeSIy5UxIHpKdB4acEJJGL3tMygvEF0+2mbY55OB/vpjr2gTb6sy4sd+TkXvrMF++UI10r0sV8v7g==",
+      "type": "package",
+      "path": "owin.security.providers.cosign/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Cosign.dll",
+        "owin.security.providers.cosign.2.26.0.nupkg.sha512",
+        "owin.security.providers.cosign.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.DeviantArt/2.26.0": {
+      "sha512": "c4QfkhfKwx0xXPYoxzyfXR8TT2jHmHTer0oOJQouP320jW+1BB1rgKmWr9imSUv410M0fdfOwHhrmU4X3g0KpQ==",
+      "type": "package",
+      "path": "owin.security.providers.deviantart/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.DeviantArt.dll",
+        "owin.security.providers.deviantart.2.26.0.nupkg.sha512",
+        "owin.security.providers.deviantart.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Discord/2.26.0": {
+      "sha512": "8qt64AHXZQW6+Siu1Wnw/V7vZJeWLrSukF968O68qjE5LSOuIpvzcURdaa0ilTFF43/WlqXbx3sn3OTBCG++lQ==",
+      "type": "package",
+      "path": "owin.security.providers.discord/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Discord.dll",
+        "owin.security.providers.discord.2.26.0.nupkg.sha512",
+        "owin.security.providers.discord.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.DoYouBuzz/2.26.0": {
+      "sha512": "C7HqIshYkGoG/hWxB5i7QbHVP7Nlz70iiWSVGXtF42XODx4vYgtIh1vhG4rtsTz0RMuhSs7cdDIH1rTDTv0zwA==",
+      "type": "package",
+      "path": "owin.security.providers.doyoubuzz/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.DoYouBuzz.dll",
+        "owin.security.providers.doyoubuzz.2.26.0.nupkg.sha512",
+        "owin.security.providers.doyoubuzz.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Dropbox/2.26.0": {
+      "sha512": "Jt12+YhRRGq1/4JQznDPtdCgyRYIYZpQR5iPlf26p1ARkxDutra+Vsty1xeHDS2kQB9cXcFtocgtAI4eDgUk8A==",
+      "type": "package",
+      "path": "owin.security.providers.dropbox/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Dropbox.dll",
+        "owin.security.providers.dropbox.2.26.0.nupkg.sha512",
+        "owin.security.providers.dropbox.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.EVEOnline/2.26.0": {
+      "sha512": "93T2JrpGNv611LMtats3opPf2RUUWlgfYtIvsTfbRq0GGUKMZymqsrzOKvOWF1VDmH7sbd5910ai0dHYVm8vkg==",
+      "type": "package",
+      "path": "owin.security.providers.eveonline/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.EVEOnline.dll",
+        "owin.security.providers.eveonline.2.26.0.nupkg.sha512",
+        "owin.security.providers.eveonline.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Evernote/2.26.0": {
+      "sha512": "vC4yO/tqsuo7g2+vimpJci4BLN8TxxGLuPdSUNQ9e8lx6bE0OQHCI0wnebBtK9TSZk/brfCCciWg05F1O1clrQ==",
+      "type": "package",
+      "path": "owin.security.providers.evernote/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Evernote.dll",
+        "owin.security.providers.evernote.2.26.0.nupkg.sha512",
+        "owin.security.providers.evernote.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Fitbit/2.26.0": {
+      "sha512": "nEwULbHeoS3g9g3teiMZJpGAKa+6KB6L2y7u/wERIyafI3HCnfmLIyCbVIsaCyG7BhJ7BRKfCqaXj64xtlLuDA==",
+      "type": "package",
+      "path": "owin.security.providers.fitbit/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Fitbit.dll",
+        "owin.security.providers.fitbit.2.26.0.nupkg.sha512",
+        "owin.security.providers.fitbit.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Flickr/2.26.0": {
+      "sha512": "bxPDo0KYrbOQd3GQW3/AO2+sVpjqFWLq0f6bPgaTJdJ8S2o6tJ48wgxA0jg4cMBGvvAfGgSnD3C67csqv1bZ/w==",
+      "type": "package",
+      "path": "owin.security.providers.flickr/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Flickr.dll",
+        "owin.security.providers.flickr.2.26.0.nupkg.sha512",
+        "owin.security.providers.flickr.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Foursquare/2.26.0": {
+      "sha512": "btC2EL44P798WBkU3xOZxNkF9pD0ukfKTpYSG7Uw5i2WUaD8kT9ylsgxzCpU9w6qr/lXXBE91pUpKq5jQV3M4g==",
+      "type": "package",
+      "path": "owin.security.providers.foursquare/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Foursquare.dll",
+        "owin.security.providers.foursquare.2.26.0.nupkg.sha512",
+        "owin.security.providers.foursquare.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Geni/2.26.0": {
+      "sha512": "p/T8kyT8l7sZFKfW7YNduTAH/QdRrjNv/bhBXvq/n3DkyQ2knz5wDxIDQqbVdk0iIHfm9No4f6R2ij+WjNiu2A==",
+      "type": "package",
+      "path": "owin.security.providers.geni/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Geni.dll",
+        "owin.security.providers.geni.2.26.0.nupkg.sha512",
+        "owin.security.providers.geni.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.GitHub/2.26.0": {
+      "sha512": "lVvkmPTmzgPfQ4I8xI4cluXrJ+5tG+n5VBMrlEhEnxj2RW9ppUxPrZsWr2SC5Sixs37eVXf5tGmpeDPAUbOm5w==",
+      "type": "package",
+      "path": "owin.security.providers.github/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.GitHub.dll",
+        "owin.security.providers.github.2.26.0.nupkg.sha512",
+        "owin.security.providers.github.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Gitter/2.26.0": {
+      "sha512": "vuPwS8fUYnncu6ZQes/QZMVSDpDgHfMeADcUPaBYG9FUzHL8/79k/WShvolER0K+O5JkfCkBWUF1hJB8+QZ18Q==",
+      "type": "package",
+      "path": "owin.security.providers.gitter/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Gitter.dll",
+        "owin.security.providers.gitter.2.26.0.nupkg.sha512",
+        "owin.security.providers.gitter.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Google/2.26.0": {
+      "sha512": "rQZzwA+/rRqBPDawQvW1NYGNZYHoDoVrFN4lq7eek7aisAdEqqfuTcFc/iaAO+8opMUWtouaoeFFnTobd+TqiQ==",
+      "type": "package",
+      "path": "owin.security.providers.google/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Google.dll",
+        "owin.security.providers.google.2.26.0.nupkg.sha512",
+        "owin.security.providers.google.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.GooglePlus/2.26.0": {
+      "sha512": "uNsDTTFcsjPK1QsKHoFjFWFZpSjCcqkNugu/0VPnMlslh5ZfpgUQNo343+dj7bzcuESns3PqkLVhzgnvt2IKXw==",
+      "type": "package",
+      "path": "owin.security.providers.googleplus/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.GooglePlus.dll",
+        "owin.security.providers.googleplus.2.26.0.nupkg.sha512",
+        "owin.security.providers.googleplus.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.HealthGraph/2.26.0": {
+      "sha512": "yAummBA1uJtTPwkXbeCuM6XJOhmEuSfo9InfLm6gOPdRsuQeqVvbsvmJbgENvU0FX7+k2Jg2KrPL5WEZKdn3Nw==",
+      "type": "package",
+      "path": "owin.security.providers.healthgraph/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.HealthGraph.dll",
+        "owin.security.providers.healthgraph.2.26.0.nupkg.sha512",
+        "owin.security.providers.healthgraph.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Imgur/2.26.0": {
+      "sha512": "eqUslSCfH3UeP4gN3HtYBVL8v4xkfFX5N6cZ+g0ygqTQYBPoQclRhITfTfGLwazlojjOKjeIW8NU5+OmKQCiTQ==",
+      "type": "package",
+      "path": "owin.security.providers.imgur/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Imgur.dll",
+        "owin.security.providers.imgur.2.26.0.nupkg.sha512",
+        "owin.security.providers.imgur.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Instagram/2.26.0": {
+      "sha512": "vQzb6UvVhGqsT0B/Rmg8m7kx/VPMmN/wjFd83u7dhZatfBNILWwMqomM5I2TRRM/+2rDxedtGS6mLs7my23EJw==",
+      "type": "package",
+      "path": "owin.security.providers.instagram/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Instagram.dll",
+        "owin.security.providers.instagram.2.26.0.nupkg.sha512",
+        "owin.security.providers.instagram.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.LinkedIn/2.26.0": {
+      "sha512": "z/JqFdfaeI44gEbW+BRvj34egZsErEtZPDJ3CFRYNxhbpxqRkbHn1DwvASKKU22YnMsL5Ta0SITHfoLYLurzrw==",
+      "type": "package",
+      "path": "owin.security.providers.linkedin/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.LinkedIn.dll",
+        "owin.security.providers.linkedin.2.26.0.nupkg.sha512",
+        "owin.security.providers.linkedin.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.MyHeritage/2.26.0": {
+      "sha512": "4Oj4edwqNO1J5I+DKOVnHEziu1qIx2SxVdxEGApweQd8koqTPLUPnmiZJd/pa1iD9WWMPcNPmWaYdUrZ13+KBA==",
+      "type": "package",
+      "path": "owin.security.providers.myheritage/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.MyHeritage.dll",
+        "owin.security.providers.myheritage.2.26.0.nupkg.sha512",
+        "owin.security.providers.myheritage.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Onshape/2.26.0": {
+      "sha512": "nq5v3kTW+GozNicEMtR0yB7d3qmOJaydEgDwpzkidiWF65/+C+2r4yZviGsYVs5lza0zhXz6/KvaN5bQF7hNqw==",
+      "type": "package",
+      "path": "owin.security.providers.onshape/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Onshape.dll",
+        "owin.security.providers.onshape.2.26.0.nupkg.sha512",
+        "owin.security.providers.onshape.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.OpenID/2.26.0": {
+      "sha512": "q/XqaVZCfZWbJuZau2NdWQGFxqdNv97XXXlswCXd0gQ7+KQP1iL7zOAQqQ7wn8+9GAc133T4Is0ZSHXMzXw8jA==",
+      "type": "package",
+      "path": "owin.security.providers.openid/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.OpenID.dll",
+        "owin.security.providers.openid.2.26.0.nupkg.sha512",
+        "owin.security.providers.openid.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.OpenIDBase/2.1.1": {
+      "sha512": "HwDLN84ETwMX4cJ90WdHB0785dnAjXqIdTdYao8IdLDw/B/8EjUQc/ug7qFKMeo+ElTTu+k5rBeezw43tiDQdQ==",
+      "type": "package",
+      "path": "owin.security.providers.openidbase/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.OpenIDBase.dll",
+        "owin.security.providers.openidbase.2.1.1.nupkg.sha512",
+        "owin.security.providers.openidbase.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Orcid/2.26.0": {
+      "sha512": "rifwsabubn6txq8hpd92KbLlds/Kgrmug0jY5cw46oBXDlpXS1E25K9MKxmrzoipd4NXeqnsbHLQOPg65ORwWQ==",
+      "type": "package",
+      "path": "owin.security.providers.orcid/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Orcid.dll",
+        "owin.security.providers.orcid.2.26.0.nupkg.sha512",
+        "owin.security.providers.orcid.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.PayPal/2.26.0": {
+      "sha512": "VjWStM9eVr6N5qASH1z4wEz6is7KV4+rpzSrJvlx2U9KRSNWr5vourbO7cXMrXWr8BKvEjxwxWtkNWw9XiqhwA==",
+      "type": "package",
+      "path": "owin.security.providers.paypal/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.PayPal.dll",
+        "owin.security.providers.paypal.2.26.0.nupkg.sha512",
+        "owin.security.providers.paypal.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Podbean/2.26.0": {
+      "sha512": "bF4OMA1UldqwRnivHMgrUCd5WIPuexzAuCjMrqVF5UCQ1ulrnfswDiNj/b37wupo+pK5XmU85kPlM4gLZ9AoXQ==",
+      "type": "package",
+      "path": "owin.security.providers.podbean/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Podbean.dll",
+        "owin.security.providers.podbean.2.26.0.nupkg.sha512",
+        "owin.security.providers.podbean.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Reddit/2.26.0": {
+      "sha512": "byp2hikIQAl9kfc8ENbLp1VcqCWm+Lwxg/Qf4peTQcg5doq6g9EnC4JQ997PneNXn+3eWeia+N1QeC8svi4UNQ==",
+      "type": "package",
+      "path": "owin.security.providers.reddit/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Reddit.dll",
+        "owin.security.providers.reddit.2.26.0.nupkg.sha512",
+        "owin.security.providers.reddit.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Salesforce/2.26.0": {
+      "sha512": "+Uqt6rP9MvpqbVTBIoS0CTV9VZIJc328QNS4JYVUOl0hkEN+43SBpRPHwSlsWhV+0p6EZgy/T5eNJTocUi82kA==",
+      "type": "package",
+      "path": "owin.security.providers.salesforce/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Salesforce.dll",
+        "owin.security.providers.salesforce.2.26.0.nupkg.sha512",
+        "owin.security.providers.salesforce.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Shopify/2.26.0": {
+      "sha512": "PqUrnmQXMoWq3kySPMlzb4tFwowfW0xN+dzElxlV8oDOp0sJSbI73vsw+UvEIAgqA3KK8IENRdI9qlHQAMIQgQ==",
+      "type": "package",
+      "path": "owin.security.providers.shopify/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Shopify.dll",
+        "owin.security.providers.shopify.2.26.0.nupkg.sha512",
+        "owin.security.providers.shopify.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.SlackProvider/2.26.0": {
+      "sha512": "ZHW2w+DJw7QKtnuDLGCOTFbo9QZmTXsLgbuwGM0YJ24Yv5GKFXQ+hSr49hH7hPkZIAX+V+cvLmcGO8YXLbDFgw==",
+      "type": "package",
+      "path": "owin.security.providers.slackprovider/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Slack.dll",
+        "owin.security.providers.slackprovider.2.26.0.nupkg.sha512",
+        "owin.security.providers.slackprovider.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.SoundCloud/2.26.0": {
+      "sha512": "5RsOUg0TQEEA52x8e2p9J9qrKzPbfacM676OyQQFLGuLZr4TuAfuRB4UUFUvY7WW4XCHXnHIoo6AHxjicvRBPQ==",
+      "type": "package",
+      "path": "owin.security.providers.soundcloud/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.SoundCloud.dll",
+        "owin.security.providers.soundcloud.2.26.0.nupkg.sha512",
+        "owin.security.providers.soundcloud.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Spotify/2.26.0": {
+      "sha512": "FtUX0txiasNRdOvJE4mk6HHKZ6LWBMQ6TCA+CNqH+JmrKe5itUHhJZGpF7G0XqqZQ+lIB4GPWT7I96P/in1KQA==",
+      "type": "package",
+      "path": "owin.security.providers.spotify/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Spotify.dll",
+        "owin.security.providers.spotify.2.26.0.nupkg.sha512",
+        "owin.security.providers.spotify.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.StackExchange/2.26.0": {
+      "sha512": "yEdZsQzxiFEt+X3Ebz5YeUA4HMgYp3/WN+/F7lxUcax3d4TuOi7QUd/005LqrpxHZ1mQmw5tbL6KoUeIzd2jsw==",
+      "type": "package",
+      "path": "owin.security.providers.stackexchange/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.StackExchange.dll",
+        "owin.security.providers.stackexchange.2.26.0.nupkg.sha512",
+        "owin.security.providers.stackexchange.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Steam/2.26.0": {
+      "sha512": "1KlPt1UHU4WNRyO3ih8YXi4V8LFOp+wqv7J7eK1lEPiqdrHkkFFGoWFui8EtrZBbpQyDL/lhWsELrFWlj9U8fw==",
+      "type": "package",
+      "path": "owin.security.providers.steam/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Steam.dll",
+        "owin.security.providers.steam.2.26.0.nupkg.sha512",
+        "owin.security.providers.steam.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.TripIt/2.26.0": {
+      "sha512": "vHChleeV0EpR/w4d8856Z54DRl2hZ6oMn3jSVG6NH9tC0JLMqY61QhnMLKCMVxaKqja/cbPys7IF5ES2du9pJA==",
+      "type": "package",
+      "path": "owin.security.providers.tripit/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.TripIt.dll",
+        "owin.security.providers.tripit.2.26.0.nupkg.sha512",
+        "owin.security.providers.tripit.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Twitch/2.26.0": {
+      "sha512": "GE31cNlU0zZgJhcNRLhVuYjCyrSGj2LXl5lu0YFbjfafZFb0LqaLdpGck+vd7d5tHQbqeSVZtpN6WLBx5TDULw==",
+      "type": "package",
+      "path": "owin.security.providers.twitch/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Twitch.dll",
+        "owin.security.providers.twitch.2.26.0.nupkg.sha512",
+        "owin.security.providers.twitch.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Typeform/2.26.0": {
+      "sha512": "1rsEC/32ezK2hb9SC76in4/vstYVHJ4XRpJAD4aYTD6uXsszpaSBjrs+CrtoWW52g0FL4jTiluKX1ruDKyM2xw==",
+      "type": "package",
+      "path": "owin.security.providers.typeform/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Typeform.dll",
+        "owin.security.providers.typeform.2.26.0.nupkg.sha512",
+        "owin.security.providers.typeform.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Untappd/2.26.0": {
+      "sha512": "3JxH0jKHXreeUtJV85I33C2Br6Lj8bqHS0VNDD42h16FFC7s9uZGYzxpTu8xbieQYWlRcJTy5H2D051K1vKOog==",
+      "type": "package",
+      "path": "owin.security.providers.untappd/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Untappd.dll",
+        "owin.security.providers.untappd.2.26.0.nupkg.sha512",
+        "owin.security.providers.untappd.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Vimeo/2.26.0": {
+      "sha512": "emO0Ib3VrsUvOjEwFrSyN3543km9lcuXFx1NEiC0r8rcdqv1CNJRhyryeS6f0RIjmCqW2nim3PgxoNjNMVbaJw==",
+      "type": "package",
+      "path": "owin.security.providers.vimeo/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Vimeo.dll",
+        "owin.security.providers.vimeo.2.26.0.nupkg.sha512",
+        "owin.security.providers.vimeo.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.VisualStudio/2.26.0": {
+      "sha512": "ocxoQkwYE9pfxmelfjrd4sydnrhnVaCyTK85F2d5SgZbIGJYX8CyIkFj7NIfeKSWRNGp4Yc1D4Fx5D3tO6/f1g==",
+      "type": "package",
+      "path": "owin.security.providers.visualstudio/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.VisualStudio.dll",
+        "owin.security.providers.visualstudio.2.26.0.nupkg.sha512",
+        "owin.security.providers.visualstudio.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.VKontakte/2.26.0": {
+      "sha512": "KonaBqgxWPd3Mjij10cPMkWlFh3ccvngNSvdyE84HA0Pc5K2/uDfjj8SqqB0Z0SIck20pL8waa62C8QKKka6/g==",
+      "type": "package",
+      "path": "owin.security.providers.vkontakte/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.VKontakte.dll",
+        "owin.security.providers.vkontakte.2.26.0.nupkg.sha512",
+        "owin.security.providers.vkontakte.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Wargaming/2.26.0": {
+      "sha512": "1ZwOqi6GU5fOm+u7tTn3FDRVhYMF4JmTXPGSi3zSEMEdVY/j1KGgYjzDvqqprE8AT2b567Rtlr56WAr6xPsBJQ==",
+      "type": "package",
+      "path": "owin.security.providers.wargaming/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Wargaming.dll",
+        "owin.security.providers.wargaming.2.26.0.nupkg.sha512",
+        "owin.security.providers.wargaming.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.WordPress/2.26.0": {
+      "sha512": "HsXy/3gu+32CtBY8b49zy6FufBPhGmrKEMbSTHV0xeHMn2+MHs+9hbXYFs2f3+DnkWxdqfyvCRt/9SzQswbDmQ==",
+      "type": "package",
+      "path": "owin.security.providers.wordpress/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.WordPress.dll",
+        "owin.security.providers.wordpress.2.26.0.nupkg.sha512",
+        "owin.security.providers.wordpress.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.WSO2/2.26.0": {
+      "sha512": "Dwp6pKZS5SqfJDoctERNFkYiJK1KeL6PdtKzfxFNtTxAHh4ORZWhD8f8mh0S5ik2OCYQuNR9VBc2VyDct91N5w==",
+      "type": "package",
+      "path": "owin.security.providers.wso2/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/OWin.Security.Providers.WSO2.dll",
+        "owin.security.providers.wso2.2.26.0.nupkg.sha512",
+        "owin.security.providers.wso2.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Xing/2.26.0": {
+      "sha512": "npeOHp1XczC/cGKZdfsSDEK0zrP5X1m89A9Ncz4l9xHGuenE22/ciumbr8Fix+1fk6oHBabuJMGHsnvq/kcPzA==",
+      "type": "package",
+      "path": "owin.security.providers.xing/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Xing.dll",
+        "owin.security.providers.xing.2.26.0.nupkg.sha512",
+        "owin.security.providers.xing.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Yahoo/2.26.0": {
+      "sha512": "lxWvDXmzs2fUD84oEHY4BxtaxuZxGyrBR6E6XGWzYw7llsHrEG7PhHPtrWiabb05/U34C+VG5K5fmHELaSmwQQ==",
+      "type": "package",
+      "path": "owin.security.providers.yahoo/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Yahoo.dll",
+        "owin.security.providers.yahoo.2.26.0.nupkg.sha512",
+        "owin.security.providers.yahoo.nuspec"
+      ]
+    },
+    "Owin.Security.Providers.Yammer/2.26.0": {
+      "sha512": "oQOsYxUVZXt9rYWEEvqDSAoy+PxN8XiuTws/MvWpOT/yfshw91WriKR3xbXtIcZiQWF1kwkqqXmRQSuvdpae3w==",
+      "type": "package",
+      "path": "owin.security.providers.yammer/2.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Owin.Security.Providers.Yammer.dll",
+        "owin.security.providers.yammer.2.26.0.nupkg.sha512",
+        "owin.security.providers.yammer.nuspec"
+      ]
+    },
+    "PreMailer.Net/1.2.7": {
+      "sha512": "mi/gemDvReQRwK5FCOM/AhjjzAr2TG8jFIjD0cFegoCiULIa/xhByhmmv1kQsEck2bLziMYbBE1Z3qkeqEU4Ug==",
+      "type": "package",
+      "path": "premailer.net/1.2.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/PreMailer.Net.dll",
+        "premailer.net.1.2.7.nupkg.sha512",
+        "premailer.net.nuspec"
+      ]
+    },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
       "sha512": "7VSGO0URRKoMEAq0Sc9cRz8mb6zbyx/BZDEWhgPdzzpmFhkam3fJ1DAGWFXBI4nGlma+uPKpfuMQP5LXRnOH5g==",
       "type": "package",
@@ -10145,6 +12150,19 @@
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.nuspec",
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
+      ]
+    },
+    "SgmlReader/1.8.11": {
+      "sha512": "htnYaQvJ83HXKV36Y1NlVDQBU41aU2IV7AZtGI3vuxEUYXPuNidTSZWw9kHvyT1wNgnK3eGooSaS8GTOI4PLhA==",
+      "type": "package",
+      "path": "sgmlreader/1.8.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/2.0/SgmlReaderDll.dll",
+        "lib/4.0/SgmlReaderDll.dll",
+        "sgmlreader.1.8.11.nupkg.sha512",
+        "sgmlreader.nuspec"
       ]
     },
     "Slack.Webhooks/1.1.5": {
@@ -11609,10 +13627,10 @@
         "system.globalization.extensions.nuspec"
       ]
     },
-    "System.IdentityModel.Tokens.Jwt/6.8.0": {
-      "sha512": "5tBCjAub2Bhd5qmcd0WhR5s354e4oLYa//kOWrkX+6/7ZbDDJjMTfwLSOiZ/MMpWdE4DWPLOfTLOq/juj9CKzA==",
+    "System.IdentityModel.Tokens.Jwt/6.10.0": {
+      "sha512": "C+Q5ORsFycRkRuvy/Xd0Pv5xVpmWSAvQYZAGs7VQogmkqlLhvfZXTgBIlHqC3cxkstSoLJAYx6xZB7foQ2y5eg==",
       "type": "package",
-      "path": "system.identitymodel.tokens.jwt/6.8.0",
+      "path": "system.identitymodel.tokens.jwt/6.10.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -11620,9 +13638,11 @@
         "lib/net45/System.IdentityModel.Tokens.Jwt.xml",
         "lib/net461/System.IdentityModel.Tokens.Jwt.dll",
         "lib/net461/System.IdentityModel.Tokens.Jwt.xml",
+        "lib/net472/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/net472/System.IdentityModel.Tokens.Jwt.xml",
         "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll",
         "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.xml",
-        "system.identitymodel.tokens.jwt.6.8.0.nupkg.sha512",
+        "system.identitymodel.tokens.jwt.6.10.0.nupkg.sha512",
         "system.identitymodel.tokens.jwt.nuspec"
       ]
     },
@@ -15581,9 +17601,13 @@
       "AspNetCore.LineLogin >= 1.0.2",
       "Google.Apis.Auth >= 1.67.0",
       "Google.Apis.Calendar.v3 >= 1.67.0.3297",
+      "Line.Api >= 1.0.5",
+      "Line.Messaging >= 1.4.5",
       "LineAuthentication >= 1.1.4",
+      "LineBotSDK >= 2.12.39",
       "Microsoft.AspNetCore.Authentication.Cookies >= 2.2.0",
       "Microsoft.AspNetCore.Authentication.OAuth >= 2.2.0",
+      "Microsoft.AspNetCore.Authentication.OpenIdConnect >= 6.0.3",
       "Microsoft.AspNetCore.Http.Extensions >= 2.2.0",
       "Microsoft.EntityFrameworkCore >= 6.0.27",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.27",
@@ -15596,6 +17620,7 @@
       "Microsoft.Extensions.Options.ConfigurationExtensions >= 9.0.0-preview.2.24128.5",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.16",
       "Newtonsoft.Json >= 13.0.3",
+      "Owin.Security.Providers >= 2.26.0",
       "Slack.Webhooks >= 1.1.5",
       "SlackAPI >= 1.1.14",
       "SlackNet.Bot >= 0.12.2",
@@ -15672,9 +17697,21 @@
             "target": "Package",
             "version": "[1.67.0.3297, )"
           },
+          "Line.Api": {
+            "target": "Package",
+            "version": "[1.0.5, )"
+          },
+          "Line.Messaging": {
+            "target": "Package",
+            "version": "[1.4.5, )"
+          },
           "LineAuthentication": {
             "target": "Package",
             "version": "[1.1.4, )"
+          },
+          "LineBotSDK": {
+            "target": "Package",
+            "version": "[2.12.39, )"
           },
           "Microsoft.AspNetCore.Authentication.Cookies": {
             "target": "Package",
@@ -15683,6 +17720,10 @@
           "Microsoft.AspNetCore.Authentication.OAuth": {
             "target": "Package",
             "version": "[2.2.0, )"
+          },
+          "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
+            "target": "Package",
+            "version": "[6.0.3, )"
           },
           "Microsoft.AspNetCore.Http.Extensions": {
             "target": "Package",
@@ -15735,6 +17776,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
+          },
+          "Owin.Security.Providers": {
+            "target": "Package",
+            "version": "[2.26.0, )"
           },
           "Slack.Webhooks": {
             "target": "Package",
@@ -15791,5 +17836,647 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'CsQuery 1.3.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "CsQuery",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'evernote-cloud-sdk-windows 1.0.8' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "evernote-cloud-sdk-windows",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Line.Api 1.0.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Line.Api",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Owin 3.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Owin",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Owin.Security 3.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Owin.Security",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.ArcGISOnline 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.ArcGISOnline",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.ArcGISPortal 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.ArcGISPortal",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Asana 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Asana",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Backlog 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Backlog",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Baidu 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Baidu",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.BattleNet 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.BattleNet",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Bitbucket 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Bitbucket",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Box 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Box",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Buffer 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Buffer",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Cosign 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Cosign",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.DeviantArt 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.DeviantArt",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Discord 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Discord",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.DoYouBuzz 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.DoYouBuzz",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Dropbox 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Dropbox",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.EVEOnline 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.EVEOnline",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Evernote 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Evernote",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Fitbit 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Fitbit",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Flickr 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Flickr",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Foursquare 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Foursquare",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Geni 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Geni",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.GitHub 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.GitHub",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Gitter 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Gitter",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Google 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Google",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.GooglePlus 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.GooglePlus",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.HealthGraph 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.HealthGraph",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Imgur 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Imgur",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Instagram 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Instagram",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.LinkedIn 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.LinkedIn",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.MyHeritage 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.MyHeritage",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Onshape 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Onshape",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.OpenID 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.OpenID",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.OpenIDBase 2.1.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.OpenIDBase",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Orcid 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Orcid",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.PayPal 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.PayPal",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Podbean 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Podbean",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Reddit 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Reddit",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Salesforce 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Salesforce",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Shopify 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Shopify",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.SlackProvider 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.SlackProvider",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.SoundCloud 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.SoundCloud",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Spotify 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Spotify",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.StackExchange 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.StackExchange",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Steam 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Steam",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.TripIt 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.TripIt",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Twitch 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Twitch",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Typeform 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Typeform",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Untappd 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Untappd",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Vimeo 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Vimeo",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.VisualStudio 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.VisualStudio",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.VKontakte 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.VKontakte",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Wargaming 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Wargaming",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.WordPress 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.WordPress",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.WSO2 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.WSO2",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Xing 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Xing",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Yahoo 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Yahoo",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Yammer 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Yammer",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'PreMailer.Net 1.2.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "PreMailer.Net",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'SgmlReader 1.8.11' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "SgmlReader",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

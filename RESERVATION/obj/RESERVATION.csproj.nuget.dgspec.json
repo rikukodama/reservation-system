@@ -66,9 +66,21 @@
               "target": "Package",
               "version": "[1.67.0.3297, )"
             },
+            "Line.Api": {
+              "target": "Package",
+              "version": "[1.0.5, )"
+            },
+            "Line.Messaging": {
+              "target": "Package",
+              "version": "[1.4.5, )"
+            },
             "LineAuthentication": {
               "target": "Package",
               "version": "[1.1.4, )"
+            },
+            "LineBotSDK": {
+              "target": "Package",
+              "version": "[2.12.39, )"
             },
             "Microsoft.AspNetCore.Authentication.Cookies": {
               "target": "Package",
@@ -77,6 +89,10 @@
             "Microsoft.AspNetCore.Authentication.OAuth": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
+              "target": "Package",
+              "version": "[6.0.3, )"
             },
             "Microsoft.AspNetCore.Http.Extensions": {
               "target": "Package",
@@ -129,6 +145,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "Owin.Security.Providers": {
+              "target": "Package",
+              "version": "[2.26.0, )"
             },
             "Slack.Webhooks": {
               "target": "Package",

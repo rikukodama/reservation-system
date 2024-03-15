@@ -7,6 +7,19 @@ using System.Net.Http.Headers;
 using Google.Apis.Auth.OAuth2;
 using Google.Apis.Calendar.v3;
 using Google.Apis.Calendar.v3.Data;
+using System.Drawing.Drawing2D;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.IdentityModel.Protocols.OpenIdConnect;
+using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+using Microsoft.IdentityModel.Tokens;
+using RESERVATION.Models;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using System.Text;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<ReservationContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("reservationContext")));
@@ -27,6 +40,34 @@ builder.Services.AddHttpClient("SlackApiClient")
 
 builder.Services.AddScoped<RESERVATION.Controllers.SlackService>();
 builder.Services.AddScoped<ReservationService>();
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    //options.DefaultChallengeScheme = OpenIdConnectDefaults.AuthenticationScheme;
+})
+            .AddCookie()
+            .AddOpenIdConnect(o =>
+            {
+                o.ClientId = "2004081012";
+                o.ClientSecret = "e3b23055fb8758ed56cf5cf4be13f58e";
+                o.ResponseType = OpenIdConnectResponseType.Code;
+                o.UseTokenLifetime = true;
+                o.SaveTokens = true;
+                o.Scope.Add("email");
+
+                o.Configuration = new OpenIdConnectConfiguration
+                {
+                    Issuer = "https://access.line.me",
+                    AuthorizationEndpoint = "https://access.line.me/oauth2/v2.1/authorize?bot_prompt=aggressive",
+                    TokenEndpoint = "https://api.line.me/oauth2/v2.1/token"
+                };
+                o.TokenValidationParameters = new TokenValidationParameters
+                {
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(o.ClientSecret)),
+                    NameClaimType = "name",
+                    ValidAudience = o.ClientId
+                };
+            });
 var app = builder.Build();
 //builder.Services.AddDbContext<ReservationContext>(options =>
 //            options.UseSqlServer(builder.Configuration.GetConnectionString("reservationContext")));
@@ -45,6 +86,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

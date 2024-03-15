@@ -3,10 +3,12 @@
 
 *@
 @{
+
     ViewData["Title"] = "Reservation";
     var resDate = (DateTime)ViewData["res_date"];
     var weekdays = new string[] { "日", "月", "火", "水", "木", "金", "土" };
     var day1 = (int)resDate.DayOfWeek;
+    
 }
 @model RESERVATION.Models.T_RESERVATION
 

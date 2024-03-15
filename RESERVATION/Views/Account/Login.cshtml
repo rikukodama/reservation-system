@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="jumbotron">
+    <div class="panel panel-info center-block">
+        <div class="panel-heading">ログインしてください</div>
+        <div class="panel-body">
+            LINEアカウントを利用してログインを行います。<br />
+            <hr />
+            本Webサービスでは、ログイン時の認証画面にて許可を頂いた場合のみ、あなたのLINEアカウントに登録されているメールアドレスを取得します。<br />
+            取得したメールアドレスは、以下の目的以外では使用いたしません。また、法令に定められた場合を除き、第三者への提供はいたしません。
+            <ul>
+                <li>ユーザーIDとしてアカウントの管理に利用</li>
+                <li>パスワード再発行時の本人確認に利用</li>
+            </ul>
+            <hr />
+        </div>
+        <p class="text-center">
+            <a asp-area="" asp-controller="Account" asp-action="LineLogin">
+                <img src="~/images/btn_login_base.png" />
+            </a>
+        </p>
+    </div>
+</div>

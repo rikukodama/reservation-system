@@ -55,7 +55,6 @@ $(document).ready(function () {
     show();
 
     $("#month").click(function () {
-        show();
         count = 1;
 
         $("#this").text("今月");
@@ -72,7 +71,6 @@ $(document).ready(function () {
     renderWeeker(currentYear, currentMonth, currentDay);
 
     $("#week").click(function () {
-        show();
         count = 0;
         $("#this").html("今週");
 
@@ -114,7 +112,7 @@ function show() {
 
     });
 
-    $("#nextBtn,#next").on("click", function () {
+    $("#nextBtn,#next").mousedown("click", function () {
         if (count) {
             currentMonth++;
         } else {
@@ -130,7 +128,7 @@ function show() {
             }
 
         }
-        console.log(count)
+        console.log(currentDay)
         renderCalendar(currentYear, currentMonth);
 
         renderWeeker(currentYear, currentMonth, currentDay);
@@ -169,8 +167,7 @@ function renderWeeker(year, month, date) {
         firstDay++;
         weekBody.append(cell);
     }
-
-
+    
     $(".day-cell").on("click", function () {
 
         if (count) selectDate($(this), currentMonth, currentYear);

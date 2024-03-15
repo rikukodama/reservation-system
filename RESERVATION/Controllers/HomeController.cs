@@ -11,6 +11,23 @@ using Google.Apis.Util.Store;
 using Microsoft.Data.SqlClient;
 using Slack.Webhooks.Blocks;
 using Google.Apis.Calendar.v3.Data;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using AspNet.Security.OAuth.Line;
+using Microsoft.AspNetCore.Authentication;
+using System.Security.Claims;
+using System.IdentityModel.Tokens.Jwt;
+using Microsoft.IdentityModel.Tokens;
+using Com.CloudRail.SI.Services;
+using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Linq;
+using System.Net;
+using System.Threading.Tasks;
+using Microsoft.Extensions.Options;
+using System.Collections.Generic;
+using Line.Messaging;
 namespace RESERVATION.Controllers
 {
     public class SlackService
@@ -178,24 +195,49 @@ namespace RESERVATION.Controllers
             }
         }
     }
+    public class LineSettings
+    {
+        public string LoginClientId { get; set; }
+        public string LoginClientSecret { get; set; }
+        public string MessagingAccessToken { get; set; }
+    }
     public class HomeController : Controller
     {
 
         private readonly ReservationContext _context;
         private readonly SlackService _slackService;
         private readonly ReservationService _reservationService;
-        public HomeController(ILogger<HomeController> logger, ReservationContext context, IConfiguration configuration, SlackService slackService, ReservationService reservationService)
+        private readonly IConfiguration _configuration;
+        private LineSettings lineSettings;
+        public HomeController(ILogger<HomeController> logger, ReservationContext context, IConfiguration configuration, SlackService slackService, ReservationService reservationService, IOptions<LineSettings> options)
         {
             StripeConfiguration.ApiKey = configuration.GetSection("Stripe:ApiKey").Value;
             _context = context;
             _slackService = slackService;
             _reservationService = reservationService;
+            _configuration = configuration;
+            lineSettings = options.Value;
+
+            string channelId = _configuration["LineLogin:ChannelId"];
+            string channelSecret = _configuration["LineLogin:ChannelSecret"];
         }
      
         public async Task<IActionResult> Index()
         {
             ViewData["coursemList"] = await _context.T_COURSEM.ToListAsync();
             ViewData["reservation"] = await _context.T_RESERVATION.ToListAsync();
+            return View();
+        }
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> PushMessage(string pushMessage)
+        {
+            var userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier).Value;
+
+            using (var line = new Line.Messaging.LineMessagingClient(lineSettings.MessagingAccessToken))
+            {
+                await line.PushMessageAsync(userId, pushMessage);
+            }
             return View();
         }
 

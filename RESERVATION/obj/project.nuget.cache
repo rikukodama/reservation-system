@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "H3/wJ9zVhX3V78bJAzEBwxW2hq+c1TBEhMEWHfRAXWDrdm+DOcffr4mld0/WDbXF6d1kCfteJRiGxEAPo0eC6A==",
+  "dgSpecHash": "H0nVoIVv0Wnvt3xYUppSHcwYcINg1xu5hD40S5A9o3IZU3O9VbTAaokEdX1kxD+lWFVGQ/wcN0cx6+VYkiCnIw==",
   "success": true,
   "projectFilePath": "D:\\Work\\ASP.Net\\reservation\\RESERVATION\\RESERVATION\\RESERVATION.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Satellite\\.nuget\\packages\\aspnet.security.oauth.line\\6.0.0\\aspnet.security.oauth.line.6.0.0.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\aspnetcore.linelogin\\1.0.2\\aspnetcore.linelogin.1.0.2.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\csquery\\1.3.4\\csquery.1.3.4.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\evernote-cloud-sdk-windows\\1.0.8\\evernote-cloud-sdk-windows.1.0.8.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\google.apis\\1.67.0\\google.apis.1.67.0.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\google.apis.auth\\1.67.0\\google.apis.auth.1.67.0.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\google.apis.calendar.v3\\1.67.0.3297\\google.apis.calendar.v3.1.67.0.3297.nupkg.sha512",
@@ -61,7 +63,10 @@
     "C:\\Users\\Satellite\\.nuget\\packages\\humanizer.core.zh-hans\\2.14.1\\humanizer.core.zh-hans.2.14.1.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\humanizer.core.zh-hant\\2.14.1\\humanizer.core.zh-hant.2.14.1.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\libuv\\1.9.1\\libuv.1.9.1.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\line.api\\1.0.5\\line.api.1.0.5.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\line.messaging\\1.4.5\\line.messaging.1.4.5.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\lineauthentication\\1.1.4\\lineauthentication.1.1.4.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\linebotsdk\\2.12.39\\linebotsdk.2.12.39.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\messagepackanalyzer\\2.1.152\\messagepackanalyzer.2.1.152.nupkg.sha512",
@@ -71,6 +76,9 @@
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.2.0\\microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.aspnetcore.authentication.oauth\\2.2.0\\microsoft.aspnetcore.authentication.oauth.2.2.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\6.0.3\\microsoft.aspnetcore.authentication.openidconnect.6.0.3.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.aspnetcore.authorization.policy\\2.2.0\\microsoft.aspnetcore.authorization.policy.2.2.0.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\2.2.0\\microsoft.aspnetcore.cryptography.internal.2.2.0.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.aspnetcore.dataprotection\\2.2.0\\microsoft.aspnetcore.dataprotection.2.2.0.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.aspnetcore.dataprotection.abstractions\\2.2.0\\microsoft.aspnetcore.dataprotection.abstractions.2.2.0.nupkg.sha512",
@@ -84,9 +92,12 @@
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.aspnetcore.http.extensions\\2.2.0\\microsoft.aspnetcore.http.extensions.2.2.0.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.aspnetcore.httpoverrides\\1.0.1\\microsoft.aspnetcore.httpoverrides.1.0.1.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.aspnetcore.mvc.abstractions\\2.2.0\\microsoft.aspnetcore.mvc.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.aspnetcore.mvc.core\\2.2.5\\microsoft.aspnetcore.mvc.core.2.2.5.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.0\\microsoft.aspnetcore.razor.language.6.0.0.nupkg.sha512",
-    "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.aspnetcore.routing\\1.0.2\\microsoft.aspnetcore.routing.1.0.2.nupkg.sha512",
-    "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.aspnetcore.routing.abstractions\\1.0.2\\microsoft.aspnetcore.routing.abstractions.1.0.2.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.aspnetcore.responsecaching.abstractions\\2.2.0\\microsoft.aspnetcore.responsecaching.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.aspnetcore.routing\\2.2.0\\microsoft.aspnetcore.routing.2.2.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.aspnetcore.routing.abstractions\\2.2.0\\microsoft.aspnetcore.routing.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.aspnetcore.server.iisintegration\\1.0.1\\microsoft.aspnetcore.server.iisintegration.1.0.1.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.aspnetcore.server.kestrel\\1.0.2\\microsoft.aspnetcore.server.kestrel.1.0.2.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.2.0\\microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
@@ -104,7 +115,7 @@
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.codeanalysis.scripting.common\\4.0.0\\microsoft.codeanalysis.scripting.common.4.0.0.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.codeanalysis.visualbasic\\1.3.0\\microsoft.codeanalysis.visualbasic.1.3.0.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.codeanalysis.workspaces.common\\4.0.0\\microsoft.codeanalysis.workspaces.common.4.0.0.nupkg.sha512",
-    "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.7\\microsoft.data.sqlclient.2.1.7.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.27\\microsoft.data.sqlite.core.6.0.27.nupkg.sha512",
@@ -146,11 +157,11 @@
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.0-preview.2.24128.5\\microsoft.extensions.primitives.9.0.0-preview.2.24128.5.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.extensions.webencoders\\2.2.0\\microsoft.extensions.webencoders.2.2.0.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.identity.client\\4.21.1\\microsoft.identity.client.4.21.1.nupkg.sha512",
-    "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.8.0\\microsoft.identitymodel.jsonwebtokens.6.8.0.nupkg.sha512",
-    "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.identitymodel.logging\\6.8.0\\microsoft.identitymodel.logging.6.8.0.nupkg.sha512",
-    "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.8.0\\microsoft.identitymodel.protocols.6.8.0.nupkg.sha512",
-    "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.8.0\\microsoft.identitymodel.protocols.openidconnect.6.8.0.nupkg.sha512",
-    "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.8.0\\microsoft.identitymodel.tokens.6.8.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.10.0\\microsoft.identitymodel.jsonwebtokens.6.10.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.identitymodel.logging\\6.10.0\\microsoft.identitymodel.logging.6.10.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.10.0\\microsoft.identitymodel.protocols.6.10.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.10.0\\microsoft.identitymodel.protocols.openidconnect.6.10.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.10.0\\microsoft.identitymodel.tokens.6.10.0.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.net.stringtools\\17.3.2\\microsoft.net.stringtools.17.3.2.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.netcore.app\\1.1.0\\microsoft.netcore.app.1.1.0.nupkg.sha512",
@@ -162,6 +173,8 @@
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.netcore.runtime.coreclr\\1.1.0\\microsoft.netcore.runtime.coreclr.1.1.0.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.netcore.windows.apisets\\1.0.1\\microsoft.netcore.windows.apisets.1.0.1.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.owin\\3.0.1\\microsoft.owin.3.0.1.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.owin.security\\3.0.1\\microsoft.owin.security.3.0.1.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.visualbasic\\10.1.0\\microsoft.visualbasic.10.1.0.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.visualstudio.debugger.contracts\\17.2.0\\microsoft.visualstudio.debugger.contracts.17.2.0.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\6.0.16\\microsoft.visualstudio.web.codegeneration.6.0.16.nupkg.sha512",
@@ -185,6 +198,67 @@
     "C:\\Users\\Satellite\\.nuget\\packages\\nuget.projectmodel\\6.6.1\\nuget.projectmodel.6.6.1.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\nuget.protocol\\6.6.1\\nuget.protocol.6.6.1.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\nuget.versioning\\6.6.1\\nuget.versioning.6.6.1.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\openssl.privatekeydecoder\\1.2.0\\openssl.privatekeydecoder.1.2.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\openssl.x509certificate2.provider\\1.2.0\\openssl.x509certificate2.provider.1.2.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin\\1.0.0\\owin.1.0.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers\\2.26.0\\owin.security.providers.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.arcgisonline\\2.26.0\\owin.security.providers.arcgisonline.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.arcgisportal\\2.26.0\\owin.security.providers.arcgisportal.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.asana\\2.26.0\\owin.security.providers.asana.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.backlog\\2.26.0\\owin.security.providers.backlog.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.baidu\\2.26.0\\owin.security.providers.baidu.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.battlenet\\2.26.0\\owin.security.providers.battlenet.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.bitbucket\\2.26.0\\owin.security.providers.bitbucket.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.box\\2.26.0\\owin.security.providers.box.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.buffer\\2.26.0\\owin.security.providers.buffer.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.cosign\\2.26.0\\owin.security.providers.cosign.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.deviantart\\2.26.0\\owin.security.providers.deviantart.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.discord\\2.26.0\\owin.security.providers.discord.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.doyoubuzz\\2.26.0\\owin.security.providers.doyoubuzz.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.dropbox\\2.26.0\\owin.security.providers.dropbox.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.eveonline\\2.26.0\\owin.security.providers.eveonline.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.evernote\\2.26.0\\owin.security.providers.evernote.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.fitbit\\2.26.0\\owin.security.providers.fitbit.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.flickr\\2.26.0\\owin.security.providers.flickr.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.foursquare\\2.26.0\\owin.security.providers.foursquare.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.geni\\2.26.0\\owin.security.providers.geni.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.github\\2.26.0\\owin.security.providers.github.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.gitter\\2.26.0\\owin.security.providers.gitter.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.google\\2.26.0\\owin.security.providers.google.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.googleplus\\2.26.0\\owin.security.providers.googleplus.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.healthgraph\\2.26.0\\owin.security.providers.healthgraph.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.imgur\\2.26.0\\owin.security.providers.imgur.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.instagram\\2.26.0\\owin.security.providers.instagram.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.linkedin\\2.26.0\\owin.security.providers.linkedin.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.myheritage\\2.26.0\\owin.security.providers.myheritage.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.onshape\\2.26.0\\owin.security.providers.onshape.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.openid\\2.26.0\\owin.security.providers.openid.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.openidbase\\2.1.1\\owin.security.providers.openidbase.2.1.1.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.orcid\\2.26.0\\owin.security.providers.orcid.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.paypal\\2.26.0\\owin.security.providers.paypal.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.podbean\\2.26.0\\owin.security.providers.podbean.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.reddit\\2.26.0\\owin.security.providers.reddit.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.salesforce\\2.26.0\\owin.security.providers.salesforce.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.shopify\\2.26.0\\owin.security.providers.shopify.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.slackprovider\\2.26.0\\owin.security.providers.slackprovider.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.soundcloud\\2.26.0\\owin.security.providers.soundcloud.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.spotify\\2.26.0\\owin.security.providers.spotify.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.stackexchange\\2.26.0\\owin.security.providers.stackexchange.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.steam\\2.26.0\\owin.security.providers.steam.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.tripit\\2.26.0\\owin.security.providers.tripit.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.twitch\\2.26.0\\owin.security.providers.twitch.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.typeform\\2.26.0\\owin.security.providers.typeform.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.untappd\\2.26.0\\owin.security.providers.untappd.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.vimeo\\2.26.0\\owin.security.providers.vimeo.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.visualstudio\\2.26.0\\owin.security.providers.visualstudio.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.vkontakte\\2.26.0\\owin.security.providers.vkontakte.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.wargaming\\2.26.0\\owin.security.providers.wargaming.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.wordpress\\2.26.0\\owin.security.providers.wordpress.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.wso2\\2.26.0\\owin.security.providers.wso2.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.xing\\2.26.0\\owin.security.providers.xing.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.yahoo\\2.26.0\\owin.security.providers.yahoo.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\owin.security.providers.yammer\\2.26.0\\owin.security.providers.yammer.2.26.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\premailer.net\\1.2.7\\premailer.net.1.2.7.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
@@ -202,6 +276,7 @@
     "C:\\Users\\Satellite\\.nuget\\packages\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\sgmlreader\\1.8.11\\sgmlreader.1.8.11.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\slack.webhooks\\1.1.5\\slack.webhooks.1.1.5.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\slackapi\\1.1.14\\slackapi.1.1.14.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\slacknet\\0.12.2\\slacknet.0.12.2.nupkg.sha512",
@@ -243,7 +318,7 @@
     "C:\\Users\\Satellite\\.nuget\\packages\\system.globalization\\4.3.0\\system.globalization.4.3.0.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\system.globalization.calendars\\4.3.0\\system.globalization.calendars.4.3.0.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\system.globalization.extensions\\4.3.0\\system.globalization.extensions.4.3.0.nupkg.sha512",
-    "C:\\Users\\Satellite\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.8.0\\system.identitymodel.tokens.jwt.6.8.0.nupkg.sha512",
+    "C:\\Users\\Satellite\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.10.0\\system.identitymodel.tokens.jwt.6.10.0.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\system.io.compression\\4.3.0\\system.io.compression.4.3.0.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\system.io.compression.zipfile\\4.3.0\\system.io.compression.zipfile.4.3.0.nupkg.sha512",
@@ -329,5 +404,646 @@
     "C:\\Users\\Satellite\\.nuget\\packages\\yamac.linemessagingapi.client\\0.0.1-prerelease-8\\yamac.linemessagingapi.client.0.0.1-prerelease-8.nupkg.sha512",
     "C:\\Users\\Satellite\\.nuget\\packages\\yamac.linemessagingapi.common\\0.0.1-prerelease-8\\yamac.linemessagingapi.common.0.0.1-prerelease-8.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'CsQuery 1.3.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "CsQuery",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'evernote-cloud-sdk-windows 1.0.8' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "evernote-cloud-sdk-windows",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Line.Api 1.0.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Line.Api",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Owin 3.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Owin",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Owin.Security 3.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Owin.Security",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.ArcGISOnline 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.ArcGISOnline",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.ArcGISPortal 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.ArcGISPortal",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Asana 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Asana",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Backlog 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Backlog",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Baidu 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Baidu",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.BattleNet 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.BattleNet",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Bitbucket 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Bitbucket",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Box 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Box",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Buffer 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Buffer",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Cosign 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Cosign",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.DeviantArt 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.DeviantArt",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Discord 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Discord",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.DoYouBuzz 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.DoYouBuzz",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Dropbox 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Dropbox",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.EVEOnline 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.EVEOnline",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Evernote 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Evernote",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Fitbit 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Fitbit",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Flickr 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Flickr",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Foursquare 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Foursquare",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Geni 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Geni",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.GitHub 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.GitHub",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Gitter 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Gitter",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Google 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Google",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.GooglePlus 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.GooglePlus",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.HealthGraph 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.HealthGraph",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Imgur 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Imgur",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Instagram 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Instagram",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.LinkedIn 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.LinkedIn",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.MyHeritage 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.MyHeritage",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Onshape 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Onshape",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.OpenID 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.OpenID",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.OpenIDBase 2.1.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.OpenIDBase",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Orcid 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Orcid",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.PayPal 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.PayPal",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Podbean 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Podbean",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Reddit 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Reddit",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Salesforce 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Salesforce",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Shopify 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Shopify",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.SlackProvider 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.SlackProvider",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.SoundCloud 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.SoundCloud",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Spotify 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Spotify",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.StackExchange 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.StackExchange",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Steam 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Steam",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.TripIt 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.TripIt",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Twitch 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Twitch",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Typeform 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Typeform",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Untappd 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Untappd",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Vimeo 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Vimeo",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.VisualStudio 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.VisualStudio",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.VKontakte 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.VKontakte",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Wargaming 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Wargaming",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.WordPress 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.WordPress",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.WSO2 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.WSO2",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Xing 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Xing",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Yahoo 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Yahoo",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin.Security.Providers.Yammer 2.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin.Security.Providers.Yammer",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'PreMailer.Net 1.2.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "PreMailer.Net",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'SgmlReader 1.8.11' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "SgmlReader",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }
