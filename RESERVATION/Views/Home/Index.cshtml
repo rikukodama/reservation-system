@@ -123,7 +123,7 @@
 
                                         var reservations = ViewData["reservation"] as IEnumerable<T_RESERVATION>;
                                         var id = item.Id;
-                                        var date = ViewData["hidden1"].ToString();
+                                        var date = i.ToString();
                                         var result = reservations.Where(r => r.date == Model.res_date && r.coursem_id == id );
                                         
                                     }

@@ -35,7 +35,7 @@ builder.Services.AddHttpClient("SlackApiClient")
     .ConfigureHttpClient((serviceProvider, client) =>
     {
         client.BaseAddress = new Uri("https://slack.com/api/");
-        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "{your slack token}");
+        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "xoxb-6478304789431-6759776124819-BuwoiWbv6ELJIvcYSf1NNmlI");
     });
 
 builder.Services.AddScoped<RESERVATION.Controllers.SlackService>();
