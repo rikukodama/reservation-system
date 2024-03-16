@@ -241,14 +241,15 @@ namespace RESERVATION.Controllers
             return View();
         }
 
-        public ActionResult GetReservation(int courseId, DateTime resDate)
+        public ActionResult GetReservation([FromBody] DateTime resDate)
         {
-            var reservation = _context.T_RESERVATION
-                .Where(r => r.coursem_id == courseId && r.date == resDate)
-                .FirstOrDefault();
+            var status = _context.T_RESERVATION
+                .Count(r => r.date == resDate);
+            var count = _context.T_COURSEM.ToList().Count();
+            bool reservationStatus = status == count;
 
-            // Return the reservation status as a string (e.g., "Reserved" or "Not Reserved")
-            return Content(reservation != null ? "Reserved" : "Not Reserved");
+            return Json(reservationStatus);
+
         }
         public IActionResult Verify()
         {
@@ -334,26 +335,7 @@ namespace RESERVATION.Controllers
         }
         // Example usage in your project code
     
-        [HttpGet]
-        public async Task<IActionResult> Create([FromBody] decimal price)
-        {
-            var channel = "D06NQG697R7";
-            var message = "Nice to meet you" + price;
-            var result = await _slackService.SendMessage(channel, message);
-            var Date = DateTime.Now;
-            Debug.WriteLine("result :" + result);
-            if (result)
-            {
-                // Slack message was sent successfully
-                
-                return View();
-            }
-            else
-            {
-                // Slack message sending failed
-                return BadRequest();
-            }
-        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Privacy([Bind("reservationId,date,coursem_id,cource_id,option_id,price,username,phonenumber,mail,update,paymentIntentid,calendarid")] T_RESERVATION t_RESERVATION)

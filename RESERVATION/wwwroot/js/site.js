@@ -128,7 +128,6 @@ function show() {
             }
 
         }
-        console.log(currentDay)
         renderCalendar(currentYear, currentMonth);
 
         renderWeeker(currentYear, currentMonth, currentDay);
@@ -146,14 +145,16 @@ function show() {
 function renderWeeker(year, month, date) {
     let firstDay = new Date(year, month, date).getDay();
     const totalDays = new Date(year, month + 1, 0).getDate();
-    const weekBody = $("#weekBody");
+    var weekBody = $("#weekBody");
     weekBody.empty();
 
     const cell = $("<div>").addClass("day-week").html("");
     weekBody.append(cell);
 
     month++;
-
+    $("#weekBody").val(new Date(year, month - 1, date));
+    console.log($(".day-week").val())
+    
     for (let i = 0; i < 7; i++) {
         if (date > totalDays) {
             date = 1;
@@ -161,7 +162,7 @@ function renderWeeker(year, month, date) {
             if (month > 12) month = 1,year++;
         }
         if (firstDay > 6) firstDay = 0;
-        const cell = $("<div>").addClass("day-week").html(month + "/" + date + "&#13;" + "<br>(" + weekdays[firstDay] + ")");
+        const cell = $("<div>").addClass("day-week").html(month + " / " + date + "&#13;" + "<br>(" + weekdays[firstDay] + ")");
         cell.val(new Date(year, month - 1, date));
         date++;
         firstDay++;
@@ -169,9 +170,7 @@ function renderWeeker(year, month, date) {
     }
     
     $(".day-cell").on("click", function () {
-
-        if (count) selectDate($(this), currentMonth, currentYear);
-        else {
+        
             
             let values = $(".day-week").map(function () {
 
@@ -181,17 +180,18 @@ function renderWeeker(year, month, date) {
             let select_id = parseInt($(this).find('.select_id').val());
             let date1 = values[8 + selectDate];
             const formattedDate = date1.getFullYear() + '-' + (date1.getMonth() < 9 ? '0' : '') + (date1.getMonth() + 1) + '-' + (date1.getDate() < 10 ? '0' : '') + date1.getDate();
+
             $("#hidden1").val(formattedDate);
             $("#modal_select").val(select_id);
            
             $("#modal_form").submit();
-        }
+     
 
     });
 
 }
 
-function renderCalendar(year, month) {
+async function renderCalendar(year, month) {
     const monthYear = $("#monthYear");
     const calendarBody = $("#calendarBody");
 
@@ -218,35 +218,67 @@ function renderCalendar(year, month) {
         const cell = $("<div>").addClass("day-week").text(weekdays[i]);
         calendarBody.append(cell);
     }
-
     for (let i = startFrom; i <= totalPrevDays; i++) {
-        const cell = $("<button>").addClass("day-cell text-muted").text(i);
-        cell.val((currentMonth + 11) % 12 + 1);
+        let cell;
+        let res = await Status(i, currentMonth-1, year);
+
+        if (currentYear > year || (currentYear == year && currentDate.getMonth() > (month + 11) % 12) || (currentDate.getMonth() == (month + 11) % 12 && currentYear == year && currentDay > i)) cell = $("<button>").addClass("day-cell text-muted").html(i);
+        else if (res) cell = $("<button>").addClass("day-cell text-muted").html(i + "<br>" +"x");
+        else cell = $(`<button onclick='selectDate(${i},${(month+11)%12+1},${year})'>`).addClass("day-cell text-muted").html(i + "<br>" + "o");
+        cell.val(i*100+(month+11)%12+1);
         calendarBody.append(cell);
     }
 
-    for (let i = 1; i <= totalDays; i++) {
-        const cell = $("<button>").addClass("day-cell").text(i);
-        cell.val(currentMonth + 1);
+    for (var i = 1; i <= totalDays; i++) {
+        let cell;
+        let res = await Status(i, currentMonth, year);
+        if (currentYear > year || (currentYear == year && currentDate.getMonth() > month) || (currentDate.getMonth() == month && currentYear == year && currentDay > i)) cell = $("<button>").addClass("day-cell text-muted").html(i);
+        else if (res) cell = $("<button>").addClass("day-cell").html(i + "<br>" + "x");
+        else cell = $(`<button onclick='selectDate(${i}, ${month+1},${year})'>`).addClass("day-cell").html(i + "<br>" + "o");
+  
+        cell.val(i * 100 + month + 1);
         calendarBody.append(cell);
     }
 
     for (let i = 1; i <= remainingDays; i++) {
-        const cell = $("<button>").addClass("day-cell text-muted").text(i);
-        cell.val((currentMonth + 1) % 12 + 1);
+        let res = await Status(i, currentMonth+1, year);
+        let cell;
+        if (currentYear > year || (currentYear == year && currentDate.getMonth() > (month + 1) % 12) || (currentDate.getMonth() == (month + 1) % 12 && currentYear == year && currentDay > i)) cell = $("<button>").addClass("day-cell text-muted").html(i);
+        else if (res) cell = $("<button>").addClass("day-cell text-muted").html(i + "<br>" + "x");
+        else cell = $(`<button onclick='selectDate(${i},${(month+1)%12+1},${year})'>`).addClass("day-cell text-muted").html(i + "<br>" + "o");
+        cell.val(i*100+(month+1)%12+1);
         calendarBody.append(cell);
     }
 }
 
+async function Status(day, month, year) {
+    var S_Date = new Date(year, month, day);
+    let data = 0;
+    await a();
 
-function selectDate(dayCell, currentMonth, currentYear) {
-    let selectyear = currentYear;
-    if (currentMonth == 11 && dayCell.val() == 1) selectyear++;
-    const date = new Date(selectyear, dayCell.val() - 1, dayCell.text());
+    async function a() {
+        const k = S_Date.getFullYear() + '-' + (S_Date.getMonth() < 9 ? '0' : '') + (S_Date.getMonth() + 1) + '-' + (S_Date.getDate() < 10 ? '0' : '') + S_Date.getDate();
+        const response = await fetch("/Home/GetReservation", {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json'  // Add the Content-Type header
+            },
+            body: JSON.stringify(k)
+        });
+        data = await response.json();
+    }
+
+    return data;
+}
+function selectDate(i, month, year) {
+    console.log(i,month,year)
+    let selectyear = year;
+    if (currentMonth == 11 && month == 1) selectyear++;
+    const date = new Date(selectyear, month - 1, i);
 
     const dayOfWeek = date.getDay();
-    $("#selectdate").html(selectyear + "年" + (dayCell.val()) + "月" + dayCell.text() + "日" + "(" + weekdays[dayOfWeek] + ")");
-    openModal(selectyear, dayCell.val(), dayCell.text(), weekdays[dayOfWeek]);
+    $("#selectdate").html(selectyear + "年" + month + "月" + i + "日" + "(" + weekdays[dayOfWeek] + ")");
+    openModal(selectyear, month, i, weekdays[dayOfWeek]);
     // $(".savebtn").on("click", function () {
     //   closeModal(dayCell);
     // });
@@ -267,6 +299,18 @@ function openModal(year, month, date, day) {
         $("#modal_form").submit();
     });
     const time = year + '/' + month + '/' + date + '(' + day + ')';
+}
+async function a(S_Date) {
+
+    const response = await fetch("/Home/GetReservation", {
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json'  // Add the Content-Type header
+        },
+        body: JSON.stringify(S_Date)
+    });
+    const data = await response.json();
+    return data;
 }
 
 function pay_click() {
