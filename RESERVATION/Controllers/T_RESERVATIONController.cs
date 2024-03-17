@@ -22,7 +22,9 @@ namespace RESERVATION.Controllers
         // GET: T_RESERVATION
         public async Task<IActionResult> Index()
         {
-              return _context.T_RESERVATION != null ? 
+            ViewData["coursem"] = await _context.T_COURSEM.ToListAsync();
+
+            return _context.T_RESERVATION != null ? 
                           View(await _context.T_RESERVATION.ToListAsync()) :
                           Problem("Entity set 'ReservationContext.T_RESERVATION'  is null.");
         }

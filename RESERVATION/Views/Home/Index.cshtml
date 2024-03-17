@@ -7,7 +7,7 @@
 @using System.Security.Claims;
 @using RESERVATION.Models;
 
-<div class="jumbotron">
+@* <div class="jumbotron">
     <div class="panel panel-default center-block">
         <div class="panel panel-heading">
             <div class="row">
@@ -30,23 +30,23 @@
             </form>
         </div>
     </div>
-</div>
+</div> *@
 
-<div class="text-center">
+<div class="">
    
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
          aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="selectdate"></h5>
+                    <h5 class="modal-title text-black-50" id="selectdate"></h5>
                     <button type="button" class="close" data-dismiss="modal"
                             aria-label="Close">
                         <span aria-hidden="true">戻る</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <h4 class="p20">●受付中 ×締め切り</h4>
+                    <h4 class="p20 text-black-50">●受付中 ×締め切り</h4>
                     <form asp-action="Course" id="modal_form">
                         <input type="hidden" asp-for="@Model.res_date" id="hidden1"/>
                         <div>
