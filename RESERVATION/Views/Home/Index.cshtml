@@ -7,7 +7,7 @@
 @using System.Security.Claims;
 @using RESERVATION.Models;
 
-@* <div class="jumbotron">
+<div class="jumbotron">
     <div class="panel panel-default center-block">
         <div class="panel panel-heading">
             <div class="row">
@@ -30,7 +30,8 @@
             </form>
         </div>
     </div>
-</div> *@
+</div>
+
 <div class="text-center">
    
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
@@ -119,26 +120,7 @@
                                 <span class="day-cell">
                                     <input type="hidden"  class="selectDate" value='@i' />
                                     <input type="hidden" value='@item.Id' class="select_id" />
-                                    @{
-
-                                        var reservations = ViewData["reservation"] as IEnumerable<T_RESERVATION>;
-                                        var id = item.Id;
-                                        var date = i.ToString();   
-                                        var result = reservations.Where(r => r.date == Model.res_date && r.coursem_id == id );
-                                        
-
-                                    }
-
-                                    @if(result != null)
-                                    {
-
-                                        <span class="">●</span>
-                                    }
-                                    else
-                                    {
-                                        <span>
-                                            ×</span>
-                                    }
+                                    <span id="date_@i-id_@item.Id">o</span>
                                 </span>
                             }                    
                     </div>
