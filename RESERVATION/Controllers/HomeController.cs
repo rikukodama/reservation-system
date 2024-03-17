@@ -247,10 +247,23 @@ namespace RESERVATION.Controllers
                 .Count(r => r.date == resDate);
             var count = _context.T_COURSEM.ToList().Count();
             bool reservationStatus = status == count;
-
             return Json(reservationStatus);
 
         }
+        public class MyModel
+        {
+            public DateTime Date { get; set; }
+            public int Number { get; set; }
+        }
+        public ActionResult GetStatus([FromBody] MyModel model)
+        {
+            var status = _context.T_RESERVATION
+                .Count(r => r.date == model.Date && r.coursem_id == model.Number);
+            bool reservationStatus = status == 1;
+            return Json(reservationStatus);
+
+        }
+
         public IActionResult Verify()
         {
             return View();
