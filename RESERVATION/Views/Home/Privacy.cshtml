@@ -1,18 +1,22 @@
 ﻿@{
     ViewData["Title"] = "Privacy Policy";
 }
-<h1>@ViewData["Title"]</h1>
 @model RESERVATION.Models.T_RESERVATION
+<img src="~/images/back.png" class="back1"/>
 <div>
+    <h3 class="text-center py-5 text-black-50">現在の予約状況です</h3>
+    <hr class="w-25 m-auto py-5 "/>
+    <h3 class="text-black-50">予約日時:</h3>
     @if (ViewData["reservation"] != null)
     {
         @foreach (var item in (List<T_RESERVATION>)ViewData["reservation"])
         {
-            <div value ="@item.reservationId">
-                <larbel>@item.date @item.coursem_id</larbel>
-                <button onclick="refund('@item.reservationId')">予約解除 </button>
+            <div value ="@item.reservationId" class="close-list">
+                <div class="py-2 font24 text-black-50">@item.date @item.coursem_id</div>
+                <button onclick="refund('@item.reservationId')" class="btn btn-danger">キャンセル </button>
             </div>
         }
+        <hr />
     }
     
 </div>

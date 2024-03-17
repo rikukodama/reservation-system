@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Xr7LD7Ql+GEfggNLN0M285CcD3DtVhbNjDAS16HDyls=",
+  "Hash": "2UYCXrkS15x1uc5kBCG9QItLpiO/yv1g5ZWkO7NS10M=",
   "Source": "RESERVATION",
   "BasePath": "_content/RESERVATION",
   "Mode": "Default",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Work\\ASP.Net\\reservation\\RESERVATION\\RESERVATION\\wwwroot\\images\\back.png",
+      "SourceId": "RESERVATION",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Work\\ASP.Net\\reservation\\RESERVATION\\RESERVATION\\wwwroot\\",
+      "BasePath": "_content/RESERVATION",
+      "RelativePath": "images/back.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\back.png"
     },
     {
       "Identity": "D:\\Work\\ASP.Net\\reservation\\RESERVATION\\RESERVATION\\wwwroot\\images\\banner1.svg",

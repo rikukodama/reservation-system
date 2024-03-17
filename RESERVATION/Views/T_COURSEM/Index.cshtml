@@ -4,12 +4,15 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>時間</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="blinking-button">&#x271A;</a>
+
 </p>
-<table class="table">
+<div class="w-100 overflow-auto">
+
+<table class="table table-striped">
     <thead>
         <tr>
             <th>
@@ -31,11 +34,12 @@
                 @Html.DisplayFor(modelItem => item.alertMessage)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-secondary">&#x1F4DD;</a>
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-outline-secondary">&#x1F4C3;</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-secondary">&#x1F5D1;</a>
             </td>
         </tr>
 }
     </tbody>
 </table>
+</div>

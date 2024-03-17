@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\Work\\ASP.Net\\reservation\\RESERVATION\\RESERVATION\\wwwroot\\images\\back.png",
+      "PackagePath": "staticwebassets\\images\\back.png"
+    },
+    {
       "Id": "D:\\Work\\ASP.Net\\reservation\\RESERVATION\\RESERVATION\\wwwroot\\images\\banner1.svg",
       "PackagePath": "staticwebassets\\images\\banner1.svg"
     },
