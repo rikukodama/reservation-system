@@ -8,7 +8,6 @@
     var resDate = (DateTime)ViewData["res_date"];
     var weekdays = new string[] { "日", "月", "火", "水", "木", "金", "土" };
     var day1 = (int)resDate.DayOfWeek;
-    
 }
 @model RESERVATION.Models.T_RESERVATION
 
@@ -18,9 +17,10 @@
 
         <input type="hidden" asp-for="@Model.date" value='@ViewData["res_date"]' />
         <input type="hidden" asp-for="@Model.coursem_id" value='@ViewData["coursem_id"]' />
-        <input type="hidden" asp-for="@Model.cource_id" value='@ViewData["cource_id"]' />
+        <input type="hidden" asp-for="@Model.cource_id" value='@ViewData["course_id"]' />
         <input type="hidden" asp-for="@Model.option_id" value='@ViewData["option_id"]' />
         <input type="hidden" asp-for="@Model.price" value='@ViewData["price"]' />
+ 
         <h3>サウナ予約システム</h3>
         <div class="col">
             <div class="row hr">

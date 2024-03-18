@@ -134,6 +134,10 @@ button {
     background-color:rgba(255,255,255,0.1)
 }
 
+.day-week{
+    font-size:20px;
+    text-align:center;
+}
 #prevBtn {
     margin-right: 20px;
     font-size: 20px;

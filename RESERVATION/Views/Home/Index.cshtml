@@ -1,19 +1,20 @@
 ﻿
 @{
     ViewData["Title"] = "Home Page";
-
+    var imgUrl = User.FindFirst("picture")?.Value != null ? User.FindFirst("picture")?.Value : "./images/user.png";
 }
 @model RESERVATION.Models.DateViewModel;
 @using System.Security.Claims;
 @using RESERVATION.Models;
 
-@* <div class="jumbotron">
+<div class="jumbotron">
     <div class="panel panel-default center-block">
         <div class="panel panel-heading">
             <div class="row">
                 <div class="col-md-10 col-sm-10 col-xs-8">
-                    <p>
-                        <img src="@User.FindFirst("picture")?.Value" width="32" height="32" alt="User Image" />
+                    <p class="text-black-50">
+
+                        <img src="@imgUrl" width="32" height="32" alt="User Image" />
                         @User.Identity.Name (@User.FindFirst(ClaimTypes.Email)?.Value)
                     </p>
                 </div>
@@ -23,14 +24,14 @@
             </div>
         </div>
         <div class="panel panel-body">
-            <h2>プッシュメッセージ送信テスト</h2>
-            <form role="form" asp-area="" asp-controller="Home" asp-action="PushMessage" method="post">
+            <h2 class="text-black-50">プッシュメッセージ送信テスト</h2>
+            <form role="form" asp-area="" asp-controller="Home" asp-action="PushMessage" method="post" class="text-black-50">
                 <input type="text" name="pushMessage" class="form-control" placeholder="プッシュするメッセージを入力してください">
-                <button type="submit" class="btn btn-default">送信</button>
+                <button type="submit" class="btn btn-default text-black-50">送信</button>
             </form>
         </div>
     </div>
-</div> *@
+</div>
 
 <div class="">
    

@@ -57,7 +57,7 @@
                     @{
                         var date = (DateTime)item.date;
                     }
-                 @date.Year-@date.Month-@date.Day
+                        @date.Year 年 @date.Month 月 @date.Day 日
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.coursem_id)
@@ -91,7 +91,7 @@
                     @{
                         var date1 = (DateTime)item.update;
                     }
-                    @date1.Year-@date1.Month-@date1.Day
+                        @date1.Year 年 @date1.Month 月 @date1.Day 日
                 @* @Html.DisplayFor(modelItem => item.update) *@
             </td>
      @*        <td>
