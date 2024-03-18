@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2UYCXrkS15x1uc5kBCG9QItLpiO/yv1g5ZWkO7NS10M=",
+  "Hash": "ROjUYqLcTghHt6Nu2eFD86PnAfUUxL7Rv3xTaEcOjCc=",
   "Source": "RESERVATION",
   "BasePath": "_content/RESERVATION",
   "Mode": "Default",
@@ -243,6 +243,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\btn_login_base.png"
+    },
+    {
+      "Identity": "D:\\Work\\ASP.Net\\reservation\\RESERVATION\\RESERVATION\\wwwroot\\images\\user.png",
+      "SourceId": "RESERVATION",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Work\\ASP.Net\\reservation\\RESERVATION\\RESERVATION\\wwwroot\\",
+      "BasePath": "_content/RESERVATION",
+      "RelativePath": "images/user.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\user.png"
     },
     {
       "Identity": "D:\\Work\\ASP.Net\\reservation\\RESERVATION\\RESERVATION\\wwwroot\\js\\site.js",

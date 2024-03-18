@@ -233,7 +233,7 @@ async function renderCalendar(year, month) {
     for (let i = startFrom; i <= totalPrevDays; i++) {
         let cell;
         let res = await Status(i, (currentMonth + 11) % 12, year);
-        if (currentDate.getFullYear() > year || (currentDate.getFullYear() == year && currentDate.getMonth() > (month + 11) % 12) || (currentDate.getMonth() == (month + 11) % 12 && currentDate.getFullYear() == year && currentDate.getDate() > i)) cell = $("<button>").addClass("day-cell text-muted").html(i);
+        if (currentDate.getFullYear() > year || (currentDate.getFullYear() == year && currentDate.getMonth() > (month + 11) % 12) || (currentDate.getMonth() == (month + 11) % 12 && currentDate.getFullYear() == year && currentDate.getDate() > i)) cell = $("<button>").addClass("day-cell text-muted").html(i +"<br>" +".");
         else if (res) cell = $("<button>").addClass("day-cell text-muted").html(i + "<br>" +"x");
         else cell = $(`<button onclick='selectDate(${i},${(month + 11) % 12 + 1},${year})'>`).addClass("day-cell text-muted").html(i + "<br>" + "●");
         cell.val(i*100+(month+11)%12+1);
@@ -243,7 +243,7 @@ async function renderCalendar(year, month) {
     for (var i = 1; i <= totalDays; i++) {
         let cell;
         let res = await Status(i, currentMonth, year);
-        if (currentDate.getFullYear() > year || (currentDate.getFullYear() == year && currentDate.getMonth() > month) || (currentDate.getMonth() == month && currentDate.getFullYear() == year && currentDate.getDate() > i)) cell = $("<button>").addClass("day-cell text-muted").html(i);
+        if (currentDate.getFullYear() > year || (currentDate.getFullYear() == year && currentDate.getMonth() > month) || (currentDate.getMonth() == month && currentDate.getFullYear() == year && currentDate.getDate() > i)) cell = $("<button>").addClass("day-cell text-muted").html(i +"<br>"+ ".");
         else if (res) cell = $("<button>").addClass("day-cell").html(i + "<br>" + "x");
         else cell = $(`<button onclick='selectDate(${i}, ${month + 1},${year})'>`).addClass("day-cell").html(i + "<br>" + "●");
   
@@ -254,7 +254,7 @@ async function renderCalendar(year, month) {
     for (let i = 1; i <= remainingDays; i++) {
         let res = await Status(i, (currentMonth + 1) % 12, year);
         let cell;
-        if (currentDate.getFullYear() > year || (currentDate.getFullYear() == year && currentDate.getMonth() > (month + 1) % 12) || (currentDate.getMonth() == (month + 1) % 12 && currentDate.getFullYear() == year && currentDate.getDate() > i)) cell = $("<button>").addClass("day-cell text-muted").html(i);
+        if (currentDate.getFullYear() > year || (currentDate.getFullYear() == year && currentDate.getMonth() > (month + 1) % 12) || (currentDate.getMonth() == (month + 1) % 12 && currentDate.getFullYear() == year && currentDate.getDate() > i)) cell = $("<button>").addClass("day-cell text-muted").html(i +"<br>" +".");
         else if (res) cell = $("<button>").addClass("day-cell text-muted").html(i + "<br>" + "×");
         else cell = $(`<button onclick='selectDate(${i},${(month + 1) % 12 + 1},${year})'>`).addClass("day-cell text-muted").html(i + "<br>" + "●");
         cell.val(i*100+(month+1)%12+1);

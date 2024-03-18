@@ -12,7 +12,11 @@
         @foreach (var item in (List<T_RESERVATION>)ViewData["reservation"])
         {
             <div value ="@item.reservationId" class="close-list">
-                <div class="py-2 font24 text-black-50">@item.date @item.coursem_id</div>
+                @{
+                    var r_date = (DateTime) item.date;
+                }
+
+                <div class="py-2 font24 text-black-50">@r_date.Year 年 @r_date.Month 月 @r_date.Day 日 @item.coursem_id</div>
                 <button onclick="refund('@item.reservationId')" class="btn btn-danger">キャンセル </button>
             </div>
         }
