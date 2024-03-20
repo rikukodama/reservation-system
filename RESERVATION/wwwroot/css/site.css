@@ -246,7 +246,17 @@ button {
 .red-text {
     color: rgb(255, 105, 105);
 }
-
+.form-select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 20px;
+    background-color: rgba(255,255,255,0.5);
+}
+.option1 {
+    background-color: rgba(255,255,255,0.5);
+    color:#ce6bf1;
+}
 .option {
     width: 100%;
     margin-bottom: 30px;

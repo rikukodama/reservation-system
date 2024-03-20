@@ -22,15 +22,34 @@ $(document).ready(function () {
         var checkboxSum = 0;
         let course = 0;
         let option = "0";
+        let min = 0;
+        let max = 0;
+        const person = $(".form-select");
+        var selectedValue;
         $('input[type="radio"]:checked').each(function () {
+        person.empty();
+
             let values = $(".course_price").map(function () {
                 return $(this).val();
             }).get();
-
+            let value_i = $(".min").map(function () {
+                return $(this).val();
+            }).get();
+            let value_x = $(".max").map(function () {
+                return $(this).val();
+            }).get();
+            min = value_i[$(this).val() - 1];
+            max = value_x[$(this).val() - 1];
+            selectedValue = min;
             radioSum = values[$(this).val() - 1];
             course += parseInt($(this).val());
         });
-
+        for (let i = min; i <= max; i++) {
+            const cell = $("<option >").addClass("option1").html(i);
+            cell.val(i);
+            person.append(cell);
+        }
+        
         $('input[type="checkbox"]:checked').each(function () {
             let values = $(".option_price").map(function () {
                 return $(this).val();
@@ -40,15 +59,23 @@ $(document).ready(function () {
             option += "," + String($(this).val());
         });
 
-        var totalSum = parseInt(radioSum) + checkboxSum;
-
-
+        var totalSum = parseInt(radioSum) * selectedValue + checkboxSum;
         if (totalSum >= 1000) $('#result').text(parseInt(totalSum / 1000) + ',' + parseInt(totalSum % 1000 / 100) + parseInt(totalSum % 100 / 10) + parseInt(totalSum % 10));
         else $('#result').text(totalSum);
+        $("#h_price").val(totalSum);
+        $('.form-select').on('change', function () {
+            selectedValue = $(this).val();
+            totalSum = parseInt(radioSum) * selectedValue + checkboxSum;
+            if (totalSum >= 1000) $('#result').text(parseInt(totalSum / 1000) + ',' + parseInt(totalSum % 1000 / 100) + parseInt(totalSum % 100 / 10) + parseInt(totalSum % 10));
+            else $('#result').text(totalSum);
+            $("#h_price").val(totalSum);
+
+        });
+
+       
         
         $("#h_course_id").val(course);
         $("#h_option_id").val(option);
-        $("#h_price").val(totalSum);
   
     }
     renderCalendar(currentYear, currentMonth);
