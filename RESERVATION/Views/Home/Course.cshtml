@@ -26,6 +26,8 @@
                         <input class="form-check-input" type="radio" value="@Html.DisplayFor(modelItem => item.courceId)"
                             name="flexRadioDefault" id="radio{$ @Html.DisplayFor(modelItem => item.courceId)}"
                         >
+                        <input type="hidden" value="@item.limitMinNum" class="min"/>
+                        <input type="hidden" value="@item.limitMaxNum" class="max"/>
                         <label class="form-check-label" for="radio{$ @Html.DisplayFor(modelItem => item.courceId)}">
                             @Html.DisplayFor(modelItem => item.limitMinNum)人
                             @if (Html.DisplayFor(modelItem => item.limitMaxNum) == Html.DisplayFor(modelItem => item.limitMinNum))
@@ -37,6 +39,9 @@
                         </label>
                     </div>
                 }
+                <select class="form-select" aria-label=".form-select">
+                      
+                </select>
             </div> 
 
             <div class="option">
