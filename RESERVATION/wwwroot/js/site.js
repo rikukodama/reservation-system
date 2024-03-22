@@ -8,8 +8,32 @@ let currentMonth = currentDate.getMonth();
 let currentDay = currentDate.getDate();
 let count = 1;
 $(document).ready(function () {
-    
+     var selectedValue;
+
     $('input[type="radio"]').change(function () {
+        let min = 0;
+        let max = 0;
+        const person = $(".form-select");
+        person.empty();
+        let value_i = $(".min").map(function () {
+            return $(this).val();
+        }).get();
+        let value_x = $(".max").map(function () {
+            return $(this).val();
+        }).get();
+
+
+        min = value_i[$(this).val() - 1];
+        max = value_x[$(this).val() - 1];
+        selectedValue = min;
+
+        $(`.option-check`).prop("checked", false);
+        for (let i = min; i <= max; i++) {
+            const cell = $("<option >").addClass("option1").html(i);
+            cell.val(i);
+            person.append(cell);
+        }
+
         calculateSum();
     });
 
@@ -22,33 +46,28 @@ $(document).ready(function () {
         var checkboxSum = 0;
         let course = 0;
         let option = "0";
-        let min = 0;
-        let max = 0;
-        const person = $(".form-select");
-        var selectedValue;
+       
+        
         $('input[type="radio"]:checked').each(function () {
-        person.empty();
+        
 
             let values = $(".course_price").map(function () {
                 return $(this).val();
             }).get();
-            let value_i = $(".min").map(function () {
+
+            let values_id = $(".id").map(function () {
                 return $(this).val();
             }).get();
-            let value_x = $(".max").map(function () {
-                return $(this).val();
-            }).get();
-            min = value_i[$(this).val() - 1];
-            max = value_x[$(this).val() - 1];
-            selectedValue = min;
+            let id = values_id[$(this).val() - 1];
+            for (let i = 0; i < values_id.length; i++) {
+                if (values_id[i] == 0 || i == $(this).val() - 1) $(`.${values_id[i]}`).css("display", "block");
+                else $(`.${values_id[i]}`).css("display", "none");
+            }
+           
             radioSum = values[$(this).val() - 1];
             course += parseInt($(this).val());
         });
-        for (let i = min; i <= max; i++) {
-            const cell = $("<option >").addClass("option1").html(i);
-            cell.val(i);
-            person.append(cell);
-        }
+       
         
         $('input[type="checkbox"]:checked').each(function () {
             let values = $(".option_price").map(function () {
@@ -71,8 +90,6 @@ $(document).ready(function () {
             $("#h_price").val(totalSum);
 
         });
-
-       
         
         $("#h_course_id").val(course);
         $("#h_option_id").val(option);

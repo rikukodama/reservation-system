@@ -26,7 +26,9 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
-
+.option-id{
+    display:none;
+}
 /* Carousel */
 .carousel-caption p {
     font-size: 20px;
@@ -106,9 +108,22 @@ button {
     gap: 2px;
     width: 100%;
 }
-
+.control-label{
+    color: black;
+}
+.row{
+    max-width:580px;
+    margin:auto;
+}
+.text-black{
+    color:black;
+}
+.col-sm-4, .col-sm-8{
+    border-bottom:1px solid grey;
+    margin:0;
+}
 .week-grid {
-     display: grid; 
+    display: grid;
     grid-template-columns: repeat(8, 1fr);
     gap: 2px;
     width: 100%;

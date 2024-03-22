@@ -1,14 +1,16 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using RESERVATION.Models;
 using Microsoft.Extensions.Configuration;
-
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 namespace RESERVATION.Data
 {
-    public class ReservationContext : DbContext
+    public class ReservationContext : IdentityDbContext
     {
         public ReservationContext(DbContextOptions options) : base(options)
         {
         }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -23,8 +25,9 @@ namespace RESERVATION.Data
                 .HasNoKey();
             modelBuilder.Entity<OptionViewModel>()
                 .HasNoKey();
-            
+            modelBuilder.Entity<ApplicationUser>().ToTable("AspNetUsers");
         }
+        
         public DbSet<RESERVATION.Models.T_COURSE>? T_COURSE { get; set; }
         public DbSet<RESERVATION.Models.T_OPTION>? T_OPTION { get; set; }
         public DbSet<RESERVATION.Models.T_USER>? T_USER { get; set; }

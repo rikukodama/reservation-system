@@ -50,7 +50,23 @@ namespace RESERVATION.Controllers
             }
             return View(t_COURSE);
         }
+        // GET: Option/Details/5
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null || _context.T_COURSE == null)
+            {
+                return NotFound();
+            }
 
+            var t_COURSE = await _context.T_COURSE
+                .FirstOrDefaultAsync(m => m.courceId == id);
+            if (t_COURSE == null)
+            {
+                return NotFound();
+            }
+
+            return View(t_COURSE);
+        }
         // GET: Course/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
