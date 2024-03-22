@@ -23,7 +23,7 @@
                 @foreach (var item in (List<T_COURSE>)ViewData["courseList"])
                 {
                     <div  class="form-check" asp-action="Course">
-                        <input class="form-check-input" type="radio" value="@Html.DisplayFor(modelItem => item.courceId)"
+                        <input class="form-check-input id" type="radio" value="@Html.DisplayFor(modelItem => item.courceId)"
                             name="flexRadioDefault" id="radio{$ @Html.DisplayFor(modelItem => item.courceId)}"
                         >
                         <input type="hidden" value="@item.limitMinNum" class="min"/>
@@ -51,7 +51,7 @@
                 </div>
                 @foreach (var item in (List<T_OPTION>)ViewData["optionList"])
                 {
-                    <div class="form-check">
+                    <div class="form-check @item.courceId">
                         <input class="form-check-input option-check" name="option_id" type="checkbox" 
                                    id="check{$ @Html.DisplayFor(modelItem => item.OptionId)}" value="@Html.DisplayFor(modelItem => item.OptionId)">
                             <label class="form-check-label" for="check{$ @Html.DisplayFor(modelItem => item.OptionId)}">

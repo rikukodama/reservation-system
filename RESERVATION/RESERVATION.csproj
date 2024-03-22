@@ -19,6 +19,8 @@
     <PackageReference Include="Microsoft.AspNetCore.Authentication.OAuth" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="6.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Extensions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.23" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.23" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.27" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.27">
       <PrivateAssets>all</PrivateAssets>
