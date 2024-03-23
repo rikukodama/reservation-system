@@ -94,7 +94,11 @@ body {
     margin-top: 10px;
     text-align: center;
 }
-
+#header-collapse {
+    background: rgba(255,255,255,0.8);
+    padding:8px 0 8px 140px;
+    text-align: right;
+}
 button {
     font-size: 20px;
     padding: 5px 10px;
@@ -519,4 +523,9 @@ table{
     margin-left:20px;
     color:#5469d4;
     font-size:24px;
+}
+@media screen and (max-width:575px) {
+    #header-collapse{
+        top:50px;
+    }
 }

@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Authorization
+@inject IAuthorizationService AuthorizationService
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<RESERVATION.Models.ApplicationUser> SignInManager
+@inject UserManager<RESERVATION.Models.ApplicationUser> UserManager
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -9,36 +14,50 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/RESERVATION.styles.css" asp-append-version="true" />
 </head>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+    function toggle_header(){
+        var flag = $(".navbar-collapse").hasClass("collapse");
+        if (flag) {
+            $(".navbar-collapse").removeClass("collapse");
+        } else {
+            $(".navbar-collapse").addClass("collapse");
+        }
+    }
+</script>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
+            <div class="container-fluid position-relative">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">予約システム</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                <button class="navbar-toggler" onclick="toggle_header()" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between position-absolute w-100 pr-5" id="header-collapse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">初ペジー</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="T_COURSEM" asp-action="Index">
-                                時間
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Course" asp-action="Index">
-                                コース
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Option" asp-action="Index">オプション</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="T_RESERVATION" asp-action="Index">予約状況</a>
-                        </li>
+                        @if (SignInManager.IsSignedIn(User) && User.IsInRole("admin"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="T_COURSEM" asp-action="Index">
+                                    時間
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Course" asp-action="Index">
+                                    コース
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Option" asp-action="Index">オプション</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="T_RESERVATION" asp-action="Index">予約状況</a>
+                            </li>
+                        }
                         
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">予約キャンセル</a>
@@ -50,9 +69,10 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Login">Login</a>
                         </li> *@
                     </ul>
+                    <partial name="_LoginPartial" />
                 </div>
             </div>
-            <partial name="_LoginPartial" />
+            
         </nav>
     </header>
     <div class="container">
@@ -63,10 +83,10 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2024 - 予約システム - <a asp-area="" asp-controller="Home" asp-action="Reservation">予約状況</a>
+            &copy; 2024 - 予約システム - <a asp-area="" asp-controller="Home" asp-action="Index">予約状況</a>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
