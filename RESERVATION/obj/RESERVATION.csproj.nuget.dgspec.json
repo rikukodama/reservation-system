@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Work\\ASP.Net\\reservation\\RESERVATION\\RESERVATION\\RESERVATION.csproj": {}
+    "C:\\Users\\Administrator\\Music\\reservation-system\\RESERVATION\\RESERVATION.csproj": {}
   },
   "projects": {
-    "D:\\Work\\ASP.Net\\reservation\\RESERVATION\\RESERVATION\\RESERVATION.csproj": {
+    "C:\\Users\\Administrator\\Music\\reservation-system\\RESERVATION\\RESERVATION.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\ASP.Net\\reservation\\RESERVATION\\RESERVATION\\RESERVATION.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Music\\reservation-system\\RESERVATION\\RESERVATION.csproj",
         "projectName": "RESERVATION",
-        "projectPath": "D:\\Work\\ASP.Net\\reservation\\RESERVATION\\RESERVATION\\RESERVATION.csproj",
-        "packagesPath": "C:\\Users\\Satellite\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\ASP.Net\\reservation\\RESERVATION\\RESERVATION\\obj\\",
+        "projectPath": "C:\\Users\\Administrator\\Music\\reservation-system\\RESERVATION\\RESERVATION.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Music\\reservation-system\\RESERVATION\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Satellite\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,11 +34,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -202,6 +192,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -210,7 +218,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

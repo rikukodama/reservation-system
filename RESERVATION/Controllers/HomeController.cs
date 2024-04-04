@@ -204,7 +204,6 @@ namespace RESERVATION.Controllers
   
     public class HomeController : Controller
     {
-
         private readonly ReservationContext _context;
         private readonly SlackService _slackService;
         private readonly ReservationService _reservationService;

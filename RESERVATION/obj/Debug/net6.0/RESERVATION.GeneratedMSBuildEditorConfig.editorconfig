@@ -9,335 +9,335 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RESERVATION
 build_property.RootNamespace = RESERVATION
-build_property.ProjectDir = D:\Work\ASP.Net\reservation\RESERVATION\RESERVATION\
+build_property.ProjectDir = C:\Users\Administrator\Music\reservation-system\RESERVATION\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Work\ASP.Net\reservation\RESERVATION\RESERVATION
+build_property.MSBuildProjectDirectory = C:\Users\Administrator\Music\reservation-system\RESERVATION
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/AccessDenied.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWxDaGFuZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxFeHRlcm5hbExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/Lockout.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/Lockout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2Nrb3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/LoginWith2fa.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/LoginWith2fa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbldpdGgyZmEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbldpdGhSZWNvdmVyeUNvZGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGVsZXRlUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGlzYWJsZTJmYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRG93bmxvYWRQZXJzb25hbERhdGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/Manage/Email.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/Manage/Email.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW5hYmxlQXV0aGVudGljYXRvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRXh0ZXJuYWxMb2dpbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcR2VuZXJhdGVSZWNvdmVyeUNvZGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/Manage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUmVzZXRBdXRoZW50aWNhdG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2V0UGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2hvd1JlY292ZXJ5Q29kZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcVHdvRmFjdG9yQXV0aGVudGljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1N0YXR1c01lc3NhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNlbmRFbWFpbENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfU3RhdHVzTWVzc2FnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/Error.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/Account/Login.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/Course/Create.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/Course/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/Course/Delete.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/Course/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/Course/Details.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/Course/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/Course/Edit.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/Course/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/Course/Index.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/Course/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/Home/Course.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/Home/Course.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb3Vyc2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/Home/Index.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/Home/LineCallback.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/Home/LineCallback.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMaW5lQ2FsbGJhY2suY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/Home/Privacy.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/Home/Reservation.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/Home/Reservation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZXNlcnZhdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/Home/Verify.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/Home/Verify.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWZXJpZnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/Option/Create.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/Option/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3B0aW9uXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/Option/Delete.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/Option/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3B0aW9uXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/Option/Details.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/Option/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3B0aW9uXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/Option/Edit.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/Option/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3B0aW9uXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/Option/Index.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/Option/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3B0aW9uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/Role/Create.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/Role/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/Role/Index.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/Role/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/Role/Update.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/Role/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/Shared/Error.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/T_COURSEM/Create.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/T_COURSEM/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVF9DT1VSU0VNXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/T_COURSEM/Delete.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/T_COURSEM/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVF9DT1VSU0VNXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/T_COURSEM/Details.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/T_COURSEM/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVF9DT1VSU0VNXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/T_COURSEM/Edit.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/T_COURSEM/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVF9DT1VSU0VNXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/T_COURSEM/Index.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/T_COURSEM/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVF9DT1VSU0VNXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/T_RESERVATION/Create.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/T_RESERVATION/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVF9SRVNFUlZBVElPTlxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/T_RESERVATION/Delete.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/T_RESERVATION/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVF9SRVNFUlZBVElPTlxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/T_RESERVATION/Details.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/T_RESERVATION/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVF9SRVNFUlZBVElPTlxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/T_RESERVATION/Edit.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/T_RESERVATION/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVF9SRVNFUlZBVElPTlxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/T_RESERVATION/Index.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/T_RESERVATION/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVF9SRVNFUlZBVElPTlxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/User/Create.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/User/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/User/Delete.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/User/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/User/Details.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/User/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/User/Edit.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/User/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/User/Index.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/_ViewImports.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/_ViewStart.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/ASP.Net/reservation/RESERVATION/RESERVATION/Views/Shared/_Layout.cshtml]
+[C:/Users/Administrator/Music/reservation-system/RESERVATION/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-blruaubopn
